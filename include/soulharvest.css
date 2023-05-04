@@ -1,0 +1,50 @@
+<style type="text/css">
+<!--
+	H1 {
+	  font-family: Arial, Helvetica, Verdana;
+	  color: #0099FF;
+	  font-size: 24pt;
+	  FONT-WEIGHT: bold;
+	}
+
+	H3 {
+	  font-family: Arial, Helvetica, Verdana;
+	  color: #0099FF;
+	  font-size: 14pt;
+	  FONT-WEIGHT: bold;
+	}
+
+	.soulharvest {
+	  font-family: Arial, Helvetica, Verdana;
+	  color: white;
+	  font-size: 10pt;
+	}
+
+	.soulharvest A:link
+	{
+	    color: #76A7CB;
+	    FONT-WEIGHT: bold;
+	    TEXT-DECORATION: none
+	}
+
+	.soulharvest A:visited
+	{
+	    color: #76A7CB;
+	    FONT-WEIGHT: bold;
+	    TEXT-DECORATION: none
+	}
+	.soulharvest A:hover
+	{
+	    color: #06AFFF;
+	    FONT-WEIGHT: bold;
+	    TEXT-DECORATION: underline;
+	    background: #204040
+	}
+	.soulharvest A:active
+	{
+	    color: #0099FF;
+	    FONT-WEIGHT: bold;
+	    TEXT-DECORATION: underline
+	}
+-->
+</style>

@@ -1,0 +1,155 @@
+<html>
+<head>
+<!--#include virtual="/include/metatags.html"-->
+<TITLE>Soul Harvest - Pics</TITLE>
+<script language=javascript>
+ <!--
+    //Storage variable for current section being visited
+    currentSection="pics";
+  //-->
+</script>
+</head>
+<!--#include virtual="/include/bodytag.html"-->
+
+<CENTER>
+<BLOCKQUOTE>
+<TABLE border=0 cols=2 cellspacing=0 cellpadding=3 width=85%>
+<TR VALIGN="MIDDLE">
+<TD bgcolor="#76A7CB">
+    <FONT face="arial,helvetica,verdana" size=+1>
+    <B>Soul Harvest - Pics</B>
+    </FONT>
+</TD><TD bgcolor="#76A7CB" align=right>
+<!--#include virtual="/include/email_header.html"-->
+</TD>
+</TR>
+</table>
+
+<TABLE border=0 cols=2 cellspacing=0 cellpadding=3 width=85%>
+<TR valign="top">
+
+<!--#include virtual="/include/menu.html"-->
+
+<TD class=soulharvest>
+ <BR>
+ <BLOCKQUOTE>
+  Welcome to the <B>Soul Harvest</B> photo gallery.  Click on the thumbnails to see full-size versions.
+  <BR><BR>
+
+  <TABLE cellpadding=5 cellspacing=5 border=0>
+	<tr>
+		<td align="left">
+			<a href="2004/2004-02-01/"><img src="2004/2004-02-01/2004-02-01_babylon_s.jpg" border="0" align="left" /></a>
+			<h3>Soul Harvest @ Babylon</h3></h3>
+		        <font face="arial,helvetica,verdana" size=-1>
+				Feb. 1 2004, Superbowl Sunday @ the Babylon <br />
+				<a href="2004/2004-02-01/"><b>[...more photos from Superbowl 2004 show]</b></a>
+			</font>
+			<br /><br />
+		</td>
+	</tr>
+
+   <TR><TD align="left" bgcolor="#444444">
+	<a href="2003/"><IMG src="2003/marc_bw_s.jpg" border=0 width=100 height=100 align=left></A>
+	<h3>Soul Harvest (2003)</h3>
+	<font face="arial,helvetica,verdana" size=-1>
+	Photos from 2003<br />
+        <a href="2003/"><b>[...more photos from 2003]</b></a>
+	</font>
+	<br><br>
+   </td></TR>
+
+   <TR><TD align=left>
+	<a href="ccp/"><IMG src="ccp/30-nov-00_s.jpg" border=0 width=100 height=100 align=left></A>
+	<h3>Soul Harvest @ Crimson Clover</h3>
+        <font face="arial,helvetica,verdana" size=-1>
+	Live photos from the Crimson Clover Pub (221 Rideau St.)<br>
+	<a href="ccp/"><b>[...more photos from Crimson Clover]</b></a>
+	</font>
+	<br><br>
+   </TD></TR>
+
+   <TR><TD align=left bgcolor=#444444>
+	<a href="obriens/"><IMG src="obriens/14-apr-2001_04_s.jpg" border=0 width=100 height=100 align=left></A>
+	<h3>Soul Harvest @ O'Briens</h3>
+	<font face="arial,helvetica,verdana" size=-1>
+	Photos from O'Briens Pub (1070 Bank St)<br>
+        <a href="obriens/"><b>[...more photos from O'Briens]<b></a>
+	</font>
+	<br><br>
+   </td></TR>
+
+   <TR><TD align=left>
+	<a href="2000/"><IMG src="2000/Band-Line_Jason_s.jpg" border=0 width=100 height=100 align=left></A>
+	<h3>Soul Harvest (2000)</h3>
+	<font face="arial,helvetica,verdana" size=-1>
+	Photo shoot by Lisa Kelly<br>
+        <a href="2000/"><b>[...more photos from 2000]<b></a>
+	</font>
+	<br><br>
+   </td></TR>
+
+   <TR><TD align=left bgcolor=#444444>
+	<a href="macfest/"><IMG src="macfest/2000_1_s.jpg" align="left" border=0 width=100 height=100></A>
+	<h3>MacFEST</h3>
+	<font face="arial,helvetica,verdana" size=-1>
+	Live shots of the 2000 MacFEST.  More coming...<br>
+    	<a href="macfest/"><b>[...more photos from MacFEST]<b></a>
+	</font>
+	<br><br>
+   </td></TR>
+
+   <TR><TD align=left>
+	<a href="1999/"><IMG src="1999/zaphod1_s.jpg" align="left" border=0 width=100 height=100></A>
+	<h3>Soul Harvest (1999)</h3>
+	<font face="arial,helvetica,verdana" size=-1>
+	Live shots of the 1999 SH line-up.<br>
+    	<a href="1999/"><b>[...more photos from 1999]<b></a>
+	</font>
+	<br><br>
+   </td></TR>
+
+   <TR><TD align=left bgcolor=#444444>
+	<a href="rec_rift/"><IMG src="rec_rift/studioband_s.jpg" align="left" border=0 width=100 height=100></A>
+	<h3>Recording "The Rift"</h3>
+	<font face="arial,helvetica,verdana" size=-1>
+	Photos from Distortion Studios as SH records "The Rift".<br>
+    	<a href="rec_rift/"><b>[...more photos from recording the rift]<b></a>
+	</font>
+	<br><br>
+   </td></TR>
+  </TABLE>
+
+  <TABLE cellpadding=5 cellspacing=0 border=0>
+   <TR><TH align=left colspan=3>CD Cover Art</TH></TR>
+   <TR bgcolor=#444444>
+    <TD><A href="/music/firstcrops/"><IMG src="/music/firstcrops/firstcrops_s.jpg" alt="First Crops" border=0 height="100"></A></TD>
+    <TD><A href="/music/rift/"><IMG src="/music/rift/therift_s.jpg" alt="The Rift" border=0 height="100"></A></TD>
+    <TD><A href="/music/ootb/"><IMG src="/music/ootb/ootb_s.jpg" alt="Out of the Basement" height="100" border=0></A></TD>
+    <TD><A href="hardrain.jpg"><IMG src="hardrain_s.jpg" alt="Hard Rain" border=0 height="100"></A></TD>
+   </TR>
+   <TR>
+    <TH><FONT size=-2>First Crops</FONT></TH>
+    <TH><FONT size=-2>The Rift</FONT></TH>
+    <TH><FONT size=-2>Out of the Basement</FONT></TH>
+    <TH><FONT size=-2>Hard Rain</FONT></TH>
+   </TR>
+  </TABLE>
+
+<BR><BR>
+<B>
+All photographs are the original work of Lisa Kelly.<BR>
+All digital alterations, touch-ups, etc. are courtesy of Jason St-Cyr.<BR>
+CD cover art by Sean McCullough and Jason St-Cyr.
+</B>
+</FONT>
+</BLOCKQUOTE></BLOCKQUOTE>
+</CENTER>
+</TD>
+</TR>
+</TABLE>
+</BLOCKQUOTE>
+</CENTER>
+
+</BODY>
+</HTML>

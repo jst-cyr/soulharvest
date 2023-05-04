@@ -1,0 +1,61 @@
+<html> <head> <!--#include virtual="/include/metatags.html"-->
+ <TITLE>Soul Harvest - Booking Information</TITLE>
+ <script language=javascript>
+  <!--
+     //Storage variable for current section being visited
+     currentSection = "booking";
+   //--> </script>
+ </head>
+ <!--#include virtual="/include/bodytag.html"-->
+
+ <CENTER>
+ <BLOCKQUOTE>
+
+ <TABLE border=0 cols=2 cellspacing=0 cellpadding=3 width=85%>
+ <TR VALIGN="MIDDLE">
+ <TD bgcolor="#76A7CB">
+     <FONT face="arial,helvetica,verdana" size=+1>
+     <B>Soul Harvest - Booking Information</B>
+     </FONT> </TD><TD bgcolor="#76A7CB" align=right>
+ <!--#include virtual="/include/email_header.html"-->
+ </TD></TR>
+ </table>
+
+ <TABLE border="0" cols="2" cellspacing="0" cellpadding="3" width="85%">
+ <TR valign="top"> <!--#include virtual="/include/menu.html"-->
+ <TD class="soulharvest">
+ <br><br>
+ 	<!--Booking contact information-->
+ 	 <blockquote>
+		Ryan Lindsay has taken over as main contact for all bookings and promotions.  If you would like to book Soul Harvest for your venue please contact:<br>
+		<blockquote>
+			<h3>WHY?media booking</h3>
+			<ul>
+			 <li><b>Contact:</b> Ryan Lindsay</li>
+			 <li><b>Phone:</b> (613) 762-6320</li>
+			 <li><b>Email:</b> <a href="mailto:whymedia@whymedia.ca">whymedia@whymedia.ca</a></li>
+			 <li><b>website:</b> <a href="http://www.whymedia.ca" target="_new">www.whymedia.ca</a></li>
+			</ul>
+		</blockquote>
+
+		<br /><br />
+		You can also book Soul Harvest through <b>Auto-wah Records</b>, an organization headed by Eric St-Cyr, which handles bookings and promotions.
+	
+  		<blockquote><h3>Auto-Wah Records</h3>
+ 			<ul>
+	 		 <li><b>Contact:</b> Eric St-Cyr</li>
+ 			 <li><b>Phone:</b> (613) 291-2156</li>
+	 		 <li><b>Email:</b> <a href="mailto:autowah_records@hotmail.com">autowah_records@hotmail.com</a></li>
+	 		 <li><b>website:</b> <a href="http://www.autowah.com" target="_new">www.autowah.com</a></li>
+	 		</ul>
+ 		</blockquote>
+ 	</blockquote>
+  </TD>
+ </TR>
+ </TABLE>
+
+ </BLOCKQUOTE>
+ </CENTER>
+
+</BODY>
+</HTML>

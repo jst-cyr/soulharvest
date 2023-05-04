@@ -1,0 +1,177 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="Author" content="Jason St-Cyr">
+<title>Soul Harvest</title>
+
+<script language="javascript">
+<!--
+	if (document.images)
+	{
+		//Active Images
+		home_off=new Image();
+		home_off.src="graphics/home_off.gif";
+		home_on=new Image();
+		home_on.src="graphics/home_on.gif";
+		bio_off=new Image();
+		bio_off.src="graphics/bio_off.gif";
+		bio_on=new Image();
+		bio_on.src="graphics/bio_on.gif";
+		gigs_off=new Image();
+		gigs_off.src="graphics/gigs_off.gif";
+		gigs_on=new Image();
+		gigs_on.src="graphics/gigs_on.gif";
+		clips_off=new Image();
+		clips_off.src="graphics/clips_off.gif";
+		clips_on=new Image();
+		clips_on.src="graphics/clips_on.gif";
+		band_off=new Image();
+		band_off.src="graphics/band_off.gif";
+		band_on=new Image();
+		band_on.src="graphics/band_on.gif";
+		pics_off=new Image();
+		pics_off.src="graphics/pics_off.gif";
+		pics_on=new Image();
+		pics_on.src="graphics/pics_on.gif";
+
+ 		//Storage variable for current section being visited
+		currentSection = "home";
+	}
+
+	//Switch sections
+	function goTo(sectionName){
+		if(document.images){
+                        document[currentSection].src=eval(currentSection+"_off.src");
+			document[sectionName].src=eval(sectionName+"_on.src");
+			currentSection=sectionName;
+		}
+	}
+
+	//Activate images
+	function imgOn(imgName){
+		if ((document.images) && (imgName != currentSection)){
+			document[imgName].src=eval(imgName+"_on.src");
+		}
+	}
+
+	//Deactivate images
+	function imgOff(imgName){
+		if((document.images) && (imgName !=currentSection)){
+				document[imgName].src=eval(imgName+"_off.src");
+		}
+	}
+
+//-->
+</script>
+</head>
+<body text="#FFFFFF"  bgcolor="#000000" link="#00B5B5" vlink="#C0C0C0" alink="#FF0000" >
+
+<CENTER>
+<BLOCKQUOTE>
+<TABLE border=0 cols=2 cellspacing=0 cellpadding=3 width=85%>
+<TR VALIGN="MIDDLE">
+<TD bgcolor="#76A7CB" width="150">
+    <FONT face="arial,helvetica,verdana" size=+1>
+    <B>Soul Harvest</B>
+    </FONT>
+</TD><TD bgcolor="#76A7CB" align=right>
+  <FONT face="arial,helvetica,verdana" color="#ffffff"><B>
+  <A href="mailto:soulharvest@ottawa.com">
+  <FONT color="#FFFFFF">soulharvest</FONT><FONT size=+1 color="#FFFF99">@</FONT><FONT color="#FFFFFF">ottawa.com</FONT></A>
+  </B></FONT>
+</TD>
+</TR>
+
+<TR valign="top">
+<TD>
+  <IMG src="pics/zaphods2000a_s.jpg" border="0" width="100" height="100" alt="Live @ Zaphod's"><BR>
+  <BR>
+  <A href="index.html" onmouseover="imgOn('home');window.status='Main - News and Reviews';return true;" onmouseout="imgOff('home');window.status=' ';return true;" onclick="goTo('home');return true;"><IMG name="home" src="graphics/home_on.gif" height="25" width="75" border="0" alt="Main - News and Reviews"></A><BR>
+  <A href="bio.html" onmouseover="imgOn('bio');window.status='Band Presskit and Biography';return true;" onmouseout="imgOff('bio');window.status=' ';return true;" onclick="goTo('bio');return true;"><IMG src="graphics/bio_off.gif" name="bio" height="25" width="75" border="0" alt="Band Presskit and Biography"></A><BR>
+  <A href="gigs.html" onmouseover="imgOn('gigs');window.status='Upcoming and Previous shows';return true;" onmouseout="imgOff('gigs');window.status=' ';return true;" onclick="goTo('gigs');return true;"><IMG name="gigs" src="graphics/gigs_off.gif"  height="25" width="75" border="0" alt="Upcoming and Previous shows"></A><BR>
+  <A href="music/" onmouseover="imgOn('clips');window.status='Music clips, full downloads, and tabs';return true;" onmouseout="imgOff('clips');window.status=' ';return true;" onclick="goTo('clips');return true;"><IMG src="graphics/clips_off.gif" name="clips" height="25" width="75" border="0" alt="Music clips, full downloads, and tabs"></A><BR>
+  <A href="pics/" onmouseover="imgOn('pics');window.status='Photo Gallery!';return true;" onmouseout="imgOff('pics');window.status=' ';return true;" onclick="goTo('pics');return true;"><IMG src="graphics/pics_off.gif" name="pics"  height="25" width="75" border="0" alt="Photo Gallery!"></A><BR>
+  <A href="band.html" onmouseover="imgOn('band');window.status='Band Members';return true;" onmouseout="imgOff('band');window.status=' ';return true;" onclick="goTo('band');return true;"><IMG src="graphics/band_off.gif" name="band" height="25" width="75" border="0" alt="Band Members"></A><BR>
+  <BR>
+  <BR>
+  <FONT face="arial, verdana, helvetica" size=-2>
+  Other SH sites:
+  <BR>
+  <A href="http://www.mp3.com/soulharvest" target="_new">SH @ mp3.com</A>
+  <BR>
+  <A href="http://musicians.riffage.com/SOULHARVEST" target="_new">SH @ riffage.com</A>
+  </FONT>
+</TD>
+<TD>
+  <TABLE border=0 cellpadding=5 cellspacing=5>
+  <TR><TD valign=top>
+  <FONT face=arial,helvetica,verdana size=-1>
+  <FONT COLOR="#76A7CB" size=+1><B>News!</B></FONT>
+
+  <TABLE border=0 cellpadding=5 cellspacing=5>
+
+  <TR valign="top">
+    <TD><IMG src="graphics/riffage.gif" alt="Sad news" width="100" border=0 align=left></TD>
+    <TD>
+      <FONT face="arial,helvetica,verdana" size=-1><B>Riffage.com says goodbye</B><BR>
+	As of Dec. 8, 2000, Riffage.com will no longer be providing its services.  We are working to move our music around so that you can still download all the tracks you could before.
+      </FONT>
+    </TD>
+  </TR>
+
+  <TR valign="top">
+    <TD><a href="gigs.html"><IMG src="pics/2000/John-bubbles_s.jpg" alt="LIVE!!!" width="100" height="100" border=0 align=left></A></TD>
+    <TD>
+      <FONT face="arial,helvetica,verdana" size=-1><B>SH: Official House Band for the Crimson Clover Pub [14-Dec-00]</B><BR>
+	A few surprises for you this Thursday, December 14th.  C'mon out, have a few, and hear the band!<br>
+        <a href="gigs.html"><b>[...more info]</b></a>
+      </FONT>
+    </TD>
+  </TR>
+
+  <TR valign="top">
+    <TD><a href="http://www.ottawaatnite.com/artists/artists001.shtml" target="_new"><IMG src="pics/2000/Ryan1_s.jpg" alt="News!!!" width="100" height="100" border=0 align=left></A></TD>
+    <TD>
+      <FONT face="arial,helvetica,verdana" size=-1><B>SH featured on Ottawa@Nite.com</B><BR>
+	Check out the Soul Harvest feature on Ottawa's new nightlife site <a href="http://www.ottawaatnite.com" target="_new">http://www.ottawaatnite.com</a><br>
+        <b><a href="http://www.ottawaatnite.com/artists/artists001.shtml" target="_new">[...more info]</b></a>
+      </FONT>
+    </TD>
+  </TR>
+
+  <TR valign="top">
+    <TD><A href="music/ootb/"><IMG src="music/ootb/ootb_s.jpg" alt="Out of the Basement" border=0 height="100" width="100" align=left></A></TD>
+    <TD>
+      <FONT face="arial,helvetica,verdana" size=-1><B>Out of the Basement EP!</B><BR>
+      Soul Harvest has released a brand new 4-track EP named "Out of the Basement" featuring some of the tracks from the upcoming SH CD, due out by the end of 2000.  Check out the information on the EP <A href="music/ootb/">here!</A>.
+      </FONT>
+    </TD>
+  </TR>
+  </TABLE>
+
+  <BR><BR><BR>
+  <LI>Can't stand our music? Or does our CD live in your Discman? Let us know by rating our songs over at <A href="http://musicians.riffage.com/SOULHARVEST" target="_new" onMouseOver="window.status='Soul Harvest @ riffage.com';return true;" onMouseOut="window.status='';return true;">http://musicians.riffage.com/SOULHARVEST</A></FONT>
+
+  </TD><TD valign=top width=100 bgcolor="#444444">
+  <B><FONT face="arial,verdana,helvetica" size=-1>
+  Reviews of the month:
+  <P>
+  <LI><FONT  COLOR="#76A7CB">(about Chillin' On the Patio)</FONT><BR>
+	"fun song. hits me on a very personal level. what could possibly be better than hanging with the guys?"
+  <LI><FONT  COLOR="#76A7CB">(about Momo/Good Little Girl)</FONT><BR>
+	"This is my kind of music. Has the elements of a hit. "
+  </FONT></B>
+  </TD></TR>
+
+  </TABLE>
+
+</TD>
+</TR>
+</TABLE>
+</BLOCKQUOTE>
+</CENTER>
+</BODY>
+</HTML>
+
+
+

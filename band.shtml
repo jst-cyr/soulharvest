@@ -1,0 +1,77 @@
+<html>
+<head>
+<!--#include virtual="/include/metatags.html"-->
+<TITLE>Soul Harvest - Band Members</TITLE>
+<script language=javascript>
+ <!--
+    //Storage variable for current section being visited
+    currentSection = "band";
+  //-->
+</script>
+</head>
+<!--#include virtual="/include/bodytag.html"-->
+
+<CENTER>
+<BLOCKQUOTE>
+<TABLE border=0 cols=2 cellspacing=0 cellpadding=3 width=85%>
+<TR VALIGN="MIDDLE">
+<TD bgcolor="#76A7CB">
+    <FONT face="arial,helvetica,verdana" size=+1>
+    <b>Soul Harvest - the Band</b>
+    </FONT>
+</TD><TD bgcolor="#76A7CB" align=right>
+<!--#include virtual="/include/email_header.html"--></TD>
+</TR>
+</table>
+
+<TABLE border=0 cols=2 cellspacing=0 cellpadding=3 width=85%>
+<TR valign="top">
+
+<!--#include virtual="/include/menu.html"-->
+
+<!--Insert page content here-->
+
+<td class=soulharvest>
+<br>
+
+<table border=0>
+ <tr>
+  <td valign="top">
+   <a href="/pics/2000/Jason-serious.jpg"><img src="/pics/2000/Jason-serious_s.jpg" align="left" HSPACE="5" VSPACE="5" height="100" width="100" ALT="Jason St-Cyr" BORDER="0"></a>
+   <tt><font color="#33CCFF">GUITAR/VOCALS: Jason St-Cyr</font></tt>
+   <p><font face="arial,helvetica,verdana" size=-1>Born into the servitude of a cruel world, Jason's "terrible" childhood life as part of a suburban upper-middle class family which provided him with food, shelter, good moral upbringing, and genuine manners led him to be the sorrow-stricken man known by his band-mates today.  Plagued by genius and amazing looks, this Software Engineer spends his time at pool halls and blues bars enjoying the finer points of life and a Scotch or two.</font>
+   <br><br>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top">
+   <a href="/pics/2000/Ryan1.jpg"><img src="/pics/2000/Ryan1_s.jpg" align="left"  HSPACE="5" VSPACE="5" height="100" width="100" ALT="Ryan Lindsay" BORDER="0"></a>
+   <tt><font color="#33CCFF">GUITAR/VOCALS: Ryan Lindsay</font></tt>
+   <p><font face="arial,helvetica,verdana" size="-1">The younger of the guitar duo has made his mark with his flamboyant appearance and general upbeat attitude, much to the delight of fans and band-mates alike.  His musicianship, heavily rooted in his rock influences, belies his age and shows the promise of a future guitar great.  Having returned to Ottawa to learn Radio Broadcasting at Algonquin College, the young man has had the time to practice and start taking over some of the lead vocal responsibilities in the band.
+   <br><br>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top">
+   <a href="/pics/2003/marc_bw.jpg"><img src="/pics/2003/marc_bw_s.jpg" align="left" width="100" height="100" alt="Marc Paquette"  HSPACE="5" VSPACE="5" BORDER="0"></a>
+   <tt><font color="#33CCFF">BASS: Marc Paquette</font></tt>
+   <p><font face="arial,helvetica,verdana" size="-1">The newest member to the Soul Harvest lineup, Marc is a converted guitarist who is working hard to get into shape for performing alongside his new bandmates.
+   <br><br>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top">
+   <a href="/pics/2000/Chris2000b.jpg"><img src="/pics/2000/Chris2000b_s.jpg" align="left"  HSPACE="5" VSPACE="5" ALT="Chris Amos" BORDER="0" HEIGHT="100" WIDTH="100" ></a>
+   <tt><font color="#33CCFF">DRUMS: Chris Amos</font></tt>
+   <p><font face="arial,helvetica,verdana" size="-1">The former infantry member, and current Algonquin Computer Networking student, Soul Harvest's drummer Chris had never been behind a set before joining the band.  Now an indispensable part of the band's music, Chris won't let you buy him a beer but throw him on a dance floor and watch those limbs fly.  The frenetic Amos blames society for his irresistable urge to slay and destroy all those "poor little demons and goblins on the screen", but says: "I'm getting help. Don't worry. I'm fine.  Really".
+   <br><br>
+  </td>
+ </tr>
+</table>
+
+</td></tr>
+</table>
+</blockquote>
+</center>
+</body>
+</html>

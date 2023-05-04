@@ -1,0 +1,224 @@
+<html>
+<head>
+<!--#include virtual="/include/metatags.html"-->
+<TITLE>Soul Harvest - Music Archive</TITLE>
+<script language=javascript>
+ <!--
+    //Storage variable for current section being visited
+    currentSection = "clips";
+  //-->
+</script>
+</head>
+<!--#include virtual="/include/bodytag.html"-->
+
+<CENTER>
+<BLOCKQUOTE>
+<TABLE border=0 cols=2 cellspacing=0 cellpadding=3 width=85%>
+<TR VALIGN="MIDDLE"><TD bgcolor="#76A7CB">
+    <FONT face="arial,helvetica,verdana" size=+1>
+    <B>Soul Harvest - Music Archive</B>
+    </FONT>
+</TD>
+<TD bgcolor="#76A7CB" align=right>
+<!--#include virtual="/include/email_header.html"-->
+</TD></TR>
+</table>
+<TABLE border=0 cols=2 cellspacing=0 cellpadding=3 width=85%>
+<TR valign="top">
+
+<!--#include virtual="/include/menu.html"-->
+
+<TD class=soulharvest>
+ <BR>
+ <BLOCKQUOTE>
+ <FONT face="helvetica,arial,verdana" size=-1>From days gone by, these recordings cover the various lineups that have been called "Soul Harvest" over the years.  Enjoy!</FONT>
+ <P>
+
+ <CENTER>
+ <TABLE width="75%" cols=3 cellpadding="2" cellspacing="0" border="0">
+  <TR bgcolor="#444444">
+   <TD align="left" width="50%" valign="top">
+    <FONT face="arial,helvetica,verdana"  color="#0099FF"><B>SONG</B> <FONT size=-1>(click for more info)</FONT></FONT>
+   </TD>
+
+   <TD valign="top">
+    <CENTER><FONT face="arial,helvetica,verdana"  color="#0099FF"><B>CLIPS</B></FONT></CENTER>
+   </TD>
+
+   <TD align="left" valign="top">
+    <CENTER><FONT face="arial,helvetica,verdana"  color="#0099FF"><B>GET</B></FONT></CENTER>
+   </TD>
+  </TR>
+
+  <!--  BONUS TRAX  -->
+  <TR><TD align="center" colspan=3><IMG src="/graphics/blackwav.gif" alt="Bonus Trax" border=0 height=50 width=50 align="LEFT"><FONT face="arial,helvetica,verdana"  color="#0099FF"><b>Bonus Trax</b></font></TD></TR>
+
+  <TR bgcolor="#444444">
+   <TD><FONT  face="arial,helvetica" size=-1 color="#33CCFF">Blame (Live @ CCP)</FONT></TD>
+   <TD align="center">&nbsp;</TD>
+   <TD align="center"><A href="ccp_blame.mp3"><IMG src="/graphics/download.gif" height="20" border=0></A></TD>
+  </TR>
+
+  <TR>
+   <TD><FONT  face="arial,helvetica" size=-1 color="#33CCFF">John Doe (Live @ CCP)</FONT></TD>
+   <TD align="center">&nbsp;</TD>
+   <TD align="center"><A href="ccp_johndoe.mp3"><IMG src="/graphics/download.gif" height="20" border=0></A></TD>
+  </TR>
+
+  <TR bgcolor="#444444">
+   <TD><A href="midnight_sky.html"><FONT  face="arial,helvetica" size=-1 color="#33CCFF">Midnight Sky</FONT></A></TD>
+   <TD align="center">&nbsp;</TD>
+   <TD align="center"><A href="Midnight_Sky.mp3"><IMG src="/graphics/download.gif" height="20" border=0></A></TD>
+  </TR>
+
+  <TR>
+   <TD><A href="mirrortime.html"><FONT  face="arial,helvetica" size=-1 color="#33CCFF">Mirrortime</FONT></A></TD>
+   <TD align="center">&nbsp;</TD>
+   <TD align="center"><A href="Mirrortime.mp3"><IMG src="/graphics/download.gif" height="20" border=0></A></TD>
+  </TR>
+
+  <TR bgcolor="#444444">
+   <TD><FONT  face="arial,helvetica" size=-1 color="#33CCFF">Something Soothing (Live @ CCP)</FONT></A></TD>
+   <TD align="center">&nbsp;</TD>
+   <TD align="center"><A href="ccp_somethingsoothing.mp3"><IMG src="/graphics/download.gif" height="20" border=0></TD>
+  </TR>
+
+
+  <!--  OUT OF THE BASEMENT  -->
+  <TR align=middle><TD align="center" colspan=3><hr><a href="ootb/"><IMG src="ootb/ootb_s.jpg" alt="Out of the Basement" border=0 height=50 width=50 align="LEFT"></a><FONT face="arial,helvetica,verdana"  color="#0099FF"><b>Out of the Basement EP</b></font></TD></TR>
+
+  <TR bgcolor="#444444">
+   <TD><A href="ootb/chilling.html"><FONT  face="arial,helvetica" color="#33CCFF" size=-1>Chillin' on the Patio</A></TD>
+   <TD align="center">&nbsp;</TD>
+   <TD align="center"><A href="ootb/chilling.mp3"><IMG src="/graphics/download.gif" height="20" border=0></A></TD>
+  </TR>
+
+  <TR>
+   <TD><A href="ootb/cruel.html"><FONT face="arial,helvetica" size=-1 color="#33CCFF">Cruel</FONT></A></TD>
+   <TD align="center">&nbsp;</TD>
+   <TD align="center"><A href="ootb/cruel.mp3"><IMG src="/graphics/download.gif" height="20" border=0></A></TD>
+  </TR>
+
+  <TR bgcolor="#444444">
+   <TD><A href="ootb/seans_song.html"><FONT  face="arial,helvetica" size=-1 color="#33CCFF">Sean's Song</FONT></A></TD>
+   <TD align="center">&nbsp;</TD>
+   <TD align="center"><A href="ootb/seans_song.mp3"><IMG src="/graphics/download.gif" height="20" border=0></A></TD>
+  </TR>
+
+  <TR>
+   <TD><A href="ootb/takeyourtime.html"><FONT  face="arial,helvetica" color="#33CCFF" size=-1>Take Your Time</FONT></A></TD>
+   <TD align="center">&nbsp;</TD>
+   <TD align="center"><A href="ootb/take_your_time.mp3"><IMG src="/graphics/download.gif" height="20" border=0></A></TD>
+  </TR>
+
+  <!--  THE RIFT  -->
+  <TR align=middle><TD align="center" colspan=3><hr><a href="rift/"><IMG src="rift/therift_s.jpg" alt="The Rift" border=0 height=50 width=50 align="LEFT"></a><FONT face="arial,helvetica,verdana"  color="#0099FF"><b>The Rift</b></font></TD></TR>
+
+  <TR bgcolor="#444444">
+   <TD><A href="rift/chilling.html"><FONT face="arial,helvetica" color="#33CCFF" size=-1>Chillin' on the Patio</FONT></A></TD>
+   <TD align="center"><A href="rift/chilling_clip.mp3"><IMG src="/graphics/spkr.gif" border="0"></a></TD>
+   <TD align="center"><A href="rift/chilling.mp3"><IMG src="/graphics/download.gif" height="20" border=0></A></TD>
+  </TR>
+
+  <TR>
+   <TD><A href="rift/johndoe.html"><FONT  face="arial,helvetica" color="#33CCFF" size=-1>John Doe</FONT></A></TD>
+   <TD align="center">&nbsp;</TD>
+   <TD align="center"><a href="rift/johndoe.mp3"><img src="/graphics/download.gif" height="20" border="0" /></a></TD>
+  </TR>
+
+  <TR bgcolor="#444444">
+   <TD><A href="rift/momo.html"><FONT  face="arial,helvetica" size=-1 color="#33CCFF">Momo/Good Little Girl</FONT></A></TD>
+   <TD align="center">&nbsp;</TD>
+   <TD align="center"><a href="rift/momo.mp3"><img src="/graphics/download.gif" height="20" border="0" /></a></TD>
+  </TR>
+
+  <TR>
+   <TD><A href="rift/shesallright.html"><FONT  face="arial,helvetica" size=-1 color="#33CCFF">She's Alright</FONT></a></TD>
+   <TD align="center"><A href="rift/shes_alright_clip.mp3"><IMG src="/graphics/spkr.gif" border="0"></a></TD>
+   <TD align="center"><A href="rift/shesallright.mp3"><IMG src="/graphics/download.gif" height="20" border="0" /></a></TD>
+  </TR>
+
+  <TR bgcolor="#444444">
+   <TD><A href="rift/stumbled.html"><FONT color="#33CCFF" face="arial,helvetica" size=-1>Stumbled</FONT></A></TD>
+   <TD align="center">&nbsp;</TD>
+   <TD align="center"><a href="rift/stumbled.mp3"><img src="/graphics/download.gif" height="20" border="0" /></a></TD>
+  </TR>
+
+  <TR>
+   <TD><A href="rift/takeyourtime.html"><FONT  face="arial,helvetica" color="#33CCFF" size=-1>Take Your Time</FONT></A></TD>
+   <TD align="center"><A href="rift/takeyourtime_clip.mp3"><IMG src="/graphics/spkr.gif" border="0"></a></TD>
+   <TD align="center"><A href="rift/takeyourtime.mp3"><IMG src="/graphics/download.gif" height="20" border="0" /></A></TD>
+  </TR>
+
+  <TR bgcolor="#444444">
+   <TD><A href="rift/wannagohome.html"><FONT  face="arial,helvetica" size=-1 color="#33CCFF">Wanna Go Home</FONT></A></TD>
+   <TD align="center"><A href="rift/wannagohome_clip.mp3"><IMG src="/graphics/spkr.gif" border="0"></a></TD>
+   <TD align="center"><a href="rift/wannagohome.mp3"><IMG src="/graphics/download.gif" height="20" border=0></A></TD>
+  </TR>
+
+  <TR>
+   <TD><A href="rift/windflow.html"><FONT  color="#33CCFF" face="arial,helvetica" size=-1>Windflow</FONT></A></TD>
+   <TD align="center">&nbsp;</TD>
+   <TD align="center"><a href="rift/windflow.mp3"><img src="/graphics/download.gif" height="20" border=0></A></TD>
+  </TR>
+
+
+  <!--  FIRST CROPS  -->
+  <TR align=middle><TD align="center" colspan=3><hr><a href="firstcrops/"><IMG src="firstcrops/firstcrops_s.jpg" alt="First Crops" border=0 height=50 width=50 align="LEFT"></a><FONT face="arial,helvetica,verdana"  color="#0099FF"><b>The First Crops EP</b></font></TD></TR>
+
+  <TR bgcolor="#444444">
+   <TD><A href="firstcrops/chilling.html"><FONT  face="arial,helvetica" color="#33CCFF" size=-1>Chillin' on the Patio</FONT></a></TD>
+   <TD align="center"><A href="firstcrops/chilling_clip.mp3"><IMG src="/graphics/spkr.gif" border="0"></A></TD>
+   <TD align="center"><a href="firstcrops/chilling.mp3"><img src="/graphics/download.gif" height="20" border="0" /></a></TD> 
+  </TR>
+
+
+  <TR>
+   <TD><A href="firstcrops/johndoe.html"><FONT face="arial,helvetica" color="#33CCFF" size=-1>John Doe</FONT></A></TD>
+   <TD align="center"><A href="firstcrops/johndoe_clip.mp3"><IMG src="/graphics/spkr.gif"border="0"></A></TD>
+   <TD align="center"><A href="firstcrops/johndoe.mp3"><IMG src="/graphics/download.gif" height="20" border="0"></A></TD>
+  </TR>
+
+  <TR bgcolor="#444444">
+   <TD><A href="firstcrops/lush.html"><FONT face="arial,helvetica" size=-1 color="#33CCFF">Lush</FONT></A></TD>
+   <TD align="center"><A href="firstcrops/lush_clip.mp3"><IMG src="/graphics/spkr.gif" border="0"></A></TD>
+   <TD align="center"><a href="firstcrops/lush.mp3"><IMG src="/graphics/download.gif" height="20" border=0></a></TD>
+  </TR>
+
+  <TR>
+   <TD><A href="firstcrops/soothing.html"><FONT face="arial,helvetica" size=-1 color="#33CCFF">Something Soothing</FONT></A></TD>
+   <TD align="center"><A href="firstcrops/soothing_clip.mp3"><IMG src="/graphics/spkr.gif" border="0"></A></TD>
+   <TD align="center"><A href="firstcrops/soothing.mp3"><IMG src="/graphics/download.gif" height="20" border="0"></A></TD>
+  </TR>
+
+  <TR bgcolor="#444444">
+   <TD><A href="firstcrops/stumbled.html"><FONT  face="arial,helvetica" size=-1><FONT color="#33CCFF">Stumbled</FONT></A></TD>
+   <TD align="center"><A href="firstcrops/stumbled_clip.mp3"><IMG src="/graphics/spkr.gif" border="0"></A></TD>
+   <TD align="center"><A href="firstcrops/stumbled.mp3"><IMG src="/graphics/download.gif" height="20" border=0></A></TD>
+  </TR>
+
+  <TR>
+   <TD><A href="firstcrops/windflow.html"><FONT  face="arial,helvetica" color="#33CCFF" size=-1>Windflow</FONT></A></TD>
+   <TD align="center"><A href="firstcrops/windflow_clip.mp3"><IMG src="/graphics/spkr.gif" border="0"></A></TD>
+   <TD align="center"><a href="firstcrops/windflow.mp3"><img src="/graphics/download.gif" height="20" border="0"/></a></TD>
+  </TR>
+
+
+
+ </TABLE>
+ </CENTER>
+
+ <BR><BR>
+ <BLOCKQUOTE>
+  <FONT face="arial,helvetica,verdana" size="-1">
+  All songs are in <B>.mp3</B> format.  Please contact the band for other formats.  If you do not have an <B>mp3</B> player, we recommend <B><A HREF="http://winamp.com">WinAmp</A></B>, available free through the net.
+  </FONT>
+ </BLOCKQUOTE>
+
+ </TD></TR>
+</TABLE>
+</BLOCKQUOTE>
+</CENTER>
+
+</BODY>
+</HTML>
