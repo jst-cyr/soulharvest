@@ -11,7 +11,7 @@
     ],
     "functions": {
       "api/ssi.js": {
-        "includeFiles": "not-public/**"
+        "includeFiles": "htdocs/**"
       }
     },
     "headers": [
