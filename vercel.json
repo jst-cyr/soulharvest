@@ -1,0 +1,28 @@
+{
+    "rewrites": [
+      {
+        "source": "/",
+        "destination": "/index.shtml"
+      },
+      {
+        "source": "((?!/api/).+)",
+        "destination": "/api/ssi.js?path=$1"
+      }
+    ],
+    "functions": {
+      "api/ssi.js": {
+        "includeFiles": "**"
+      }
+    },
+    "headers": [
+      {
+        "source": "((?!/api/).+)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=60"
+          }
+        ]
+      }
+    ]
+  }
