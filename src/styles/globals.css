@@ -36,3 +36,17 @@ button {
   padding: 0.5rem 1rem;
   font-weight: bold;
 }
+
+h1 {
+	font-family: Arial, Helvetica, Verdana;
+	color: #0099FF;
+	font-size: 24pt;
+	FONT-WEIGHT: bold;
+}
+
+h3 {
+	font-family: Arial, Helvetica, Verdana;
+	color: #0099FF;
+	font-size: 14pt;
+	FONT-WEIGHT: bold;
+}

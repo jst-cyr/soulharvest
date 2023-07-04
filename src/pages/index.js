@@ -1,12 +1,15 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/soulharvest.module.css';
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Soul Harvest - Ottawa Band from the early 2000's</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <meta name="Author" content="Jason St-Cyr" />
+        <script language="javascript" src="/include/menuscript.js"></script>
       </Head>
 
       <main>
