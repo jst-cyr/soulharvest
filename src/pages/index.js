@@ -17,7 +17,7 @@ export default function Home() {
 
         <center>
           <blockquote>
-            <table border="0" cols="2" cellspacing="0" cellpadding="3" width="85%">
+            <table border="0" cols="2" cellSpacing="0" cellPadding="3" width="85%">
               <tbody>
                 <tr valign="middle">
                   <td bgcolor="#76A7CB">
@@ -34,18 +34,18 @@ export default function Home() {
               </tbody>
             </table>
 
-            <table border="0" cols="2" cellspacing="0" cellpadding="3" width="85%"><tbody>
+            <table border="0" cols="2" cellSpacing="0" cellPadding="3" width="85%"><tbody>
               <tr valign="top">
                 <td width="150" class="soulharvest">
                   <img src="/pics/2000/Band-Line_Jason_s.jpg" border="0" width="100" height="100" alt="soulharvest.ca" /><br />
                   <br />
-                  <a href="/index.shtml" onmouseover="imgOn('home');window.status='Main - News and Reviews';return true;" onmouseout="imgOff('home');window.status=' ';return true;" onclick="goTo('home');return true;"><img name="home" src="/graphics/home_off.gif" height="25" width="75" border="0" alt="Main - News and Reviews" /></a><br />
-                  <a href="/bio.shtml" onmouseover="imgOn('bio');window.status='Band Presskit and Biography';return true;" onmouseout="imgOff('bio');window.status=' ';return true;" onclick="goTo('bio');return true;"><img src="/graphics/bio_off.gif" name="bio" height="25" width="75" border="0" alt="Band Presskit and Biography" /></a><br />
-                  <a href="/gigs/" onmouseover="imgOn('gigs');window.status='Upcoming and Previous shows';return true;" onmouseout="imgOff('gigs');window.status=' ';return true;" onclick="goTo('gigs');return true;"><img name="gigs" src="/graphics/gigs_off.gif"  height="25" width="75" border="0" alt="Upcoming and Previous shows" /></a><br />
-                  <a href="/music/" onmouseover="imgOn('clips');window.status='Music clips, full downloads, and tabs';return true;" onmouseout="imgOff('clips');window.status=' ';return true;" onclick="goTo('clips');return true;"><img src="/graphics/clips_off.gif" name="clips" height="25" width="75" border="0" alt="Music clips, full downloads, and tabs" /></a><br />
-                  <a href="/pics/" onmouseover="imgOn('pics');window.status='Photo Gallery!';return true;" onmouseout="imgOff('pics');window.status=' ';return true;" onclick="goTo('pics');return true;"><img src="/graphics/pics_off.gif" name="pics"  height="25" width="75" border="0" alt="Photo Gallery!" /></a><br />
-                  <a href="/band.shtml" onmouseover="imgOn('band');window.status='Band Members';return true;" onmouseout="imgOff('band');window.status=' ';return true;" onclick="goTo('band');return true;"><img src="/graphics/band_off.gif" name="band" height="25" width="75" border="0" alt="Band Members" /></a><br />
-                  <a href="/booking.shtml" onmouseover="imgOn('booking');window.status='Booking Information';return true;" onmouseout="imgOff('booking');window.status=' ';return true;" onclick="goTo('booking');return true;"><img src="/graphics/booking_off.gif" name="booking" height="25" width="75" border="0" alt="Booking Information" /></a><br /><br /><br />
+                  <a href="/index.shtml" onMouseOver="imgOn('home');window.status='Main - News and Reviews';return true;" onMouseOut="imgOff('home');window.status=' ';return true;" onClick="goTo('home');return true;"><img name="home" src="/graphics/home_off.gif" height="25" width="75" border="0" alt="Main - News and Reviews" /></a><br />
+                  <a href="/bio.shtml" onMouseOver="imgOn('bio');window.status='Band Presskit and Biography';return true;" onMouseOut="imgOff('bio');window.status=' ';return true;" onClick="goTo('bio');return true;"><img src="/graphics/bio_off.gif" name="bio" height="25" width="75" border="0" alt="Band Presskit and Biography" /></a><br />
+                  <a href="/gigs/" onMouseOver="imgOn('gigs');window.status='Upcoming and Previous shows';return true;" onMouseOut="imgOff('gigs');window.status=' ';return true;" onClick="goTo('gigs');return true;"><img name="gigs" src="/graphics/gigs_off.gif"  height="25" width="75" border="0" alt="Upcoming and Previous shows" /></a><br />
+                  <a href="/music/" onMouseOver="imgOn('clips');window.status='Music clips, full downloads, and tabs';return true;" onMouseOut="imgOff('clips');window.status=' ';return true;" onClick="goTo('clips');return true;"><img src="/graphics/clips_off.gif" name="clips" height="25" width="75" border="0" alt="Music clips, full downloads, and tabs" /></a><br />
+                  <a href="/pics/" onMouseOver="imgOn('pics');window.status='Photo Gallery!';return true;" onMouseOut="imgOff('pics');window.status=' ';return true;" onClick="goTo('pics');return true;"><img src="/graphics/pics_off.gif" name="pics"  height="25" width="75" border="0" alt="Photo Gallery!" /></a><br />
+                  <a href="/band.shtml" onMouseOver="imgOn('band');window.status='Band Members';return true;" onMouseOut="imgOff('band');window.status=' ';return true;" onClick="goTo('band');return true;"><img src="/graphics/band_off.gif" name="band" height="25" width="75" border="0" alt="Band Members" /></a><br />
+                  <a href="/booking.shtml" onMouseOver="imgOn('booking');window.status='Booking Information';return true;" onMouseOut="imgOff('booking');window.status=' ';return true;" onClick="goTo('booking');return true;"><img src="/graphics/booking_off.gif" name="booking" height="25" width="75" border="0" alt="Booking Information" /></a><br /><br /><br />
 
                   Other SH sites:
                   <br />
@@ -56,11 +56,11 @@ export default function Home() {
                   <a href="http://soulharvest.iuma.com" target="_new">SH @ IUMA</a>
                 </td>
                 <td class="soulharvest">
-                  <table border="0" cellpadding="5" cellspacing="5"><tbody>
+                  <table border="0" cellPadding="5" cellSpacing="5"><tbody>
                     <tr>
                       <td valign="top">
                         <h3>News!</h3>
-                        <table border="0" cellpadding="5" cellspacing="5">
+                        <table border="0" cellPadding="5" cellSpacing="5">
                           <tr valign="top">
                             <td><a href="/gigs/"><img src="/pics/obriens/14-apr-2001_01_s.jpg" alt="Acoustic @ Dekcuf!" border="0" width="100" /></a></td>
                             <td>
