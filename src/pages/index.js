@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Script from 'next/script';
 import styles from '../styles/soulharvest.module.css';
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
         <meta name="Author" content="Jason St-Cyr" />
-        <script language="javascript" src="/include/menuscript.js"></script>
+        <Script language="javascript" src="/lib/menuscript.js" />
       </Head>
 
       <main>
@@ -17,21 +18,23 @@ export default function Home() {
         <center>
           <blockquote>
             <table border="0" cols="2" cellspacing="0" cellpadding="3" width="85%">
-              <tr valign="middle">
-                <td bgcolor="#76A7CB">
-                  <font face="arial,helvetica,verdana" size="+1">
-                    <b>Soul Harvest</b>
-                  </font>
-                </td>
-                <td bgcolor="#76A7CB" align="right">
-                  <font face="arial,helvetica,verdana" color="#ffffff"><b>
-                    <a href="mailto:soulharvest@soulharvest.ca"><font color="#FFFFFF">soulharvest</font><font size="+1" color="#FFFF99">@</font><font color="#FFFFFF">soulharvest.ca</font></a>
-                  </b></font>
-                </td>
-              </tr>
+              <tbody>
+                <tr valign="middle">
+                  <td bgcolor="#76A7CB">
+                    <font face="arial,helvetica,verdana" size="+1">
+                      <b>Soul Harvest</b>
+                    </font>
+                  </td>
+                  <td bgcolor="#76A7CB" align="right">
+                    <font face="arial,helvetica,verdana" color="#ffffff"><b>
+                      <a href="mailto:soulharvest@soulharvest.ca"><font color="#FFFFFF">soulharvest</font><font size="+1" color="#FFFF99">@</font><font color="#FFFFFF">soulharvest.ca</font></a>
+                    </b></font>
+                  </td>
+                </tr>
+              </tbody>
             </table>
 
-            <table border="0" cols="2" cellspacing="0" cellpadding="3" width="85%">
+            <table border="0" cols="2" cellspacing="0" cellpadding="3" width="85%"><tbody>
               <tr valign="top">
                 <td width="150" class="soulharvest">
                   <img src="/pics/2000/Band-Line_Jason_s.jpg" border="0" width="100" height="100" alt="soulharvest.ca" /><br />
@@ -53,7 +56,7 @@ export default function Home() {
                   <a href="http://soulharvest.iuma.com" target="_new">SH @ IUMA</a>
                 </td>
                 <td class="soulharvest">
-                  <table border="0" cellpadding="5" cellspacing="5">
+                  <table border="0" cellpadding="5" cellspacing="5"><tbody>
                     <tr>
                       <td valign="top">
                         <h3>News!</h3>
@@ -128,10 +131,10 @@ export default function Home() {
                         </b>
                       </td>
                     </tr>
-                  </table>
+                    </tbody></table>
                 </td>
               </tr>
-            </table>
+            </tbody></table>
           </blockquote>
         </center>
       </main>
