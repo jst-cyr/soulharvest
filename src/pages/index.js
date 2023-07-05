@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Script from 'next/script';
 import styles from '../styles/soulharvest.module.css';
 
 export default function Home() {
@@ -10,7 +9,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
         <meta name="Author" content="Jason St-Cyr" />
-        <Script language="javascript" src="/lib/menuscript.js" />
       </Head>
 
       <main>
@@ -39,14 +37,48 @@ export default function Home() {
                 <td width="150" class="soulharvest">
                   <img src="/pics/2000/Band-Line_Jason_s.jpg" border="0" width="100" height="100" alt="soulharvest.ca" /><br />
                   <br />
-                  <a href="/index.shtml" onMouseOver="imgOn('home');window.status='Main - News and Reviews';return true;" onMouseOut="imgOff('home');window.status=' ';return true;" onClick="goTo('home');return true;"><img name="home" src="/graphics/home_off.gif" height="25" width="75" border="0" alt="Main - News and Reviews" /></a><br />
-                  <a href="/bio.shtml" onMouseOver="imgOn('bio');window.status='Band Presskit and Biography';return true;" onMouseOut="imgOff('bio');window.status=' ';return true;" onClick="goTo('bio');return true;"><img src="/graphics/bio_off.gif" name="bio" height="25" width="75" border="0" alt="Band Presskit and Biography" /></a><br />
-                  <a href="/gigs/" onMouseOver="imgOn('gigs');window.status='Upcoming and Previous shows';return true;" onMouseOut="imgOff('gigs');window.status=' ';return true;" onClick="goTo('gigs');return true;"><img name="gigs" src="/graphics/gigs_off.gif"  height="25" width="75" border="0" alt="Upcoming and Previous shows" /></a><br />
-                  <a href="/music/" onMouseOver="imgOn('clips');window.status='Music clips, full downloads, and tabs';return true;" onMouseOut="imgOff('clips');window.status=' ';return true;" onClick="goTo('clips');return true;"><img src="/graphics/clips_off.gif" name="clips" height="25" width="75" border="0" alt="Music clips, full downloads, and tabs" /></a><br />
-                  <a href="/pics/" onMouseOver="imgOn('pics');window.status='Photo Gallery!';return true;" onMouseOut="imgOff('pics');window.status=' ';return true;" onClick="goTo('pics');return true;"><img src="/graphics/pics_off.gif" name="pics"  height="25" width="75" border="0" alt="Photo Gallery!" /></a><br />
-                  <a href="/band.shtml" onMouseOver="imgOn('band');window.status='Band Members';return true;" onMouseOut="imgOff('band');window.status=' ';return true;" onClick="goTo('band');return true;"><img src="/graphics/band_off.gif" name="band" height="25" width="75" border="0" alt="Band Members" /></a><br />
-                  <a href="/booking.shtml" onMouseOver="imgOn('booking');window.status='Booking Information';return true;" onMouseOut="imgOff('booking');window.status=' ';return true;" onClick="goTo('booking');return true;"><img src="/graphics/booking_off.gif" name="booking" height="25" width="75" border="0" alt="Booking Information" /></a><br /><br /><br />
-
+                  <a href="/index.shtml">
+                    <img name="home" src="/graphics/home_off.gif" height="25" width="75" border="0" alt="Main - News and Reviews" 
+                      onMouseOver={e => (e.currentTarget.src="/graphics/home_on.gif")}
+                      onMouseOut={e => (e.currentTarget.src="/graphics/home_off.gif")}
+                    />
+                  </a><br />
+                  <a href="/bio.shtml">
+                    <img name="home" src="/graphics/bio_off.gif" height="25" width="75" border="0" alt="Band Presskit and Biography" 
+                      onMouseOver={e => (e.currentTarget.src="/graphics/bio_on.gif")}
+                      onMouseOut={e => (e.currentTarget.src="/graphics/bio_off.gif")}
+                    />
+                  </a><br />
+                  <a href="/gigs/">
+                    <img name="gigs" src="/graphics/gigs_off.gif" height="25" width="75" border="0" alt="Upcoming and Previous shows" 
+                      onMouseOver={e => (e.currentTarget.src="/graphics/gigs_on.gif")}
+                      onMouseOut={e => (e.currentTarget.src="/graphics/gigs_off.gif")}
+                    />
+                  </a><br />
+                  <a href="/music/">
+                    <img name="clips" src="/graphics/clips_off.gif" height="25" width="75" border="0" alt="Music clips, full downloads, and tabs" 
+                      onMouseOver={e => (e.currentTarget.src="/graphics/clips_on.gif")}
+                      onMouseOut={e => (e.currentTarget.src="/graphics/clips_off.gif")}
+                    />
+                  </a><br />
+                  <a href="/pics/">
+                    <img name="pics" src="/graphics/pics_off.gif" height="25" width="75" border="0" alt="Photo Gallery!" 
+                      onMouseOver={e => (e.currentTarget.src="/graphics/pics_on.gif")}
+                      onMouseOut={e => (e.currentTarget.src="/graphics/pics_off.gif")}
+                    />
+                  </a><br />
+                  <a href="/band.shtml">
+                    <img name="band" src="/graphics/home_off.gif" height="25" width="75" border="0" alt="Band Members" 
+                      onMouseOver={e => (e.currentTarget.src="/graphics/home_on.gif")}
+                      onMouseOut={e => (e.currentTarget.src="/graphics/home_off.gif")}
+                    />
+                  </a><br />
+                  <a href="/booking.shtml">
+                    <img name="booking" src="/graphics/booking_off.gif" height="25" width="75" border="0" alt="Booking Information" 
+                      onMouseOver={e => (e.currentTarget.src="/graphics/booking_on.gif")}
+                      onMouseOut={e => (e.currentTarget.src="/graphics/booking_off.gif")}
+                    />
+                  </a><br />
                   Other SH sites:
                   <br />
                   <a href="http://www.garageband.com/artist/soulharvest" target="_new">SH @ garageband</a>
