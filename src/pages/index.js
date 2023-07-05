@@ -34,7 +34,7 @@ export default function Home() {
 
             <table border="0" cols="2" cellSpacing="0" cellPadding="3" width="85%"><tbody>
               <tr valign="top">
-                <td width="150" class="soulharvest">
+                <td width="150" className="soulharvest">
                   <img src="/pics/2000/Band-Line_Jason_s.jpg" border="0" width="100" height="100" alt="soulharvest.ca" /><br />
                   <br />
                   <a href="/index.shtml">
@@ -87,12 +87,12 @@ export default function Home() {
                   <br />
                   <a href="http://soulharvest.iuma.com" target="_new">SH @ IUMA</a>
                 </td>
-                <td class="soulharvest">
+                <td className="soulharvest">
                   <table border="0" cellPadding="5" cellSpacing="5"><tbody>
                     <tr>
                       <td valign="top">
                         <h3>News!</h3>
-                        <table border="0" cellPadding="5" cellSpacing="5">
+                        <table border="0" cellPadding="5" cellSpacing="5"><tbody>
                           <tr valign="top">
                             <td><a href="/gigs/"><img src="/pics/obriens/14-apr-2001_01_s.jpg" alt="Acoustic @ Dekcuf!" border="0" width="100" /></a></td>
                             <td>
@@ -138,9 +138,9 @@ export default function Home() {
                               </font>
                             </td>
                           </tr>
-                        </table>
+                          </tbody></table>
                         <br/><br/><br/>
-                        <li>Can't stand our music? Or does our CD live in your Discman? Let us know by rating our songs over at <a href="http://www.besonic.com/soulharvest" target="_new" onMouseOver="window.status='Soul Harvest @ besonic.com';return true;" onMouseOut="window.status='';return true;">http://www.besonic.com/soulharvest</a></li>
+                        <li>Can't stand our music? Or does our CD live in your Discman? Let us know by rating our songs over at <a href="http://www.besonic.com/soulharvest" target="_new">http://www.besonic.com/soulharvest</a></li>
                       </td>
                       <td valign="top" width="150" bgcolor="#444444">
                         <b>
