@@ -1,0 +1,109 @@
+import { AppProps } from 'next/app';
+import Head from 'next/head';
+import styles from '../styles/soulharvest.module.css';
+
+const MyApp = ({ Component, pageProps }: AppProps) => {
+  return (
+    <>
+      <Head>
+        <title>Soul Harvest - Ottawa Band from the early 2000's</title>
+        <link rel="icon" href={`/favicon.png`} />
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <meta name="Author" content="Jason St-Cyr" />
+      </Head>
+
+      <div className={styles.container}>
+      <main>
+        <center>
+          <blockquote>
+            <table cols="2" cellSpacing="0" cellPadding="3" width="85%">
+              <tbody>
+                <tr valign="middle">
+                  <td bgcolor="#76A7CB">
+                    <font face="arial,helvetica,verdana" size="+1">
+                      <b>Soul Harvest</b>
+                    </font>
+                  </td>
+                  <td bgcolor="#76A7CB" align="right">
+                    <font face="arial,helvetica,verdana" color="#ffffff"><b>
+                      <a href="mailto:soulharvest@soulharvest.ca"><font color="#FFFFFF">soulharvest</font><font size="+1" color="#FFFF99">@</font><font color="#FFFFFF">soulharvest.ca</font></a>
+                    </b></font>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table border="0" cols="2" cellSpacing="0" cellPadding="3" width="85%"><tbody>
+              <tr valign="top">
+                <td width="150" className="soulharvest">
+                  <img src="/pics/2000/Band-Line_Jason_s.jpg" width="100" height="100" alt="soulharvest.ca" /><br />
+                  <br />
+                  <a href="/index.shtml">
+                    <img key="home" src="/graphics/home_off.gif" height="25" width="75" alt="Main - News and Reviews" 
+                      onMouseOver={e => (e.currentTarget.src="/graphics/home_on.gif")}
+                      onMouseOut={e => (e.currentTarget.src="/graphics/home_off.gif")}
+                    />
+                  </a><br />
+                  <a href="/bio.shtml">
+                    <img key="bio" src="/graphics/bio_off.gif" height="25" width="75" alt="Band Presskit and Biography" 
+                      onMouseOver={e => (e.currentTarget.src="/graphics/bio_on.gif")}
+                      onMouseOut={e => (e.currentTarget.src="/graphics/bio_off.gif")}
+                    />
+                  </a><br />
+                  <a href="/gigs/">
+                    <img key="gigs" src="/graphics/gigs_off.gif" height="25" width="75" alt="Upcoming and Previous shows" 
+                      onMouseOver={e => (e.currentTarget.src="/graphics/gigs_on.gif")}
+                      onMouseOut={e => (e.currentTarget.src="/graphics/gigs_off.gif")}
+                    />
+                  </a><br />
+                  <a href="/music/">
+                    <img key="clips" src="/graphics/clips_off.gif" height="25" width="75" alt="Music clips, full downloads, and tabs" 
+                      onMouseOver={e => (e.currentTarget.src="/graphics/clips_on.gif")}
+                      onMouseOut={e => (e.currentTarget.src="/graphics/clips_off.gif")}
+                    />
+                  </a><br />
+                  <a href="/pics/">
+                    <img key="pics" src="/graphics/pics_off.gif" height="25" width="75" alt="Photo Gallery!" 
+                      onMouseOver={e => (e.currentTarget.src="/graphics/pics_on.gif")}
+                      onMouseOut={e => (e.currentTarget.src="/graphics/pics_off.gif")}
+                    />
+                  </a><br />
+                  <a href="/band.shtml">
+                    <img key="band" src="/graphics/home_off.gif" height="25" width="75" alt="Band Members" 
+                      onMouseOver={e => (e.currentTarget.src="/graphics/home_on.gif")}
+                      onMouseOut={e => (e.currentTarget.src="/graphics/home_off.gif")}
+                    />
+                  </a><br />
+                  <a href="/booking.shtml">
+                    <img key="booking" src="/graphics/booking_off.gif" height="25" width="75" alt="Booking Information" 
+                      onMouseOver={e => (e.currentTarget.src="/graphics/booking_on.gif")}
+                      onMouseOut={e => (e.currentTarget.src="/graphics/booking_off.gif")}
+                    />
+                  </a><br />
+                  Other SH sites:
+                  <br />
+                  <a href="http://www.garageband.com/artist/soulharvest" target="_new">SH @ garageband</a>
+                  <br />
+                  <a href="http://www.besonic.com/soulharvest" target="_new">SH @ besonic</a>
+                  <br />
+                  <a href="http://soulharvest.iuma.com" target="_new">SH @ IUMA</a>
+                </td>
+                <td className="soulharvest">
+                    <Component {...pageProps} />
+                </td>
+              </tr>
+            </tbody></table>
+          </blockquote>
+        </center>
+      </main>
+
+
+    </div>
+
+
+      
+    </>
+  );
+};
+
+export default MyApp;
