@@ -16,25 +16,23 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       <main>
         <center>
           <blockquote>
-            <table cols="2" cellSpacing="0" cellPadding="3" width="85%">
+            <table cellSpacing="0" cellPadding="3" width="85%">
               <tbody>
-                <tr valign="middle">
-                  <td bgcolor="#76A7CB">
-                    <font face="arial,helvetica,verdana" size="+1">
+                <tr style={{verticalAlign: 'middle'}}>
+                  <td style={{backgroundColor:"#76A7CB", fontSize:"+1", fontFamily:"arial,helvetica,verdana"}} >
                       <b>Soul Harvest</b>
-                    </font>
                   </td>
-                  <td bgcolor="#76A7CB" align="right">
-                    <font face="arial,helvetica,verdana" color="#ffffff"><b>
-                      <a href="mailto:soulharvest@soulharvest.ca"><font color="#FFFFFF">soulharvest</font><font size="+1" color="#FFFF99">@</font><font color="#FFFFFF">soulharvest.ca</font></a>
-                    </b></font>
+                  <td style={{backgroundColor:"#76A7CB", fontSize:"+1", fontFamily:"arial,helvetica,verdana", color:"#ffffff", textAlign:"right"}} >
+                    <b>
+                      <a href="mailto:soulharvest@soulharvest.ca">soulharvest<span style={{fontSize:"+1", color:"#FFFF99"}}>@</span>soulharvest.ca</a>
+                    </b>
                   </td>
                 </tr>
               </tbody>
             </table>
 
-            <table border="0" cols="2" cellSpacing="0" cellPadding="3" width="85%"><tbody>
-              <tr valign="top">
+            <table style={{border:"0"}} cellSpacing="0" cellPadding="3" width="85%"><tbody>
+              <tr style={{verticalAlign: 'top'}}>
                 <td width="150" className="soulharvest">
                   <img src="/pics/2000/Band-Line_Jason_s.jpg" width="100" height="100" alt="soulharvest.ca" /><br />
                   <br />
