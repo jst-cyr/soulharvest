@@ -1,5 +1,6 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
+import '../styles/globals.css';
 import styles from '../styles/soulharvest.module.css';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
@@ -19,10 +20,10 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
             <table cellSpacing="0" cellPadding="3" width="85%">
               <tbody>
                 <tr style={{verticalAlign: 'middle'}}>
-                  <td style={{backgroundColor:"#76A7CB", fontSize:"+1", fontFamily:"arial,helvetica,verdana"}} >
+                  <td style={{backgroundColor:"#76A7CB", fontSize:"+1"}} >
                       <b>Soul Harvest</b>
                   </td>
-                  <td style={{backgroundColor:"#76A7CB", fontSize:"+1", fontFamily:"arial,helvetica,verdana", color:"#ffffff", textAlign:"right"}} >
+                  <td className={styles.header} style={{backgroundColor:"#76A7CB", fontSize:"+1", textAlign:"right"}}  >
                     <b>
                       <a href="mailto:soulharvest@soulharvest.ca">soulharvest<span style={{fontSize:"+1", color:"#FFFF99"}}>@</span>soulharvest.ca</a>
                     </b>
