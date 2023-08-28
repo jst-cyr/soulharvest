@@ -37,7 +37,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
                 <td width="150" className={styles.menu}>
                   <img src="/pics/2000/Band-Line_Jason_s.jpg" width="100" height="100" alt="soulharvest.ca" /><br />
                   <br />
-                  <a href="/index.shtml">
+                  <a href="/">
                     <img key="home" src="/graphics/home_off.gif" height="25" width="75" alt="Main - News and Reviews" 
                       onMouseOver={e => (e.currentTarget.src="/graphics/home_on.gif")}
                       onMouseOut={e => (e.currentTarget.src="/graphics/home_off.gif")}
