@@ -43,7 +43,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
                       onMouseOut={e => (e.currentTarget.src="/graphics/home_off.gif")}
                     />
                   </a><br />
-                  <a href="/bio.shtml">
+                  <a href="/bio">
                     <img key="bio" src="/graphics/bio_off.gif" height="25" width="75" alt="Band Presskit and Biography" 
                       onMouseOver={e => (e.currentTarget.src="/graphics/bio_on.gif")}
                       onMouseOut={e => (e.currentTarget.src="/graphics/bio_off.gif")}

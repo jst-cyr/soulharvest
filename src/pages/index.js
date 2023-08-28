@@ -1,5 +1,6 @@
 export default function Home() {
   return (
+    <div>
     <table border="0" cellPadding="5" cellSpacing="5"><tbody>
       <tr>
         <td valign="top">
@@ -76,5 +77,6 @@ export default function Home() {
         </td>
       </tr>
       </tbody></table>
+      </div>
   )
 }
