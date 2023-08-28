@@ -34,7 +34,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 
             <table style={{border:"0"}} cellSpacing="0" cellPadding="3" width="85%"><tbody>
               <tr style={{verticalAlign: 'top'}}>
-                <td width="150" className="soulharvest">
+                <td width="150" className={styles.menu}>
                   <img src="/pics/2000/Band-Line_Jason_s.jpg" width="100" height="100" alt="soulharvest.ca" /><br />
                   <br />
                   <a href="/index.shtml">
