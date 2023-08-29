@@ -7,7 +7,7 @@ export default function Home() {
           <h3>News!</h3>
           <table border="0" cellPadding="5" cellSpacing="5"><tbody>
             <tr valign="top">
-              <td><a href="/gigs/"><img src="/pics/obriens/14-apr-2001_01_s.jpg" alt="Acoustic @ Dekcuf!" border="0" width="100" /></a></td>
+              <td><a href="/gigs/"><img src="/pics/obriens/14-apr-2001_01_s.jpg" alt="Acoustic @ Dekcuf!" border="0" width="400" /></a></td>
               <td>
                 <font face="arial,helvetica,verdana" size="-1"><b>Dekcuf. Be there. [29-aug-2004]</b><br />
                 The boys from <a href="http://www.universalhabit.com" target="_blank">Universal Habit</a> invited us out to play with them at their Dekcuf show on Thursday (such nice guys!!).  Soul Harvest will be bringing a rare acoustic set to the stage, so don't miss it!  Check the gigs section for more details...<br />
