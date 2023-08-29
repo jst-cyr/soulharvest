@@ -82,3 +82,9 @@ h3 {
 	font-size: 14pt;
 	FONT-WEIGHT: bold;
 }
+
+p{
+	display:block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+}

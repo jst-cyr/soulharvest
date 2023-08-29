@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import styles from '../styles/soulharvest.module.css';
 
 export default function Bio() {
   return (
@@ -8,7 +9,7 @@ export default function Bio() {
       </Head>
     
       <h1>Band Biography and Press Kit</h1>
-      <p>
+      <div class={styles.row}>
         One last reverberating flourish fills the room, guitars strumming loudly as the drums sound off with an escalating crescendo.  The music hits a feverish tempo as Ryan Lindsay shouts out to the crowd, signaling for the final crash.  When it comes, the lights go down and the band takes their bow.  
         <br /><br />
 
@@ -22,14 +23,14 @@ export default function Bio() {
         <br /><br />
 
         <b>"The First Crops"</b>, their debut EP in summer '98, was followed by the released of their first CD entitled <b>"The Rift"</b> in August '99.  The promotional EP <b>"Out of the Basement"</b>, featuring Kristen Lewis on vocals, was released in July 2000.  Look for news about Soul Harvest's release of their new full-length CD in early Spring 2003.
-      </p>
-      <p>
-        <font face="arial,helvetica,verdana" size="-1">
-          <br /><br />
+        <br /><br />
+      </div>
+      <div class={styles.row}>
           <img src="/music/rift/therift_s.jpg" width="50" height="50" align="left" border="0" hspace="2" vspace="2" />
-          <br />
           <b>The Rift</b><br />
           <i>Soul Harvest</i>
+      </div>
+      <div class={styles.row}>
           <p>
             If you have the opportunity to sit back and listen to The Rift, <img src="/pics/rec_rift/studiodave_s.jpg" width="100" height="100" align="left" border="0" hspace="2" vspace="2" />the newest release from Soul Harvest, get ready for an album that has a live-performance feel and covers a wide range of music.  There's no shortage of pure rock on the CD, but both the sound and the subject vary greatly from song to song.   Although Soul Harvest is a young band, they are lyrically and musically incredibly sound, and aside from the occasional problem synching lead and backup vocals, vocally impressive as well.
           </p>
@@ -63,8 +64,7 @@ export default function Bio() {
           </p>
           <br />
           <b>Press Kit photography, reviews, and band biography prepared by Lisa Kelly for WHY?Media</b>
-        </font>
-      </p>
+      </div>
       </div>
   )
 }
