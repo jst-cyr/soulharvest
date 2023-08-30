@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Script from 'next/script';
 import styles from '../../styles/soulharvest.module.css';
+import calendarStyles from '../../styles/calendar.module.css';
 
 export default function Gigs() {
   return (
@@ -19,7 +20,7 @@ export default function Gigs() {
               <tr>
                 <td>NAV HERE</td>
                 <td align="right">
-                  <div className="month">MONTH TITLE HERE</div>
+                  <div className={calendarStyles.month}>MONTH TITLE HERE</div>
                 </td>
               </tr>
               <tr>
