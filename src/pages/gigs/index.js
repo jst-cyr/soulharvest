@@ -109,6 +109,16 @@ export default function Gigs() {
           </table>
         </center>
       </div>
+      
+      <div class="row">
+        <br /><br />
+        <b>Click on a date for more information on the show.<br />
+        (start time, cover charge, address, directions, additional bands).</b>
+        <br /><br />
+        <font color="#76A7CB"><b>BLUE</b></font> addresses denote Soul Harvest shows.  Special dates are likewise highlighted.<br />
+        All other shows feature other local Ottawa acts.
+      </div>
+
     </div>
   )
 }
