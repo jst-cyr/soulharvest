@@ -25,7 +25,8 @@ export default function Gigs() {
               </tr>
               <tr>
                 <td colSpan="2">
-                  <table border="1" cellpadding="2" cellspacing="0" class="dates">
+                  <table border="1" cellPadding="2" cellSpacing="0" className={calendarStyles.dates}>
+                    <thead>
                     <tr valign="top" align="center">
                       <th bgcolor="#444444" width="75">
                         Sun.</th>
@@ -42,6 +43,8 @@ export default function Gigs() {
                       <th bgcolor="#444444" width="75">
                         Sat.</th>
                     </tr>
+                    </thead>
+                    <tbody>
                     <tr valign="top" align="center">
                       <td bgcolor="#444444">&nbsp;<br /><br /><br /></td>
                       <td bgcolor="#444444"> &nbsp;</td>
@@ -101,6 +104,7 @@ export default function Gigs() {
                       <td bgcolor="#444444">&nbsp;</td>
                       <td bgcolor="#444444">&nbsp;</td>
                     </tr>
+                    </tbody>
                   </table> 
 
                 </td>
@@ -110,7 +114,7 @@ export default function Gigs() {
         </center>
       </div>
       
-      <div class="row">
+      <div className="row">
         <br /><br />
         <b>Click on a date for more information on the show.<br />
         (start time, cover charge, address, directions, additional bands).</b>
