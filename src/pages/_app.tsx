@@ -67,10 +67,10 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
                       onMouseOut={e => (e.currentTarget.src="/graphics/pics_off.gif")}
                     />
                   </a><br />
-                  <a href="/band.shtml">
-                    <img key="band" src="/graphics/home_off.gif" height="25" width="75" alt="Band Members" 
-                      onMouseOver={e => (e.currentTarget.src="/graphics/home_on.gif")}
-                      onMouseOut={e => (e.currentTarget.src="/graphics/home_off.gif")}
+                  <a href="/band">
+                    <img key="band" src="/graphics/band_off.gif" height="25" width="75" alt="Band Members" 
+                      onMouseOver={e => (e.currentTarget.src="/graphics/band_on.gif")}
+                      onMouseOut={e => (e.currentTarget.src="/graphics/band_off.gif")}
                     />
                   </a><br />
                   <a href="/booking.shtml">
