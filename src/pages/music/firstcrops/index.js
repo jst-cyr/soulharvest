@@ -10,13 +10,6 @@ export default function FirstCrops() {
     
       <h1>First Crops EP</h1>
       <div className={styles.row}>
-        <blockquote>
-          <p>Until the release of the new CD, there will be no radio-release music available from Soul Harvest.  For the time being, however, you can enjoy these sample demos recorded at Bova Sound studios, and mixed by Eric St-Cyr of Auto-Wah Records.</p>
-          <p>Recordings from previous years are available in the archive.</p>
-          <a href="/music/archive">[archive...]</a>
-        </blockquote>
-      </div>
-      <div className={styles.row}>
         <table border="0" cols="2" cellSpacing="5" cellPadding="5" width="85%">
           <tbody>
             <tr valign="top">
