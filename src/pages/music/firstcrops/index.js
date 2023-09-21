@@ -64,32 +64,32 @@ export default function FirstCrops() {
 
               <tr valign="middle">
                 <td><img src="firstcrops/firstcrops_s.jpg" alt="First Crops" border="0" height="50" width="50" align="middle" /><a href="lush.html"><font  face="arial,helvetica" size="-1" color="#33CCFF">Lush</font></a></td>
-                <td align="center">&nbsp;<a href="http://www.besonic.com/soulharvest" target="_new"><img src="/graphics/download.gif" height="30" border="0" /></a> </td>
+                <td align="center">&nbsp;<a href="firstcrops/lush.mp3" target="_new"><img src="/graphics/download.gif" height="30" border="0" /></a> </td>
               </tr>    
 
               <tr bgcolor="#444444" valign="middle">
                 <td><img src="firstcrops/firstcrops_s.jpg" alt="First Crops" border="0" height="50" width="50" align="middle" /><a href="stumbled.html"><font face="arial,helvetica" size="-1" color="#33CCFF">Stumbled</font></a></td>
-                <td align="center">&nbsp;<a href="http://www.mp3.com/soulharvest" target="_new"><img src="/graphics/download.gif" height="30" border="0" /></a> </td>
+                <td align="center">&nbsp;<a href="firstcrops/stumbled.mp3" target="_new"><img src="/graphics/download.gif" height="30" border="0" /></a> </td>
               </tr>
 
               <tr valign="middle">
                 <td><img src="firstcrops/firstcrops_s.jpg" alt="First Crops" border="0" height="50" width="50" align="middle" /><a href="soothing.html"><font  face="arial,helvetica" size="-1" color="#33CCFF">Something Soothing</font></a></td>
-                <td align="center"><a href="http://www.mp3.com/soulharvest" target="_new"><img src="/graphics/download.gif" height="30" border="0" /></a></td>
+                <td align="center"><a href="firstcrops/soothing.mp3" target="_new"><img src="/graphics/download.gif" height="30" border="0" /></a></td>
               </tr>
 
               <tr bgcolor="#444444" valign="middle">
                 <td><img src="firstcrops/firstcrops_s.jpg" alt="First Crops" border="0" height="50" width="50" align="middle" /><a href="chilling.html"><font  face="arial,helvetica" size="-1" color="#33CCFF">Chillin' on the Patio</font></a></td>
-                <td align="center">&nbsp;<a href="http://www.besonic.com/soulharvest" target="_new"><img src="/graphics/download.gif" height="30" border="0" /></a> </td>
+                <td align="center">&nbsp;<a href="firstcrops/chilling.mp3" target="_new"><img src="/graphics/download.gif" height="30" border="0" /></a> </td>
               </tr>
 
               <tr valign="middle">
                 <td><img src="firstcrops/firstcrops_s.jpg" alt="First Crops" border="0" height="50" width="50" align="middle" /><a href="windflow.html"><font  face="arial,helvetica" size="-1" color="#33CCFF">Windflow</font></a></td>
-                <td align="center">&nbsp;<a href="http://www.mp3.com/soulharvest" target="_new"><img src="/graphics/download.gif" height="30" border="0" /></a> </td>
+                <td align="center">&nbsp;<a href="firstcrops/windflow.mp3" target="_new"><img src="/graphics/download.gif" height="30" border="0" /></a> </td>
               </tr>
 
               <tr bgcolor="#444444" valign="middle">
                 <td><img src="firstcrops/firstcrops_s.jpg" alt="First Crops" border="0" height="50" width="50" align="middle" /><a href="johndoe.html"><font  face="arial,helvetica" size="-1" color="#33CCFF">John Doe</font></a></td>
-                <td align="center"><a href="http://www.mp3.com/soulharvest" target="_new"><img src="/graphics/download.gif" height="30" border="0" /></a></td>
+                <td align="center"><a href="firstcrops/johndoe.mp3" target="_new"><img src="/graphics/download.gif" height="30" border="0" /></a></td>
               </tr>
             </tbody>
           </table>
