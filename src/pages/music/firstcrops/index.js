@@ -71,7 +71,7 @@ export default function FirstCrops() {
               </tr>
 
               <tr bgcolor="#444444" valign="middle">
-                <td><img src="/music/firstcrops/firstcrops_s.jpg" alt="First Crops" border="0" height="50" width="50" align="middle" /><a href="chilling.html"><font  face="arial,helvetica" size="-1" color="#33CCFF">Chillin' on the Patio</font></a></td>
+                <td><img src="/music/firstcrops/firstcrops_s.jpg" alt="First Crops" border="0" height="50" width="50" align="middle" /><a href="/music/firstcrops/chilling"><font  face="arial,helvetica" size="-1" color="#33CCFF">Chillin' on the Patio</font></a></td>
                 <td align="center">&nbsp;<a href="/music/firstcrops/chilling.mp3" target="_new"><img src="/graphics/download.gif" height="30" border="0" /></a> </td>
               </tr>
 
