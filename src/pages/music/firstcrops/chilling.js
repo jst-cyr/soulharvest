@@ -31,15 +31,15 @@ export default function ChillingOnThePatio() {
                           <a href="/music/firstcrops/chilling_clip.mp3"><img src="/graphics/spkr.gif" border="0" /></a>
                         </td>
                         <td>
-                          <font face="arial,helvetica,verdana" size="-1">Clip</font>
+                          <font face="arial,helvetica,verdana" size="-1"><a href="/music/firstcrops/chilling_clip.mp3">Clip</a></font>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <img src="/graphics/download.gif" height="20" border="0" />
+                          <a href="/music/firstcrops/chilling.mp3"><img src="/graphics/download.gif" height="20" border="0" /></a>
                         </td>
                         <td>
-                          <font face="arial,helvetica,verdana" size="-1">Download [N/A]</font>
+                          <font face="arial,helvetica,verdana" size="-1"><a href="/music/firstcrops/chilling.mp3">Download</a></font>
                         </td>
                       </tr>
                       <tr>
@@ -47,7 +47,7 @@ export default function ChillingOnThePatio() {
                           <a href="/music/firstcrops/"><img src="/music/firstcrops/firstcrops_s.jpg" height="20" border="0" /></a>
                         </td>
                         <td>
-                          <font face="arial,helvetica,verdana" size="-1">CD INFO</font>
+                          <font face="arial,helvetica,verdana" size="-1"><a href="/music/firstcrops/">CD INFO</a></font>
                         </td>
                       </tr>
                     </tbody>
