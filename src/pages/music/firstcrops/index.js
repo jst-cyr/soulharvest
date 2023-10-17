@@ -66,7 +66,7 @@ export default function FirstCrops() {
               </tr>
 
               <tr valign="middle">
-                <td><img src="/music/firstcrops/firstcrops_s.jpg" alt="First Crops" border="0" height="50" width="50" align="middle" /><a href="soothing.html"><font  face="arial,helvetica" size="-1" color="#33CCFF">Something Soothing</font></a></td>
+                <td><img src="/music/firstcrops/firstcrops_s.jpg" alt="First Crops" border="0" height="50" width="50" align="middle" /><a href="/music/firstcrops/soothing"><font  face="arial,helvetica" size="-1" color="#33CCFF">Something Soothing</font></a></td>
                 <td align="center"><a href="/music/firstcrops/soothing.mp3" target="_new"><img src="/graphics/download.gif" height="30" border="0" /></a></td>
               </tr>
 
