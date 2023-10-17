@@ -61,7 +61,7 @@ export default function FirstCrops() {
               </tr>    
 
               <tr bgcolor="#444444" valign="middle">
-                <td><img src="/music/firstcrops/firstcrops_s.jpg" alt="First Crops" border="0" height="50" width="50" align="middle" /><a href="stumbled.html"><font face="arial,helvetica" size="-1" color="#33CCFF">Stumbled</font></a></td>
+                <td><img src="/music/firstcrops/firstcrops_s.jpg" alt="First Crops" border="0" height="50" width="50" align="middle" /><a href="/music/firstcrops/stumbled"><font face="arial,helvetica" size="-1" color="#33CCFF">Stumbled</font></a></td>
                 <td align="center">&nbsp;<a href="/music/firstcrops/stumbled.mp3" target="_new"><img src="/graphics/download.gif" height="30" border="0" /></a> </td>
               </tr>
 
