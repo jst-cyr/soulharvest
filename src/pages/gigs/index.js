@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Script from 'next/script';
 import styles from '../../styles/soulharvest.module.css';
 import calendarStyles from '../../styles/calendar.module.css';
 
@@ -8,8 +7,7 @@ export default function Gigs() {
     <div>
       <Head>
         <title>Soul Harvest - Gigs</title>
-        <Script language="javascript" src="/scripts/calendar/popup.js" />
-        <Script language="javascript" src="/scripts/calendar/2004/october/gigInfo.js" />
+        <script src="/scripts/calendar/popup.js" lang="javascript" />
       </Head>
 
       <h1>Gigs</h1>
@@ -61,8 +59,8 @@ export default function Gigs() {
                       <td> 6</td>
                       <td> 7</td>
                       <td> 8</td>
-                      <td bgcolor="#76A7CB">
-                        <a href="javascript:gigInfo('9')"><b>9<br />
+                      <td bgcolor="#76A7CB" onClick={() => gigInfo('/gigs/2004/october/9')}>
+                        <a><b>9<br />
                         Animal Noises III<br />
                         9pm</b></a>
                         <br /><br />
