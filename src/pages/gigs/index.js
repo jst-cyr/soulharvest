@@ -59,7 +59,7 @@ export default function Gigs() {
                       <td> 6</td>
                       <td> 7</td>
                       <td> 8</td>
-                      <td bgcolor="#76A7CB" onClick={() => gigInfo('/gigs/2004/october/9')}>
+                      <td bgcolor="#76A7CB" onClick={() => gigInfo('/gigs/2004/october/9.html')}>
                         <a><b>9<br />
                         Animal Noises III<br />
                         9pm</b></a>
