@@ -54,7 +54,7 @@ export default function Gigs() {
                         <a href="http://www.diamondbackmusic.com/" target="_blank">Diamondback</a><br />
                         Babylon
                       </td>
-                      <td bgcolor="#76A7CB" onClick={() => gigInfo('/gigs/2004/may/29.html')}>
+                      <td bgcolor="#76A7CB" onClick={() => gigInfo('/gigs/2004/april/3.html')}>
                         <a><b>3<br />
                         Deckuf<br />
 			                  9:00pm</b></a><br />
