@@ -12,11 +12,11 @@ export function renderIntersection(ctx, canvas) {
 }
 
 export function drawSidewalk(ctx, canvas) {
-    ctx.fillStyle = "#bcbcbc";
-    ctx.fillRect(canvas.width / 3 - 145, 0, 100, canvas.height); // Reduced lawn distance
+    ctx.fillStyle = "#bcbcbc"; // Gray sidewalk color
+    ctx.fillRect(canvas.width / 3 - 145, 0, 100, canvas.height); // Reduced lawn distance, but ensure sidewalk is above houses
 }
 
 export function drawStreet(ctx, canvas) {
-    ctx.fillStyle = "#808080";
-    ctx.fillRect(canvas.width / 3 - 45, 0, canvas.width / 3 * 2, canvas.height);
+    ctx.fillStyle = "#808080"; // Road color
+    ctx.fillRect(canvas.width / 3 - 45, 0, canvas.width / 3 * 2, canvas.height); // Road width and position
 }

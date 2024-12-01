@@ -24,7 +24,7 @@ export function gameLoop(gameState) {
 
     // Slide background elements
     houses.forEach(house => {
-        house.y += streetSpeed;
+        house.y += streetSpeed; // Update house Y position
         house.mailbox.y += streetSpeed;
     });
     papers.forEach(paper => paper.x -= 10);

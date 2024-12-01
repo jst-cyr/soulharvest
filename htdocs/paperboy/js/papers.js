@@ -5,26 +5,52 @@ export function throwPaper(player, gameState) {
     gameState.papers.push(paper);
 }
 
-// Handle papers
-export function drawPapers(ctx, papers, houses, gameState){
+//Draw papers
+export function drawPapers(ctx, papers, houses, gameState) {
     papers.forEach((paper, index) => {
-        paper.x -= 10;
-        paper.y -= 2; // Slight upward angle
+        // Move the paper across the screen
+        paper.x -= 10; // Move left
+        paper.y -= 2;  // Slight upward angle
+
+        // Draw the paper as a white rectangle
         ctx.fillStyle = "white";
         ctx.fillRect(paper.x, paper.y, 30, 12); // Rectangular paper
 
-        // Check collision with mailboxes
+        // Check if the paper is off-screen and remove it if it is
+        if (paper.x < 0 || paper.y < 0 || paper.x > ctx.canvas.width || paper.y > ctx.canvas.height) {
+            papers.splice(index, 1);
+            return; // Skip further checks for this paper
+        }
+
+        // Check collision with each house's mailbox
         houses.forEach(house => {
             const mailbox = house.mailbox;
-            if (paper.x > mailbox.x && paper.x < mailbox.x + mailbox.width &&
-                paper.y > mailbox.y && paper.y < mailbox.y + mailbox.height &&
-                !mailbox.delivered) {
+
+            // Collision detection without rotation (simplified)
+            const paperLeft = paper.x;
+            const paperRight = paper.x + 30;
+            const paperTop = paper.y;
+            const paperBottom = paper.y + 12;
+
+            const mailboxLeft = mailbox.x;
+            const mailboxRight = mailbox.x + mailbox.width;
+            const mailboxTop = mailbox.y;
+            const mailboxBottom = mailbox.y + mailbox.height;
+
+            // Check if paper intersects with mailbox (bounding box check)
+            if (
+                paperRight > mailboxLeft && // Paper's right side is past mailbox's left side
+                paperLeft < mailboxRight && // Paper's left side is before mailbox's right side
+                paperBottom > mailboxTop && // Paper's bottom side is past mailbox's top side
+                paperTop < mailboxBottom && // Paper's top side is before mailbox's bottom side
+                !mailbox.delivered // Only deliver if not already delivered
+            ) {
                 if (house.mailbox.color === "red") {
-                    gameState.score++;
+                    gameState.score++; // Increment score for red mailbox hit
                     displaySuccessAnimation(ctx, mailbox.x + mailbox.width / 2, mailbox.y - 10);
                 }
                 mailbox.delivered = true; // Mark mailbox as delivered
-                papers.splice(index, 1); // Remove paper after delivery
+                papers.splice(index, 1); // Remove paper after successful delivery
             }
         });
     });
