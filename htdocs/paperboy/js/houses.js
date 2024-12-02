@@ -9,7 +9,7 @@ export function addHouse(yPosition, gameState) {
     const hasDeliverable = Math.random() < 0.6; // 60% chance for a red mailbox
 
     gameState.houses.push({
-        x: 0,
+        x: 100,
         y: yPosition,
         width: gameState.houseWidth,
         height: gameState.houseHeight,
