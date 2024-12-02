@@ -1,6 +1,7 @@
 import { movePlayer } from './player.js';
 import { throwPaper } from './papers.js';
 import { showCredits } from './modals.js';
+import { gameLoop } from './gameLoop.js';
 
 export function handleInput(gameState) {
     const { player, isPaused } = gameState;
@@ -12,7 +13,12 @@ export function handleInput(gameState) {
     // Pause toggle
     window.addEventListener("keydown", (e) => {
         if (e.code === "KeyP") {
-            gameState.isPaused = !isPaused;
+            gameState.isPaused = !gameState.isPaused;
+
+            //If we unpaused, start the animation again
+            if(!gameState.isPaused){
+                requestAnimationFrame(() => gameLoop(gameState));
+            }
         }
     });
 
