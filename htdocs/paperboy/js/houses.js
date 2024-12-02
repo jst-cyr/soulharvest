@@ -45,8 +45,18 @@ export function drawHouses(ctx, canvas, houses, houseCount, maxHouses, gameState
         ctx.rotate(-Math.PI / 2); // Rotate the house 90 degrees counterclockwise
 
         // Draw the house body (now a vertical rectangle)
+        ctx.shadowColor = "rgba(0, 0, 0, 0.5)";
+        ctx.shadowBlur = 10;
+        ctx.shadowOffsetX = 5;
+        ctx.shadowOffsetY = 5;
+        ctx.fillStyle = "#ffd700";
+
         ctx.fillStyle = house.color;
         ctx.fillRect(-house.width / 2, -house.height / 2, house.width, house.height);
+
+        // Reset shadow for other elements
+        ctx.shadowColor = "transparent";
+        ctx.shadowBlur = 0;
 
         // Draw the roof (positioned on the left of the house)
         ctx.fillStyle = "darkgray";
@@ -79,8 +89,6 @@ export function drawHouses(ctx, canvas, houses, houseCount, maxHouses, gameState
         // Draw the mailbox body (no rotation)
         ctx.fillStyle = mailbox.delivered ? "gray" : mailbox.color;
         ctx.fillRect(mailboxX, mailboxY, mailbox.width, mailbox.height); // Mailbox body
-
-        // Skip drawing the mailbox post for this test
 
         // Draw driveway (leading from the street to the house)
         ctx.fillStyle = "#a9a9a9"; // Gray color for driveway
