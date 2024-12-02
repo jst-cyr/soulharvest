@@ -2,11 +2,15 @@ import { drawPlayer } from './player.js';
 import { drawHouses } from './houses.js';
 import { drawSidewalk, drawStreet, renderIntersection } from './street.js';
 import { drawPapers } from './papers.js';
-import { showModal } from './modals.js';
+import { showModal, showPause } from './modals.js';
 import { drawScore } from './utilities.js';
 
 export function gameLoop(gameState) {
     const { ctx, canvas, player, houses, isPaused, gameOver, streetSpeed, houseCount, maxHouses, papers, score } = gameState;
+
+    if (isPaused){
+        showPause(ctx, canvas);
+    }
 
     if (gameOver || isPaused) return;
 

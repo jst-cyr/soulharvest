@@ -65,3 +65,22 @@ export function showCredits(gameState) {
         window.location.href = "https://en.wikipedia.org/wiki/Paperboy";  // Redirect to the Wikipedia page
     });
 }
+
+export function showPause(ctx, canvas) {
+    // Semi-transparent overlay
+    ctx.fillStyle = "rgba(0, 0, 0, 0.5)";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // Text styling
+    ctx.fillStyle = "white";
+    ctx.font = "24px Arial";
+    ctx.textAlign = "center";
+
+    // Draw "Paused" text
+    ctx.fillText("Game Paused", canvas.width / 2, canvas.height / 2 - 20);
+
+    // Draw instructions
+    ctx.font = "18px Arial";
+    ctx.fillText("Press 'P' to resume", canvas.width / 2, canvas.height / 2 + 20);
+}
+
