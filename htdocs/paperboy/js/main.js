@@ -20,6 +20,8 @@ export const gameState = {
     isPaused: false,
     houseCount: 0,
     maxHouses: 30,
+    houseHeight: 150,
+    houseWidth: 100,
     streetSpeed: 2,
     levelComplete: false,
     reachedIntersection: false,

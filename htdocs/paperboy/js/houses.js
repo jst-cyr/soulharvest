@@ -7,19 +7,17 @@ export function initializeHouses(gameState) {
 
 export function addHouse(yPosition, gameState) {
     const hasDeliverable = Math.random() < 0.6; // 60% chance for a red mailbox
-    const houseWidth = 100;
-    const houseHeight = 150;
 
     gameState.houses.push({
         x: 0,
         y: yPosition,
-        width: houseWidth,
-        height: houseHeight,
+        width: gameState.houseWidth,
+        height: gameState.houseHeight,
         color: hasDeliverable ? "#FFD700" : "#8B0000",
         mailbox: {
             color: hasDeliverable ? "red" : "black",
             // Position mailbox relative to the house, to the "front" of the house
-            x: houseWidth, // The x position is fixed to the right edge of the house (after rotation)
+            x: gameState.houseWidth, // The x position is fixed to the right edge of the house (after rotation)
             y: yPosition, // The y position places the mailbox at the base of the house
             width: 20,
             height: 40,
