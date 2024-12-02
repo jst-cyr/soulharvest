@@ -28,9 +28,12 @@ export function addHouse(yPosition, gameState) {
 }
 
 export function drawHouses(ctx, canvas, houses, houseCount, maxHouses, gameState) {
+    //Determine gap for houses
+    const houseSpacing = gameState.houseHeight + gameState.houseGap;
+
     // Add new houses until maxHouses is reached
-    if (houseCount < maxHouses && houses.length < canvas.height / 200) {
-        addHouse(houses[houses.length - 1]?.y - 200 || 0, gameState);
+    if (houseCount < maxHouses && houses.length < canvas.height / houseSpacing) {
+        addHouse(houses[houses.length - 1]?.y - houseSpacing || 0, gameState);
     }
 
     houses.forEach((house) => {

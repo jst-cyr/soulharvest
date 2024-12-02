@@ -22,6 +22,7 @@ export const gameState = {
     maxHouses: 30,
     houseHeight: 150,
     houseWidth: 100,
+    houseGap: 50,
     streetSpeed: 2,
     levelComplete: false,
     reachedIntersection: false,
