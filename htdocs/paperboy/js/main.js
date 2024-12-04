@@ -7,8 +7,8 @@ import { drawPaperboy, movePaperboy } from './player.js';
 const config = {
     type: Phaser.AUTO, // Use WebGL if available, fallback to Canvas
     parent: 'phaserContainer',
-    width: window.innerWidth,
-    height: window.innerHeight,
+    width: 130,
+    height: 130,
     transparent: true,
     scene: {
         preload,

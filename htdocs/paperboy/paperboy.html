@@ -11,22 +11,20 @@
             background-color: #87CEEB;
             position: relative; /* Ensure positioning context for children */
         }
-        canvas {
-            display: block;
-            background-color: #d4f1c5; /* Green grass */
-        }
 
         #gameCanvas {
             position: absolute;
             top: 0;
             left: 0;
             z-index: 1; /* Custom canvas below Phaser canvas */
+            background-color: #d4f1c5; /* Green grass */
+            display: block;
         }
 
         #phaserContainer {
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 700px;
+            left: 475px;
             z-index: 10; /* Phaser canvas above custom canvas */
         }
     </style>
