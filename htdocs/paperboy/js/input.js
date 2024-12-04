@@ -39,7 +39,7 @@ export function handleInput(gameState) {
 
     function handleMovement() {
         if (!isPaused) {
-            movePlayer(keys, player, gameState.canvas);
+            //movePlayer(keys, player, gameState.canvas);
         }
         requestAnimationFrame(handleMovement);
     }

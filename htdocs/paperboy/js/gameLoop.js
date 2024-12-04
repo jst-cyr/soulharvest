@@ -42,7 +42,7 @@ export function gameLoop(gameState) {
     drawHouses(ctx, canvas, houses, houseCount, maxHouses, gameState);
     drawSidewalk(ctx, canvas);
     drawStreet(ctx, canvas);
-    drawPlayer(ctx, player);
+    //drawPlayer(ctx, player);
     drawPapers(ctx, papers, houses, gameState);
 
     // Display current score

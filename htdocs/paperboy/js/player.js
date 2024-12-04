@@ -17,3 +17,46 @@ export function drawPlayer(ctx, player) {
     ctx.fillRect(player.x + player.width / 2 + 5, player.y, 10, 1); // Front tire connecting line
     ctx.fillRect(player.x, player.y, 10, 1); // Back tire connecting line
 }
+
+export function drawPaperboy(scene, player) {
+    if (!scene.physics) {
+        console.error("Scene's physics system is not available!");
+        return;
+    }
+
+    // Add the player sprite with physics
+    player.sprite = scene.physics.add.sprite(200, 300, 'player');
+
+    // Set player properties
+    player.sprite.setCollideWorldBounds(true); // Prevent going out of bounds
+    player.sprite.setScale(0.5); // Adjust size if needed
+
+    // Create input keys
+    player.cursors = scene.input.keyboard.createCursorKeys(); // Arrow keys
+}
+
+export function movePaperboy(player) {
+    const speed = 150; // Movement speed
+
+    if (!player.sprite || !player.cursors) {
+        console.error("Player sprite or cursors are not defined!");
+        return;
+    }
+
+    // Stop any previous movement
+    player.sprite.setVelocity(0);
+
+    // Vertical movement
+    if (player.cursors.up.isDown) {
+        player.sprite.setVelocityY(-speed);
+    } else if (player.cursors.down.isDown) {
+        player.sprite.setVelocityY(speed);
+    }
+
+    // Horizontal movement
+    if (player.cursors.left.isDown) {
+        player.sprite.setVelocityX(-speed);
+    } else if (player.cursors.right.isDown) {
+        player.sprite.setVelocityX(speed);
+    }
+}
