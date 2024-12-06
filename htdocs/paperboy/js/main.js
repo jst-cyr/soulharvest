@@ -2,6 +2,7 @@ import { initializeHouses, updateHouses } from './houses.js';
 import { handleInput } from './input.js';
 import { gameLoop } from './gameLoop.js';
 import { drawPaperboy, movePaperboy } from './player.js';
+import { resizeGame } from './utilities.js';
 
 //Phaser configuration
 const config = {
@@ -68,6 +69,9 @@ let player = {}; //Create an empty player object to store references
 let cursors;
 
 function create() {
+    // Add resizing event listener
+    window.addEventListener('resize', resizeGame);
+
     //Draw the paperboy
     drawPaperboy(this, player);
     // Initialize houses
