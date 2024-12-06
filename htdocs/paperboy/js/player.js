@@ -30,6 +30,7 @@ export function drawPaperboy(scene, player) {
     // Set player properties
     player.sprite.setCollideWorldBounds(true); // Prevent going out of bounds
     player.sprite.setScale(0.5); // Adjust size if needed
+    player.sprite.setDepth(1);
 
     // Create input keys
     player.cursors = scene.input.keyboard.createCursorKeys(); // Arrow keys

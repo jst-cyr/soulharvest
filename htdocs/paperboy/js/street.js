@@ -36,13 +36,15 @@ export function drawSidewalk(scene, gameState) {
     const sidewalkWidth = 100;
 
     // Add a gray rectangle for the sidewalk
-    scene.add.rectangle(
+    const sidewalk = scene.add.rectangle(
         canvas.width / 3 - 145 + sidewalkWidth / 2, // X position (center of the sidewalk)
         canvas.height / 2,                         // Y position (center of the screen)
         sidewalkWidth,                             // Width of the sidewalk
         canvas.height,                             // Height of the sidewalk
         0xbcbcbc                                   // Gray color
     );
+
+    sidewalk.setDepth(0);
 }
 
 
@@ -51,11 +53,13 @@ export function drawStreet(scene, gameState) {
     const roadWidth = (canvas.width / 3) * 2;
 
     // Add a gray rectangle for the road
-    scene.add.rectangle(
+    const road = scene.add.rectangle(
         canvas.width / 3 - 45 + roadWidth / 2, // X position (center of the road)
         canvas.height / 2,                   // Y position (center of the screen)
         roadWidth,                           // Width of the road
         canvas.height,                       // Height of the road
         0x808080                             // Gray color
     );
+
+    road.setDepth(0);
 }
