@@ -46,7 +46,7 @@ export function showCredits(gameState) {
         <p>Created by ChatGPT and Jason St-Cyr</p>
         <p>An homage to the classic Atari game Paperboy (1985)</p>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Paperboy_arcade_game_logo.png/640px-Paperboy_arcade_game_logo.png" alt="Paperboy Logo" style="width: 100%; height: auto; margin-bottom: 10px;">
-        <a href="https://en.wikipedia.org/wiki/Paperboy" target="_blank">Learn more about Paperboy</a>
+        <a href="https://en.wikipedia.org/wiki/Paperboy_(video_game)" target="_blank">Learn more about Paperboy</a>
         <br><br>
         <button id="continueBtn">Continue</button>
         <button id="quitBtn">Quit</button>
@@ -62,7 +62,7 @@ export function showCredits(gameState) {
 
     // Event listener for the Quit button
     document.getElementById("quitBtn").addEventListener("click", () => {
-        window.location.href = "https://en.wikipedia.org/wiki/Paperboy";  // Redirect to the Wikipedia page
+        window.location.href = "https://en.wikipedia.org/wiki/Paperboy_(video_game)";  // Redirect to the Wikipedia page
     });
 }
 
