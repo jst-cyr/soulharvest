@@ -1,4 +1,4 @@
-import { initializeHouses } from './houses.js';
+import { initializeHouses, updateHouses } from './houses.js';
 import { handleInput } from './input.js';
 import { gameLoop } from './gameLoop.js';
 import { drawPaperboy, movePaperboy } from './player.js';
@@ -7,8 +7,8 @@ import { drawPaperboy, movePaperboy } from './player.js';
 const config = {
     type: Phaser.AUTO, // Use WebGL if available, fallback to Canvas
     parent: 'phaserContainer',
-    width: 130,
-    height: 130,
+    width: window.innerWidth,
+    height: window.innerHeight,
     transparent: true,
     scene: {
         preload,
@@ -52,9 +52,6 @@ export const gameState = {
     reachedIntersection: false,
 };
 
-// Initialize houses
-initializeHouses(gameState);
-
 // Start game loop
 handleInput(gameState);
 gameLoop(gameState);
@@ -73,9 +70,15 @@ let cursors;
 function create() {
     //Draw the paperboy
     drawPaperboy(this, player);
+    // Initialize houses
+    initializeHouses(this, gameState);
 }
 
 function update() {
     //Move the paperboy
     movePaperboy(player);
+
+    if (!gameState.isPaused && !gameState.gameOver) {
+        updateHouses(gameState, gameState.streetSpeed);
+    }
 }

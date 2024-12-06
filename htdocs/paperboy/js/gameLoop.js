@@ -1,5 +1,3 @@
-import { drawPlayer } from './player.js';
-import { drawHouses } from './houses.js';
 import { drawSidewalk, drawStreet, renderIntersection } from './street.js';
 import { drawPapers } from './papers.js';
 import { showModal, showPause } from './modals.js';
@@ -39,10 +37,8 @@ export function gameLoop(gameState) {
     }
 
     // Draw game elements
-    drawHouses(ctx, canvas, houses, houseCount, maxHouses, gameState);
     drawSidewalk(ctx, canvas);
     drawStreet(ctx, canvas);
-    //drawPlayer(ctx, player);
     drawPapers(ctx, papers, houses, gameState);
 
     // Display current score
