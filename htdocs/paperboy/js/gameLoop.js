@@ -24,11 +24,6 @@ export function gameLoop(gameState) {
         return;
     }
 
-    // Slide background elements
-    houses.forEach(house => {
-        house.y += streetSpeed; // Update house Y position
-        house.mailbox.y += streetSpeed;
-    });
     papers.forEach(paper => paper.x -= 10);
 
     // Remove off-screen houses
