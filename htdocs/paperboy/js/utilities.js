@@ -16,7 +16,7 @@ export function drawScore(ctx, canvas, score) {
     ctx.restore(); // Restore the canvas state
 }
 
-export function resizeGame() {
+export function resizeGame(game) {
     const canvas = document.querySelector('canvas');
     const width = window.innerWidth;
     const height = window.innerHeight;

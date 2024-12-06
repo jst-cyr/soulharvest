@@ -1,4 +1,5 @@
 import { initializeHouses, updateHouses } from './houses.js';
+import { drawStreet, drawSidewalk } from './street.js';
 import { handleInput } from './input.js';
 import { gameLoop } from './gameLoop.js';
 import { drawPaperboy, movePaperboy } from './player.js';
@@ -70,12 +71,14 @@ let cursors;
 
 function create() {
     // Add resizing event listener
-    window.addEventListener('resize', resizeGame);
+    window.addEventListener('resize', () => resizeGame(this.game));
 
     //Draw the paperboy
     drawPaperboy(this, player);
-    // Initialize houses
+    // Initialize houses and street elements
     initializeHouses(this, gameState);
+    drawSidewalk(this, gameState);
+    drawStreet(this, gameState);
 }
 
 function update() {

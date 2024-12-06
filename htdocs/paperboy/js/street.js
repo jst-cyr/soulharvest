@@ -1,22 +1,61 @@
-// Render intersection at the end of the level
-export function renderIntersection(ctx, canvas) {
-    ctx.fillStyle = "yellow";
-    ctx.fillRect(canvas.width / 3 - 145, canvas.height - 80, 100, 20); // End of the sidewalk
-    ctx.fillStyle = "red";
-    ctx.beginPath();
-    ctx.arc(canvas.width / 3 - 90, canvas.height - 60, 20, 0, Math.PI * 2); // Stop sign
-    ctx.fill();
-    ctx.fillStyle = "white";
-    ctx.font = "18px Arial";
-    ctx.fillText("STOP", canvas.width / 3 - 90, canvas.height - 50);
+export function renderIntersection(scene, gameState) {
+    const { canvas } = gameState;
+
+    // Add a yellow rectangle for the end of the sidewalk
+    scene.add.rectangle(
+        canvas.width / 3 - 145 + 50, // X position (center of the rectangle)
+        canvas.height - 70,         // Y position
+        100,                        // Width
+        20,                         // Height
+        0xffff00                    // Yellow color
+    );
+
+    // Add a red circle for the stop sign
+    scene.add.circle(
+        canvas.width / 3 - 90,      // X position
+        canvas.height - 60,         // Y position
+        20,                         // Radius
+        0xff0000                    // Red color
+    );
+
+    // Add white "STOP" text on the stop sign
+    scene.add.text(
+        canvas.width / 3 - 110,     // X position (adjust for centering)
+        canvas.height - 75,         // Y position (adjust for centering)
+        "STOP",                     // Text
+        {
+            font: "18px Arial",
+            fill: "#ffffff"         // White color
+        }
+    );
 }
 
-export function drawSidewalk(ctx, canvas) {
-    ctx.fillStyle = "#bcbcbc"; // Gray sidewalk color
-    ctx.fillRect(canvas.width / 3 - 145, 0, 100, canvas.height); // Reduced lawn distance, but ensure sidewalk is above houses
+
+export function drawSidewalk(scene, gameState) {
+    const { canvas } = gameState;
+    const sidewalkWidth = 100;
+
+    // Add a gray rectangle for the sidewalk
+    scene.add.rectangle(
+        canvas.width / 3 - 145 + sidewalkWidth / 2, // X position (center of the sidewalk)
+        canvas.height / 2,                         // Y position (center of the screen)
+        sidewalkWidth,                             // Width of the sidewalk
+        canvas.height,                             // Height of the sidewalk
+        0xbcbcbc                                   // Gray color
+    );
 }
 
-export function drawStreet(ctx, canvas) {
-    ctx.fillStyle = "#808080"; // Road color
-    ctx.fillRect(canvas.width / 3 - 45, 0, canvas.width / 3 * 2, canvas.height); // Road width and position
+
+export function drawStreet(scene, gameState) {
+    const { canvas } = gameState;
+    const roadWidth = (canvas.width / 3) * 2;
+
+    // Add a gray rectangle for the road
+    scene.add.rectangle(
+        canvas.width / 3 - 45 + roadWidth / 2, // X position (center of the road)
+        canvas.height / 2,                   // Y position (center of the screen)
+        roadWidth,                           // Width of the road
+        canvas.height,                       // Height of the road
+        0x808080                             // Gray color
+    );
 }

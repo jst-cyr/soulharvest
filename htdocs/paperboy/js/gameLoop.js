@@ -37,8 +37,6 @@ export function gameLoop(gameState) {
     }
 
     // Draw game elements
-    drawSidewalk(ctx, canvas);
-    drawStreet(ctx, canvas);
     drawPapers(ctx, papers, houses, gameState);
 
     // Display current score
