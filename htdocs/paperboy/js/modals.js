@@ -45,7 +45,7 @@ export function showCredits(gameState) {
         <h2>Credits</h2>
         <p>Created by ChatGPT and Jason St-Cyr</p>
         <p>An homage to the classic Atari game Paperboy (1985)</p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Paperboy_arcade_game_logo.png/640px-Paperboy_arcade_game_logo.png" alt="Paperboy Logo" style="width: 100%; height: auto; margin-bottom: 10px;">
+        <img src="https://upload.wikimedia.org/wikipedia/en/7/7e/Paperboy_arcadeflyer.png" alt="Paperboy Logo" style="width: 100%; height: auto; margin-bottom: 10px;">
         <a href="https://en.wikipedia.org/wiki/Paperboy_(video_game)" target="_blank">Learn more about Paperboy</a>
         <br><br>
         <button id="continueBtn">Continue</button>
