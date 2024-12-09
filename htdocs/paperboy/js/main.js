@@ -3,7 +3,7 @@ import { drawStreet, drawSidewalk } from './street.js';
 import { handleInput } from './input.js';
 import { gameLoop } from './gameLoop.js';
 import { drawPaperboy, movePaperboy } from './player.js';
-import { resizeGame } from './utilities.js';
+import { drawScore, resizeGame } from './utilities.js';
 
 //Phaser configuration
 const config = {
@@ -42,6 +42,7 @@ export const gameState = {
     papers: [],
     houses: [],
     score: 0,
+    scoreText: "Score: 0",
     gameOver: false,
     isPaused: false,
     houseCount: 0,
@@ -79,6 +80,9 @@ function create() {
     initializeHouses(this, gameState);
     drawSidewalk(this, gameState);
     drawStreet(this, gameState);
+
+    // Display current score
+    drawScore(this, gameState);
 }
 
 function update() {
@@ -87,5 +91,6 @@ function update() {
 
     if (!gameState.isPaused && !gameState.gameOver) {
         updateHouses(this, gameState, gameState.streetSpeed);
+        gameState.scoreText.setText(`Score: ${gameState.score}`);
     }
 }

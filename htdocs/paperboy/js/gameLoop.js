@@ -34,9 +34,6 @@ export function gameLoop(gameState) {
     // Draw game elements
     drawPapers(ctx, papers, houses, gameState);
 
-    // Display current score
-    drawScore(ctx, canvas, score);
-
     // Recursive loop
     requestAnimationFrame(() => gameLoop(gameState));
 }

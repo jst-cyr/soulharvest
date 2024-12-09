@@ -1,20 +1,18 @@
-export function drawScore(ctx, canvas, score) {
-    ctx.save(); // Save the canvas state before transformations
-    ctx.setTransform(1, 0, 0, 1, 0, 0); // Reset transformations
-
-    // Set font and alignment for score display
-    ctx.fillStyle = "white";
-    ctx.font = "24px Arial";
-    ctx.textAlign = "center"; // Center-align the text
-    ctx.textBaseline = "top";
-
-    // Draw the score at the top center of the canvas
-    const xPosition = canvas.width / 2; // Center of the canvas
-    const yPosition = 20; // 20 pixels from the top
-    ctx.fillText(`Score: ${score}`, xPosition, yPosition);
-
-    ctx.restore(); // Restore the canvas state
+export function drawScore(scene, gameState) {
+    // Add score text to the top of the screen
+    gameState.scoreText = scene.add.text(
+        scene.cameras.main.width / 2, // Center horizontally
+        20,                         // 20 pixels from the top
+        `Score: ${gameState.score}`, // Initial score text
+        {
+            font: '24px Arial',
+            fill: '#ffffff',        // White text color
+            align: 'center',
+        }
+    ).setOrigin(0.5, 0); // Center align the text horizontally
 }
+
+
 
 export function resizeGame(game) {
     const canvas = document.querySelector('canvas');
