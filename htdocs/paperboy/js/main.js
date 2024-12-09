@@ -56,6 +56,13 @@ export const gameState = {
     reachedIntersection: false,
 };
 
+/* Setup font styles */
+gameState.fontStyles = {
+    default: { font: "24px Arial", fill: "#ffffff", align: "center" },
+    small: { font: "18px Arial", fill: "#ffffff", align: "center" },
+    title: { font: "32px Arial", fill: "#ffcc00", align: "center" },
+};
+
 // Start game loop
 handleInput(gameState);
 gameLoop(gameState);

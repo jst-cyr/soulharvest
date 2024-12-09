@@ -78,23 +78,15 @@ export function drawPause(scene, gameState){
     gameState.pauseText = scene.add.text(
         scene.cameras.main.width / 2, 
         scene.cameras.main.height / 2 - 20, 
-        "Game Paused", 
-        {
-            font: "24px Arial",
-            fill: "#ffffff",
-            align: "center",
-        }
+        "Game Paused",
+        gameState.fontStyles.default 
     ).setOrigin(0.5).setDepth(11).setVisible(false); // Center-aligned, on top, hidden initially
 
     // Instructions text
     gameState.pauseInstructions = scene.add.text(
         scene.cameras.main.width / 2, 
         scene.cameras.main.height / 2 + 20, 
-        "Press 'P' to resume", 
-        {
-            font: "18px Arial",
-            fill: "#ffffff",
-            align: "center",
-        }
+        "Press 'P' to resume",
+        gameState.fontStyles.small 
     ).setOrigin(0.5).setDepth(11).setVisible(false); // Center-aligned, on top, hidden initially
 }

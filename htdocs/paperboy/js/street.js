@@ -22,11 +22,8 @@ export function renderIntersection(scene, gameState) {
     scene.add.text(
         canvas.width / 3 - 110,     // X position (adjust for centering)
         canvas.height - 75,         // Y position (adjust for centering)
-        "STOP",                     // Text
-        {
-            font: "18px Arial",
-            fill: "#ffffff"         // White color
-        }
+        "STOP",
+        gameState.fontStyles.small                   // Text
     );
 }
 
