@@ -10,15 +10,6 @@ export function gameLoop(gameState) {
     // Clear canvas
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    // Check if level is complete
-    if (houseCount >= maxHouses && houses.length === 0) {
-        renderIntersection(ctx, canvas);
-        setTimeout(() => { 
-            showModal(score);
-        }, 1000); // Show modal after 1 second
-        return;
-    }
-
     papers.forEach(paper => paper.x -= 10);
 
     // Remove off-screen houses

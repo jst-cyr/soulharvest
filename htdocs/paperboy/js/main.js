@@ -4,7 +4,7 @@ import { handleInput } from './input.js';
 import { gameLoop } from './gameLoop.js';
 import { drawPaperboy, movePaperboy } from './player.js';
 import { drawScore, resizeGame } from './utilities.js';
-import { drawPause } from './modals.js';
+import { drawPause, showModal } from './modals.js';
 
 //Phaser configuration
 const config = {
@@ -47,7 +47,7 @@ export const gameState = {
     gameOver: false,
     isPaused: false,
     houseCount: 0,
-    maxHouses: 30,
+    maxHouses: 10,
     houseHeight: 150,
     houseWidth: 100,
     houseGap: 50,
@@ -61,6 +61,7 @@ gameState.fontStyles = {
     default: { font: "24px Courier, monospace", fill: "#ffffff", align: "center" },
     small: { font: "18px Courier, monospace", fill: "#ffffff", align: "center" },
     title: { font: "32px Courier, monospace", fill: "#ffcc00", align: "center" },
+    button: {font: "18px 'Courier New', Courier, monospace", fill: "#ffffff", backgroundColor: "#ff0000", padding: { x: 10, y: 5 } }
 };
 
 // Start game loop
@@ -116,5 +117,16 @@ function update() {
     if (!gameState.isPaused && !gameState.gameOver) {
         updateHouses(this, gameState, gameState.streetSpeed);
         gameState.scoreText.setText(`Score: ${gameState.score}`);
+
+        //Check if level is over
+        if (gameState.houseCount >= gameState.maxHouses && gameState.houses.length === 0) {
+            // Delay showing the modal
+            this.time.delayedCall(1000, () => {
+                showModal(this, gameState);
+                gameState.gameOver = true; // Prevent further updates
+            });
+
+            return; //Stop further updates for this frame
+        }
     }
 }

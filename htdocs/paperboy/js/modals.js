@@ -1,25 +1,63 @@
-export function showModal(score) {
-    const modal = document.createElement("div");
-    modal.id = "modal";
-    modal.style.position = "fixed";
-    modal.style.top = "50%";
-    modal.style.left = "50%";
-    modal.style.transform = "translate(-50%, -50%)";
-    modal.style.padding = "20px";
-    modal.style.background = "white";
-    modal.style.border = "2px solid black";
-    modal.style.textAlign = "center";
-    modal.innerHTML = `
-        <h2>Level Complete!</h2>
-        <p>Your Score: ${score}</p>
-        <button id="continue">Continue</button>
-        <button id="quit">Quit</button>
-    `;
-    document.body.appendChild(modal);
+export function showModal(scene, gameState) {
+    // Semi-transparent overlay
+    const overlay = scene.add.graphics();
+    overlay.fillStyle(0x000000, 0.90); // Black with 90% opacity
+    overlay.fillRect(0, 0, scene.cameras.main.width, scene.cameras.main.height);
+    overlay.setDepth(20); // Ensure the modal is on top
 
-    document.getElementById("continue").addEventListener("click", () => location.reload());
-    document.getElementById("quit").addEventListener("click", showCredits);
+    // Modal background
+    const modalWidth = 300;
+    const modalHeight = 200;
+    const modalX = scene.cameras.main.width / 2 - modalWidth / 2;
+    const modalY = scene.cameras.main.height / 2 - modalHeight / 2;
+
+    const modalBackground = scene.add.graphics();
+    modalBackground.fillStyle(0xCCCCCC, 1); // Light Grey background
+    modalBackground.fillRect(modalX, modalY, modalWidth, modalHeight);
+    modalBackground.setDepth(21);
+
+    // Modal title
+    const title = scene.add.text(
+        scene.cameras.main.width / 2,
+        modalY + 20,
+        "Level Complete!",
+        gameState.fontStyles.default
+    ).setOrigin(0.5).setDepth(22);
+
+    // Score text
+    const scoreText = scene.add.text(
+        scene.cameras.main.width / 2,
+        modalY + 70,
+        `Your Score: ${gameState.score}`,
+        gameState.fontStyles.small
+    ).setOrigin(0.5).setDepth(22);
+
+    // Continue button
+    const continueButton = scene.add.text(
+        scene.cameras.main.width / 2,
+        modalY + 120,
+        "Continue",
+        gameState.fontStyles.button
+    ).setOrigin(0.5).setDepth(22).setInteractive();
+
+    // Quit button
+    const quitButton = scene.add.text(
+        scene.cameras.main.width / 2,
+        modalY + 160,
+        "Quit",
+        gameState.fontStyles.button
+    ).setOrigin(0.5).setDepth(22).setInteractive();
+
+    // Button interactions
+    continueButton.on('pointerdown', () => {
+        scene.scene.restart(); // Restart the scene
+    });
+
+    quitButton.on('pointerdown', () => {
+        showCredits(gameState); // Call the showCredits function
+    });
 }
+
 
 //show credits modal
 export function showCredits(gameState) {
