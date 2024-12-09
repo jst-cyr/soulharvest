@@ -66,21 +66,35 @@ export function showCredits(gameState) {
     });
 }
 
-export function showPause(ctx, canvas) {
+export function drawPause(scene, gameState){
     // Semi-transparent overlay
-    ctx.fillStyle = "rgba(0, 0, 0, 0.5)";
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    gameState.pauseOverlay = scene.add.graphics();
+    gameState.pauseOverlay.fillStyle(0x000000, 0.5); // Black with 50% opacity
+    gameState.pauseOverlay.fillRect(0, 0, scene.cameras.main.width, scene.cameras.main.height);
+    gameState.pauseOverlay.setDepth(10); // Ensure it renders on top
+    gameState.pauseOverlay.setVisible(false); // Hide by default
 
-    // Text styling
-    ctx.fillStyle = "white";
-    ctx.font = "24px Arial";
-    ctx.textAlign = "center";
+    // Pause text
+    gameState.pauseText = scene.add.text(
+        scene.cameras.main.width / 2, 
+        scene.cameras.main.height / 2 - 20, 
+        "Game Paused", 
+        {
+            font: "24px Arial",
+            fill: "#ffffff",
+            align: "center",
+        }
+    ).setOrigin(0.5).setDepth(11).setVisible(false); // Center-aligned, on top, hidden initially
 
-    // Draw "Paused" text
-    ctx.fillText("Game Paused", canvas.width / 2, canvas.height / 2 - 20);
-
-    // Draw instructions
-    ctx.font = "18px Arial";
-    ctx.fillText("Press 'P' to resume", canvas.width / 2, canvas.height / 2 + 20);
+    // Instructions text
+    gameState.pauseInstructions = scene.add.text(
+        scene.cameras.main.width / 2, 
+        scene.cameras.main.height / 2 + 20, 
+        "Press 'P' to resume", 
+        {
+            font: "18px Arial",
+            fill: "#ffffff",
+            align: "center",
+        }
+    ).setOrigin(0.5).setDepth(11).setVisible(false); // Center-aligned, on top, hidden initially
 }
-

@@ -4,6 +4,7 @@ import { handleInput } from './input.js';
 import { gameLoop } from './gameLoop.js';
 import { drawPaperboy, movePaperboy } from './player.js';
 import { drawScore, resizeGame } from './utilities.js';
+import { drawPause } from './modals.js';
 
 //Phaser configuration
 const config = {
@@ -83,9 +84,25 @@ function create() {
 
     // Display current score
     drawScore(this, gameState);
+
+    //Create Pause modal
+    drawPause(this, gameState);
 }
 
-function update() {
+function update() {    
+    //Handle pause modal
+    if (gameState.isPaused) {
+        // Show pause overlay and text
+        gameState.pauseOverlay.setVisible(true);
+        gameState.pauseText.setVisible(true);
+        gameState.pauseInstructions.setVisible(true);
+    } else {
+        // Hide pause overlay and text
+        gameState.pauseOverlay.setVisible(false);
+        gameState.pauseText.setVisible(false);
+        gameState.pauseInstructions.setVisible(false);
+    }
+
     //Move the paperboy
     movePaperboy(player);
 
