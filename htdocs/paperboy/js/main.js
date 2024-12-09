@@ -58,9 +58,9 @@ export const gameState = {
 
 /* Setup font styles */
 gameState.fontStyles = {
-    default: { font: "24px Arial", fill: "#ffffff", align: "center" },
-    small: { font: "18px Arial", fill: "#ffffff", align: "center" },
-    title: { font: "32px Arial", fill: "#ffcc00", align: "center" },
+    default: { font: "24px Courier, monospace", fill: "#ffffff", align: "center" },
+    small: { font: "18px Courier, monospace", fill: "#ffffff", align: "center" },
+    title: { font: "32px Courier, monospace", fill: "#ffcc00", align: "center" },
 };
 
 // Start game loop
