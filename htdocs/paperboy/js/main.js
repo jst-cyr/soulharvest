@@ -86,6 +86,6 @@ function update() {
     movePaperboy(player);
 
     if (!gameState.isPaused && !gameState.gameOver) {
-        updateHouses(gameState, gameState.streetSpeed);
+        updateHouses(this, gameState, gameState.streetSpeed);
     }
 }

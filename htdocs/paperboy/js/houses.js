@@ -17,14 +17,23 @@ export function addHouse(scene, yPosition, gameState) {
     gameState.houseCount++;
 }
 
+export function updateHouses(scene, gameState, streetSpeed) {
+    const { houses, houseHeight, houseGap, maxHouses, canvas } = gameState;
 
-export function updateHouses(gameState, streetSpeed) {
-    gameState.houses.forEach(({ house, mailbox }) => {
+    // Move houses and mailboxes down
+    houses.forEach(({ house, mailbox }) => {
         house.y += streetSpeed;
         mailbox.y += streetSpeed;
     });
 
     // Remove off-screen houses
-    gameState.houses = gameState.houses.filter(({ house }) => house.y < gameState.canvas.height);
-}
+    gameState.houses = houses.filter(({ house }) => house.y < canvas.height);
 
+    // Check if new houses need to be added
+    const lastHouseY = houses[houses.length - 1]?.house.y || canvas.height;
+    const houseSpacing = houseHeight + houseGap;
+
+    if (gameState.houseCount < maxHouses && lastHouseY + houseSpacing < canvas.height) {
+        addHouse(scene, lastHouseY - houseSpacing, gameState);
+    }
+}
