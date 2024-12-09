@@ -3,22 +3,20 @@ import { throwPaper } from './papers.js';
 import { showCredits } from './modals.js';
 import { gameLoop } from './gameLoop.js';
 
-export function handleInput(gameState) {
+export function handleInput(scene, gameState) {
     const { player, isPaused } = gameState;
     const keys = {};
 
     window.addEventListener("keydown", (e) => keys[e.code] = true);
     window.addEventListener("keyup", (e) => keys[e.code] = false);
 
+    // Add resizing event listener
+    window.addEventListener('resize', () => resizeGame(scene.game));
+
     // Pause toggle
     window.addEventListener("keydown", (e) => {
         if (e.code === "KeyP") {
             gameState.isPaused = !gameState.isPaused;
-
-            //If we unpaused, start the animation again
-            if(!gameState.isPaused){
-                requestAnimationFrame(() => gameLoop(gameState));
-            }
         }
     });
 
@@ -33,16 +31,7 @@ export function handleInput(gameState) {
     window.addEventListener("keydown", (e) => {
         // Handle the 'Escape' key properly for both modern browsers and Chrome.
         if (e.key == "Escape" || e.code == "Escape") {
-            showCredits(gameState);
+            showCredits(scene, gameState);
         }
     });
-
-    function handleMovement() {
-        if (!isPaused) {
-            //movePlayer(keys, player, gameState.canvas);
-        }
-        requestAnimationFrame(handleMovement);
-    }
-
-    handleMovement();
 }

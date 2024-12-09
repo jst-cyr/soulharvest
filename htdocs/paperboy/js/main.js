@@ -59,18 +59,21 @@ export const gameState = {
 /* Setup font styles */
 gameState.fontStyles = {
     default: { font: "24px Courier, monospace", fill: "#ffffff", align: "center" },
-    small: { font: "18px Courier, monospace", fill: "#ffffff", align: "center" },
+    defaultDark: { font: "24px Courier, monospace", fill: "#000000", align: "center" },
+    smallLight: { font: "18px Courier, monospace", fill: "#ffffff", align: "center" },
+    smallDark: { font: "18px Courier, monospace", fill: "#000000", align: "center" },
     title: { font: "32px Courier, monospace", fill: "#ffcc00", align: "center" },
-    button: {font: "18px 'Courier New', Courier, monospace", fill: "#ffffff", backgroundColor: "#ff0000", padding: { x: 10, y: 5 } }
+    button: {font: "18px 'Courier New', Courier, monospace", fill: "#ffffff", backgroundColor: "#666666", padding: { x: 10, y: 5 } },
+    link: { font: "16px 'Courier New', Courier, monospace", fill: "#0000ff", align: "center" },
 };
 
 // Start game loop
-handleInput(gameState);
 gameLoop(gameState);
 
 /* Phaser engine functions */
 function preload() {
     this.load.image('player', '/htdocs/paperboy/assets/Paperboy.webp');
+    this.load.image('paperboyLogo', 'https://upload.wikimedia.org/wikipedia/en/7/7e/Paperboy_arcadeflyer.png' );
     this.load.on('complete', () => {
         console.log('Assets loaded successfully!');
     }); 
@@ -80,8 +83,8 @@ let player = {}; //Create an empty player object to store references
 let cursors;
 
 function create() {
-    // Add resizing event listener
-    window.addEventListener('resize', () => resizeGame(this.game));
+    //Add input listeners
+    handleInput(this, gameState);
 
     //Draw the paperboy
     drawPaperboy(this, player);

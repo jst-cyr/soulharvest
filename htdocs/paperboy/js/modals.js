@@ -54,55 +54,122 @@ export function showModal(scene, gameState) {
     });
 
     quitButton.on('pointerdown', () => {
-        showCredits(gameState); // Call the showCredits function
+        showCredits(scene, gameState); // Call the showCredits function
     });
 }
 
-
-//show credits modal
-export function showCredits(gameState) {
+export function showCredits(scene, gameState) {
     // Pause the game
     gameState.isPaused = true;
 
-    // Hide the game canvas and display the credits modal
-    const modal = document.createElement("div");
-    modal.style.position = "absolute";
-    modal.style.top = "50%";
-    modal.style.left = "50%";
-    modal.style.transform = "translate(-50%, -50%)";
-    modal.style.padding = "20px";
-    modal.style.backgroundColor = "white";
-    modal.style.border = "2px solid black";
-    modal.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)";
-    modal.style.zIndex = "9999";  // Ensure the modal is on top of the canvas
-    modal.style.width = "300px";
-    modal.style.textAlign = "center";
+    // Semi-transparent overlay
+    const overlay = scene.add.graphics();
+    overlay.fillStyle(0x000000, 0.5); // Black with 50% opacity
+    overlay.fillRect(0, 0, scene.cameras.main.width, scene.cameras.main.height);
+    overlay.setDepth(20);
 
-    // Add title and content
-    modal.innerHTML = `
-        <h2>Credits</h2>
-        <p>Created by ChatGPT and Jason St-Cyr</p>
-        <p>An homage to the classic Atari game Paperboy (1985)</p>
-        <img src="https://upload.wikimedia.org/wikipedia/en/7/7e/Paperboy_arcadeflyer.png" alt="Paperboy Logo" style="width: 100%; height: auto; margin-bottom: 10px;">
-        <a href="https://en.wikipedia.org/wiki/Paperboy_(video_game)" target="_blank">Learn more about Paperboy</a>
-        <br><br>
-        <button id="continueBtn">Continue</button>
-        <button id="quitBtn">Quit</button>
-    `;
+    // Modal background
+    const modalWidth = 400;
+    const modalHeight = 400; // Increased height for image space
+    const modalX = scene.cameras.main.width / 2 - modalWidth / 2;
+    const modalY = scene.cameras.main.height / 2 - modalHeight / 2;
 
-    // Append modal to body
-    document.body.appendChild(modal);
+    const modalBackground = scene.add.graphics();
+    modalBackground.fillStyle(0x999999, 1); // Gray background
+    modalBackground.fillRect(modalX, modalY, modalWidth, modalHeight);
+    modalBackground.setDepth(21);
 
-    // Event listener for the Continue button
-    document.getElementById("continueBtn").addEventListener("click", () => {
-        location.reload();  // Reload the page to start a new level
+    // ROW 1: Title
+    const title = scene.add.text(
+        scene.cameras.main.width / 2,
+        modalY + 10,
+        "Credits",
+        gameState.fontStyles.title
+    ).setOrigin(0.5).setDepth(22);
+
+    // ROW 2: Image
+    const image = scene.add.image(
+        scene.cameras.main.width / 2,
+        title.y + 50, // Space below the title
+        'paperboyLogo'
+    ).setDepth(22);
+
+    // Scale the image slightly larger
+    const maxImageWidth = modalWidth - 40;
+    const maxImageHeight = modalHeight / 2.5;
+    if (image.width > maxImageWidth || image.height > maxImageHeight) {
+        const scale = Math.min(maxImageWidth / image.width, maxImageHeight / image.height);
+        image.setScale(scale);
+    }
+
+    // Adjust image Y position after scaling
+    image.y = title.y + 50 + image.displayHeight / 2;
+
+    // ROW 3: "Created by..." text
+    const creditsText1 = scene.add.text(
+        scene.cameras.main.width / 2,
+        image.y + image.displayHeight / 2 + 20,
+        "Created by ChatGPT and Jason St-Cyr",
+        {
+            ...gameState.fontStyles.content,
+            wordWrap: { width: modalWidth - 40 },
+            align: "center",
+        }
+    ).setOrigin(0.5).setDepth(22);
+
+    // ROW 4: "An homage to the classic Atari Paperboy (1985)" text
+    const creditsText2 = scene.add.text(
+        scene.cameras.main.width / 2,
+        creditsText1.y + creditsText1.height + 5,
+        "An homage to the classic Atari game Paperboy (1985)",
+        {
+            ...gameState.fontStyles.content,
+            wordWrap: { width: modalWidth - 40 },
+            align: "center",
+        }
+    ).setOrigin(0.5).setDepth(22);
+
+    // ROW 5: Hyperlink to Wikipedia
+    const learnMore = scene.add.text(
+        scene.cameras.main.width / 2,
+        creditsText2.y + creditsText2.height + 10,
+        "Learn more about Paperboy",
+        gameState.fontStyles.link
+    ).setOrigin(0.5).setDepth(22).setInteractive();
+
+    learnMore.on('pointerdown', () => {
+        window.open("https://en.wikipedia.org/wiki/Paperboy_(video_game)", "_blank");
     });
 
-    // Event listener for the Quit button
-    document.getElementById("quitBtn").addEventListener("click", () => {
-        window.location.href = "https://en.wikipedia.org/wiki/Paperboy_(video_game)";  // Redirect to the Wikipedia page
+    // ROW 6: Buttons
+    const buttonY = learnMore.y + 30; // Position buttons below the hyperlink
+
+    const buttonWidth = 100;
+    const buttonSpacing = 10; // Reduced spacing between buttons
+
+    const continueButton = scene.add.text(
+        scene.cameras.main.width / 2 - buttonWidth - buttonSpacing / 2,
+        buttonY,
+        "Continue",
+        gameState.fontStyles.button
+    ).setOrigin(0.5).setDepth(22).setInteractive();
+
+    continueButton.on('pointerdown', () => {
+        scene.scene.restart();
+    });
+
+    const quitButton = scene.add.text(
+        scene.cameras.main.width / 2 + buttonSpacing / 2,
+        buttonY,
+        "Quit",
+        gameState.fontStyles.button
+    ).setOrigin(0.5).setDepth(22).setInteractive();
+
+    quitButton.on('pointerdown', () => {
+        window.open("https://en.wikipedia.org/wiki/Paperboy_(video_game)", "_blank");
     });
 }
+
 
 export function drawPause(scene, gameState){
     // Semi-transparent overlay
