@@ -93,7 +93,7 @@ export default function Gigs() {
                       <td> 29</td>
                     </tr>
                     <tr valign="top" align="center"> 
-                      <td> 39<br /><br /><br /></td>
+                      <td> 30<br /><br /><br /></td>
                       <td> 31<br />
                         New Year's Eve<br />
                       </td>
