@@ -11,11 +11,6 @@ export function gameLoop(gameState) {
 
     papers.forEach(paper => paper.x -= 10);
 
-    // Remove off-screen houses
-    if (houses[0]?.y > canvas.height) {
-        houses.shift();
-    }
-
     // Draw game elements
     drawPapers(ctx, papers, houses, gameState);
 
