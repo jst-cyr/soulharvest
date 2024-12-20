@@ -44,14 +44,13 @@ export function movePaperboy(player) {
         return;
     }
 
-    // Stop any previous movement
-    player.sprite.setVelocity(0);
-
     // Vertical movement
     if (player.cursors.up.isDown) {
         player.sprite.setVelocityY(-speed);
     } else if (player.cursors.down.isDown) {
         player.sprite.setVelocityY(speed);
+    } else {
+        player.sprite.setVelocityY(0);
     }
 
     // Horizontal movement
@@ -59,5 +58,7 @@ export function movePaperboy(player) {
         player.sprite.setVelocityX(-speed);
     } else if (player.cursors.right.isDown) {
         player.sprite.setVelocityX(speed);
+    } else {
+        player.sprite.setVelocityX(0);
     }
 }

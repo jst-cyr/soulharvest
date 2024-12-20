@@ -5,6 +5,7 @@ import { gameLoop } from './gameLoop.js';
 import { drawPaperboy, movePaperboy } from './player.js';
 import { drawScore, resizeGame } from './utilities.js';
 import { drawPause, showModal } from './modals.js';
+import { drawPapers } from './papers.js';
 
 //Phaser configuration
 const config = {
@@ -67,9 +68,6 @@ gameState.fontStyles = {
     link: { font: "16px 'Courier New', Courier, monospace", fill: "#0000ff", align: "center" },
 };
 
-// Start game loop
-gameLoop(gameState);
-
 /* Phaser engine functions */
 function preload() {
     this.load.image('player', '/htdocs/paperboy/assets/Paperboy.webp');
@@ -125,6 +123,9 @@ function update() {
         gameState.papers.forEach(paper => {
             paper.x -= 10;
         });
+
+        // Draw papers based on player position
+        drawPapers(this, gameState.papers, player);
 
         //Check if level is over
         if (gameState.houseCount >= gameState.maxHouses && gameState.houses.length === 0) {

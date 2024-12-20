@@ -1,5 +1,3 @@
-import { drawSidewalk, drawStreet, renderIntersection } from './street.js';
-import { drawPapers } from './papers.js';
 
 export function gameLoop(gameState) {
     const { ctx, canvas, player, houses, isPaused, gameOver, streetSpeed, houseCount, maxHouses, papers, score } = gameState;
@@ -8,9 +6,6 @@ export function gameLoop(gameState) {
 
     // Clear canvas
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    // Draw game elements
-    drawPapers(ctx, papers, houses, gameState);
 
     // Recursive loop
     requestAnimationFrame(() => gameLoop(gameState));
