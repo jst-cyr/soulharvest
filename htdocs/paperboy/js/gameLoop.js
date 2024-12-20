@@ -9,8 +9,6 @@ export function gameLoop(gameState) {
     // Clear canvas
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    papers.forEach(paper => paper.x -= 10);
-
     // Draw game elements
     drawPapers(ctx, papers, houses, gameState);
 

@@ -121,6 +121,11 @@ function update() {
         updateHouses(this, gameState, gameState.streetSpeed);
         gameState.scoreText.setText(`Score: ${gameState.score}`);
 
+        // Update the x position of all papers
+        gameState.papers.forEach(paper => {
+            paper.x -= 10;
+        });
+
         //Check if level is over
         if (gameState.houseCount >= gameState.maxHouses && gameState.houses.length === 0) {
             // Delay showing the modal
