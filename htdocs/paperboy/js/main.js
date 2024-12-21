@@ -46,6 +46,7 @@ export const gameState = {
     houseGap: 50, // Example gap, adjust as needed
     streetSpeed: 1, // Adjust this value to slow down the houses
     paperSpeed: -300, //Adjust this value to slow down the paper being thrown
+    mailboxDeliveryScore: 10, // Score for successful delivery
     levelComplete: false,
     reachedIntersection: false,
 };
@@ -118,7 +119,7 @@ function update() {
         //Check if paper hits mailbox
         gameState.papers.forEach(paper => {
             gameState.houses.forEach(({ mailbox }) => {
-                checkPaperHit.call(this, paper, mailbox);
+                checkPaperHit(this, paper, mailbox, gameState);
             });
         });
 

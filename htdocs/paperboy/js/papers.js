@@ -14,11 +14,15 @@ export function throwPaper(scene, gameState) {
     gameState.papers.push(paper);
 }
 
-export function checkPaperHit(paper, mailbox) {
+export function checkPaperHit(scene, paper, mailbox, gameState) {
     // Check for collision or overlap between paper and mailbox
     if (Phaser.Geom.Intersects.RectangleToRectangle(paper.sprite.getBounds(), mailbox.getBounds())) {
-        displaySuccessAnimation(this, mailbox);
+        displaySuccessAnimation(scene, mailbox);
         paper.sprite.destroy(); // Remove the paper after a successful hit
+        gameState.papers = gameState.papers.filter(p => p !== paper); // Remove the paper from the array
+
+        // Increment the score
+        gameState.score += gameState.mailboxDeliveryScore; // Adjust the score increment as needed
     }
 }
 
