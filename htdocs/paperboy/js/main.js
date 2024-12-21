@@ -118,8 +118,8 @@ function update() {
 
         //Check if paper hits mailbox
         gameState.papers.forEach(paper => {
-            gameState.houses.forEach(({ mailbox }) => {
-                checkPaperHit(this, paper, mailbox, gameState);
+            gameState.houses.forEach(house => {
+                checkPaperHit(this, paper, house.mailbox, house, gameState);
             });
         });
 

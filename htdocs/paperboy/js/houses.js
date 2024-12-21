@@ -7,12 +7,15 @@ export function initializeHouses(scene, gameState) {
 }
 
 export function addHouse(scene, yPosition, gameState) {
-    const hasDeliverable = Math.random() < 0.6; // 60% chance for a red mailbox
+    const isSubscriber = Math.random() < 0.6; // 60% chance for a yellow house (subscriber)
 
-    const house = scene.add.rectangle(100, yPosition, gameState.houseWidth, gameState.houseHeight, hasDeliverable ? 0xFFD700 : 0x8B0000);
-    const mailbox = scene.add.rectangle(125, yPosition + 75, 20, 40, hasDeliverable ? 0xFF0000 : 0x000000);
+    const houseColor = isSubscriber ? 0xFFD700 : 0x8B0000; // Yellow for subscribers, dark red for non-subscribers
+    const mailboxColor = isSubscriber ? 0xFF0000 : 0x000000; // Red for subscribers, black for non-subscribers
 
-    gameState.houses.push({ house, mailbox, delivered: false });
+    const house = scene.add.rectangle(100, yPosition, gameState.houseWidth, gameState.houseHeight, houseColor);
+    const mailbox = scene.add.rectangle(125, yPosition + 75, 20, 40, mailboxColor);
+
+    gameState.houses.push({ house, mailbox, subscriber: isSubscriber, delivered: false });
     gameState.houseCount++;
 }
 
