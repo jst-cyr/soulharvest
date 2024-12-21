@@ -14,17 +14,6 @@ export function throwPaper(scene, gameState) {
     gameState.papers.push(paper);
 }
 
-export function drawPapers(scene, papers) {
-    papers.forEach(paper => {
-        // Ensure the paper is visible in the scene
-        if (!paper.sprite) {
-            paper.sprite = scene.add.sprite(paper.x, paper.y, 'paper');
-        } else {
-            paper.sprite.setPosition(paper.x, paper.y);
-        }
-    });
-}
-
 // Success animation for paper delivery
 export function displaySuccessAnimation(ctx, x, y) {
     ctx.fillStyle = "green";

@@ -4,7 +4,6 @@ import { handleInput } from './input.js';
 import { drawPaperboy, movePaperboy } from './player.js';
 import { drawScore, resizeGame } from './utilities.js';
 import { drawPause, showModal } from './modals.js';
-import { drawPapers } from './papers.js';
 
 //Phaser configuration
 const config = {
@@ -45,7 +44,7 @@ export const gameState = {
     houseWidth: 100, // Example width, adjust as needed
     houseGap: 50, // Example gap, adjust as needed
     streetSpeed: 1, // Adjust this value to slow down the houses
-    paperSpeed: 1000, //Adjust this value to slow down the paper being thrown
+    paperSpeed: -300, //Adjust this value to slow down the paper being thrown
     levelComplete: false,
     reachedIntersection: false,
 };
@@ -119,9 +118,6 @@ function update() {
         gameState.papers.forEach(paper => {
             paper.x -= 10;
         });
-
-        // Draw papers based on player position
-        drawPapers(this, gameState.papers, player);
 
         //Check if level is over
         if (gameState.houseCount >= gameState.maxHouses && gameState.houses.length === 0) {
