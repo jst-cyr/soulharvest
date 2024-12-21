@@ -79,6 +79,8 @@ function create() {
 
     //Draw the paperboy
     drawPaperboy(this, player);
+    gameState.player = player; // Ensure player is assigned to gameState
+
     // Initialize houses and street elements
     initializeHouses(this, gameState);
     drawSidewalk(this, gameState);
