@@ -1,5 +1,6 @@
 import { throwPaper } from './papers.js';
 import { showCredits } from './modals.js';
+import { resizeGame } from './utilities.js';
 
 export function handleInput(scene, gameState) {
     const { player, isPaused } = gameState;

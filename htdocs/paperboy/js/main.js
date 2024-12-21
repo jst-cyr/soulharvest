@@ -2,7 +2,7 @@ import { initializeHouses, updateHouses } from './houses.js';
 import { drawStreet, drawSidewalk } from './street.js';
 import { handleInput } from './input.js';
 import { drawPaperboy, movePaperboy } from './player.js';
-import { drawScore, resizeGame } from './utilities.js';
+import { drawScore } from './utilities.js';
 import { drawPause, showModal } from './modals.js';
 import { checkPaperHit } from './papers.js';
 

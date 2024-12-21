@@ -11,14 +11,20 @@ export function drawScore(scene, gameState) {
 
 
 export function resizeGame(game) {
-    const canvas = document.querySelector('canvas');
+    const canvas = game.canvas;
     const width = window.innerWidth;
     const height = window.innerHeight;
+    const wratio = width / height;
+    const ratio = canvas.width / canvas.height;
 
-    // Update Phaser game size
-    game.scale.resize(width, height);
+    if (wratio < ratio) {
+        canvas.style.width = width + 'px';
+        canvas.style.height = (width / ratio) + 'px';
+    } else {
+        canvas.style.width = (height * ratio) + 'px';
+        canvas.style.height = height + 'px';
+    }
 
-    // Adjust canvas dimensions
-    canvas.style.width = `${width}px`;
-    canvas.style.height = `${height}px`;
+    gameState.canvas.width = width;
+    gameState.canvas.height = height;
 }
