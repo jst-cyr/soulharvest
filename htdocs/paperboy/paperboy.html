@@ -12,26 +12,16 @@
             position: relative; /* Ensure positioning context for children */
         }
 
-        #gameCanvas {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1; /* Custom canvas below Phaser canvas */
-            background-color: #d4f1c5; /* Green grass */
-            display: block;
-        }
-
         #phaserContainer {
             position: absolute;
             top: 0px;
             left: 0px;
-            z-index: 10; /* Phaser canvas above custom canvas */
+            background-color: #d4f1c5; /* Green grass */
         }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.min.js"></script>
 </head>
 <body>
-    <canvas id="gameCanvas"></canvas>
     <div id="phaserContainer"></div>
     <script type="module" src="js/main.js"></script>
 </body>
