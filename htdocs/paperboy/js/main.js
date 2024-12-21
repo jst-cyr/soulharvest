@@ -45,6 +45,7 @@ export const gameState = {
     houseWidth: 100, // Example width, adjust as needed
     houseGap: 50, // Example gap, adjust as needed
     streetSpeed: 1, // Adjust this value to slow down the houses
+    paperSpeed: 1000, //Adjust this value to slow down the paper being thrown
     levelComplete: false,
     reachedIntersection: false,
 };

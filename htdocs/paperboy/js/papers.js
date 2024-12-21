@@ -3,10 +3,8 @@ export function throwPaper(scene, gameState) {
     if (gameState.gameOver) return;
 
     const paper = scene.physics.add.sprite(gameState.player.sprite.x, gameState.player.sprite.y, 'paper'); // Use 'paper' texture
-    paper.setVelocityX(300); // Set the velocity to throw the paper
+    paper.setVelocityX(gameState.paperSpeed); // Set the velocity to throw the paper
     gameState.papers.push(paper);
-
-    console.log("Num papers: " + gameState.papers.length);
 }
 
 export function drawPapers(scene, papers) {
