@@ -41,10 +41,10 @@ export const gameState = {
     isPaused: false,
     houseCount: 0,
     maxHouses: 10,
-    houseHeight: 150,
-    houseWidth: 100,
-    houseGap: 50,
-    streetSpeed: 2,
+    houseHeight: 150, // Example height, adjust as needed
+    houseWidth: 100, // Example width, adjust as needed
+    houseGap: 50, // Example gap, adjust as needed
+    streetSpeed: 1, // Adjust this value to slow down the houses
     levelComplete: false,
     reachedIntersection: false,
 };
