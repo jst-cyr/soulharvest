@@ -25,6 +25,5 @@ export function resizeGame(game) {
         canvas.style.height = height + 'px';
     }
 
-    gameState.canvas.width = width;
-    gameState.canvas.height = height;
+    game.scale.resize(width, height);
 }
