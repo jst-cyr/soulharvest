@@ -21,25 +21,18 @@ const config = {
     physics: {
         default: 'arcade',
         arcade: {
+            gravity: { y: 0 }, // No gravity
             debug: false, // Set to true for debugging physics
         },
     },
     pixelArt: true, // Ensure pixel-perfect rendering
 };
+
 const game = new Phaser.Game(config);
-
-//Original canvas setup
-const canvas = document.getElementById("gameCanvas");
-const ctx = canvas.getContext("2d");
-
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
 
 // Global game variables
 export const gameState = {
-    canvas,
-    ctx,
-    player: { x: canvas.width / 3, y: canvas.height - 150, width: 30, height: 30, speed: 5 },
+    player: { x: window.innerWidth / 3, y: window.innerHeight - 150, width: 30, height: 30, speed: 5 },
     papers: [],
     houses: [],
     score: 0,
@@ -69,6 +62,7 @@ gameState.fontStyles = {
 
 /* Phaser engine functions */
 function preload() {
+    this.load.image('paper', '/htdocs/paperboy/assets/Paper.png');
     this.load.image('player', '/htdocs/paperboy/assets/Paperboy.webp');
     this.load.image('paperboyLogo', 'https://upload.wikimedia.org/wikipedia/en/7/7e/Paperboy_arcadeflyer.png' );
     this.load.on('complete', () => {

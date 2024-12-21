@@ -1,7 +1,5 @@
-import { movePlayer } from './player.js';
 import { throwPaper } from './papers.js';
 import { showCredits } from './modals.js';
-import { gameLoop } from './gameLoop.js';
 
 export function handleInput(scene, gameState) {
     const { player, isPaused } = gameState;
@@ -21,10 +19,8 @@ export function handleInput(scene, gameState) {
     });
 
     // Paper throw trigger
-    window.addEventListener("keydown", (e) => {
-        if (e.code === "Space") {
-            throwPaper(player, gameState);
-        }
+    scene.input.keyboard.on('keydown-SPACE', () => {
+        throwPaper(scene, gameState);
     });
 
     // Event listener for Escape key to go to credits

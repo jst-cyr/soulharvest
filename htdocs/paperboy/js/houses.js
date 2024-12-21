@@ -1,11 +1,10 @@
 export function initializeHouses(scene, gameState) {
-    const { houses, canvas } = gameState;
+    const gameHeight = scene.sys.game.config.height;
 
-    for (let i = 0; i < canvas.height; i += 200) {
-        addHouse(scene, canvas.height - i - 200, gameState);
+    for (let i = 0; i < gameHeight; i += 200) {
+        addHouse(scene, gameHeight - i - 200, gameState);
     }
 }
-
 
 export function addHouse(scene, yPosition, gameState) {
     const hasDeliverable = Math.random() < 0.6; // 60% chance for a red mailbox
@@ -18,7 +17,8 @@ export function addHouse(scene, yPosition, gameState) {
 }
 
 export function updateHouses(scene, gameState, streetSpeed) {
-    const { houses, houseHeight, houseGap, maxHouses, canvas } = gameState;
+    const { houses, houseHeight, houseGap, maxHouses } = gameState;
+    const gameHeight = scene.sys.game.config.height;
 
     // Move houses and mailboxes down
     houses.forEach(({ house, mailbox }) => {
@@ -27,13 +27,13 @@ export function updateHouses(scene, gameState, streetSpeed) {
     });
 
     // Remove off-screen houses
-    gameState.houses = houses.filter(({ house }) => house.y < canvas.height);
+    gameState.houses = houses.filter(({ house }) => house.y < gameHeight);
 
     // Check if new houses need to be added
-    const lastHouseY = houses[houses.length - 1]?.house.y || canvas.height;
+    const lastHouseY = houses[houses.length - 1]?.house.y || gameHeight;
     const houseSpacing = houseHeight + houseGap;
 
-    if (gameState.houseCount < maxHouses && lastHouseY + houseSpacing < canvas.height) {
+    if (gameState.houseCount < maxHouses && lastHouseY + houseSpacing < gameHeight) {
         addHouse(scene, lastHouseY - houseSpacing, gameState);
     }
 }
