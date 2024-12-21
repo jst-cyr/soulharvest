@@ -4,6 +4,7 @@ import { handleInput } from './input.js';
 import { drawPaperboy, movePaperboy } from './player.js';
 import { drawScore, resizeGame } from './utilities.js';
 import { drawPause, showModal } from './modals.js';
+import { checkPaperHit } from './papers.js';
 
 //Phaser configuration
 const config = {
@@ -114,9 +115,11 @@ function update() {
         updateHouses(this, gameState, gameState.streetSpeed);
         gameState.scoreText.setText(`Score: ${gameState.score}`);
 
-        // Update the x position of all papers
+        //Check if paper hits mailbox
         gameState.papers.forEach(paper => {
-            paper.x -= 10;
+            gameState.houses.forEach(({ mailbox }) => {
+                checkPaperHit.call(this, paper, mailbox);
+            });
         });
 
         //Check if level is over
