@@ -16,7 +16,7 @@ export default function Gigs() {
           <table border="0" cellPadding="0" cellSpacing="0" width="60%" cols="2">
             <tbody>
               <tr>
-                <td><div className={calendarStyles.dates}><b><a href="/gigs/2001/january/">JAN</a> | <a href="/gigs/2001/march/">MAR</a></b></div></td>
+                <td><div className={calendarStyles.dates}><b><a href="/gigs/oldgigs">ARCHIVE</a> | <a href="/gigs/2001/march/">MAR</a></b></div></td>
                 <td align="right">
                   <div className={calendarStyles.month}>February 2001</div>
                 </td>
