@@ -24,7 +24,7 @@ export default function Pics() {
       </div>
       <div className={styles.row}>
         <ul>
-          <li><a href="/pics/2004/2004-05-29/">Yamaha Last Band Standing @ Babylon (May 29, 2004)</a></li>
+          {/* <li><a href="/pics/2004/2004-05-29/">Yamaha Last Band Standing @ Babylon (May 29, 2004)</a></li> */}
           <li><a href="/pics/2004/2004-04-05/">Harmony House Benefit @ Dekcuf (Apr. 6, 2004)</a> <b>[NEW!]</b></li>
           <li><a href="/pics/2004/2004-02-29/">Leap Year @ Babylon (Feb. 29, 2004)</a> <b>[NEW!]</b></li>
           <li><a href="/pics/2004/2004-02-01/">Superbowl @ Babylon (Feb. 1, 2004)</a> <b>[new photos!]</b></li>
