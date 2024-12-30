@@ -13,7 +13,7 @@ export default function FirstCrops() {
         <table border="0" cols="2" cellSpacing="5" cellPadding="5" width="85%">
           <tbody>
             <tr valign="top">
-              <td colspan="2">
+              <td colSpan="2">
                 <center>
                   <br />
                   <img src="/music/firstcrops/firstcrops.jpg" height="200" />
