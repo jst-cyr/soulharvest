@@ -29,11 +29,11 @@ export function checkPaperHit(scene, paper, mailbox, house, gameState) {
 
     // Check for collision or overlap between paper and windows
     if (Phaser.Geom.Intersects.RectangleToRectangle(paper.sprite.getBounds(), house.window1.getBounds())) {
-        displayBreakAnimation(scene, house.window1);
+        handleWindowHit(scene, house, gameState);
         paper.sprite.destroy(); // Remove the paper after a successful hit
         gameState.papers = gameState.papers.filter(p => p !== paper); // Remove the paper from the array
     } else if (Phaser.Geom.Intersects.RectangleToRectangle(paper.sprite.getBounds(), house.window2.getBounds())) {
-        displayBreakAnimation(scene, house.window2);
+        handleWindowHit(scene, house, gameState);
         paper.sprite.destroy(); // Remove the paper after a successful hit
         gameState.papers = gameState.papers.filter(p => p !== paper); // Remove the paper from the array
     }
@@ -68,4 +68,19 @@ export function displayBreakAnimation(scene, window) {
 
     // Attach the breakDot to the window so it moves with the window
     window.breakDot = breakDot;
+}
+
+// Handle window hit logic
+function handleWindowHit(scene, house, gameState) {
+    displayBreakAnimation(scene, house.window1);
+
+    if (house.subscriber) {
+        // Deduct points for hitting a window on a subscriber house
+        gameState.score = Math.max(0, gameState.score - 5);
+    } else {
+        // Add points for hitting a window on a non-subscriber house
+        gameState.score += 5;
+    }
+
+    gameState.scoreText.setText(`Score: ${gameState.score}`);
 }
