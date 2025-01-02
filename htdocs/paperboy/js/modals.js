@@ -50,6 +50,8 @@ export function showModal(scene, gameState) {
 
     // Button interactions
     continueButton.on('pointerdown', () => {
+        gameState.isPaused = false; // Resume the game state
+        gameState.gameOver = false; // Reset game over state
         scene.scene.restart(); // Restart the scene
     });
 
@@ -155,6 +157,8 @@ export function showCredits(scene, gameState) {
     ).setOrigin(0.5).setDepth(22).setInteractive();
 
     continueButton.on('pointerdown', () => {
+        gameState.isPaused = false; // Resume the game state
+        gameState.gameOver = false; // Reset game over state
         scene.scene.restart();
     });
 

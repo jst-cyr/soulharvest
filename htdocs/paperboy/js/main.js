@@ -93,6 +93,10 @@ function create() {
 
     //Create Pause modal
     drawPause(this, gameState);
+
+    // Reset game state flags
+    gameState.isPaused = false;
+    gameState.gameOver = false;
 }
 
 function update() {    
