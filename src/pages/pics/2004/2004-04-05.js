@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import styles from '../../../../styles/soulharvest.module.css';
+import styles from '../../../styles/soulharvest.module.css';
 
 export default function Pics20040405() {
   return (
@@ -8,7 +8,7 @@ export default function Pics20040405() {
         <title>Soul Harvest - 2004-Apr-05 - Dekcuf</title>
       </Head>
     
-      <h1>Soul Harvest - 2004-Apr-05 - Dekcuf</h1>
+      <h1>2004-Apr-05 - Dekcuf</h1>
       <div className={styles.row}>
         <table border="0" cellSpacing="0" cellPadding="5"> 
           <tbody>
