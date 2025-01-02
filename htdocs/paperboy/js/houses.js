@@ -11,11 +11,16 @@ export function addHouse(scene, yPosition, gameState) {
 
     const houseColor = isSubscriber ? 0xFFD700 : 0x8B0000; // Yellow for subscribers, dark red for non-subscribers
     const mailboxColor = isSubscriber ? 0xFF0000 : 0x000000; // Red for subscribers, black for non-subscribers
+    const windowColor = 0xFFFFFF; // White windows
 
     const house = scene.add.rectangle(100, yPosition, gameState.houseWidth, gameState.houseHeight, houseColor);
     const mailbox = scene.add.rectangle(100 + gameState.houseWidth / 2 + 10, yPosition, 40, 20, mailboxColor); // Moved to the front and made wider
 
-    gameState.houses.push({ house, mailbox, subscriber: isSubscriber, delivered: false });
+    // Add windows to the front of the house
+    const window1 = scene.add.rectangle(100 + gameState.houseWidth / 2 - 10, yPosition - 20, 20, 20, windowColor);
+    const window2 = scene.add.rectangle(100 + gameState.houseWidth / 2 - 10, yPosition + 20, 20, 20, windowColor);
+
+    gameState.houses.push({ house, mailbox, window1, window2, subscriber: isSubscriber, delivered: false });
     gameState.houseCount++;
 }
 
@@ -24,9 +29,11 @@ export function updateHouses(scene, gameState, streetSpeed) {
     const gameHeight = scene.sys.game.config.height;
 
     // Move houses and mailboxes down
-    houses.forEach(({ house, mailbox }) => {
+    houses.forEach(({ house, mailbox, window1, window2 }) => {
         house.y += streetSpeed;
         mailbox.y += streetSpeed;
+        window1.y += streetSpeed;
+        window2.y += streetSpeed;
     });
 
     // Remove off-screen houses
