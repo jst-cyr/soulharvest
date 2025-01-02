@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import styles from '../../../../styles/soulharvest.module.css';
 
-export default function Pics() {
+export default function Pics20040405() {
   return (
     <div>
       <Head>
