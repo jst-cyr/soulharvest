@@ -16,8 +16,8 @@ export function addHouse(scene, yPosition, gameState) {
     const postColor = 0x8B4513; // Brown post
 
     const house = scene.add.rectangle(100, yPosition, gameState.houseWidth, gameState.houseHeight, houseColor);
-    const mailbox = scene.add.rectangle(100 + gameState.houseWidth / 2 + 30, yPosition, 40, 20, mailboxColor); // Moved to the front lawn
-    const post = scene.add.rectangle(100 + gameState.houseWidth / 2 + 30, yPosition + 20, 5, 40, postColor); // Post below the mailbox
+    const mailbox = scene.add.rectangle(100 + gameState.houseWidth / 2 + 30, yPosition + 20, 40, 20, mailboxColor); // Moved down
+    const post = scene.add.rectangle(100 + gameState.houseWidth / 2 + 30, yPosition + 40, 5, 39, postColor); // Shortened post by 1 pixel
 
     // Add windows to the front of the house with adjusted y-axis positions
     const window1 = scene.add.rectangle(100 + gameState.houseWidth / 2 - 30, yPosition - 30, 20, 20, windowColor); // Moved up and left
