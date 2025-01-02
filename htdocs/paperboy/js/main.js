@@ -97,6 +97,7 @@ function create() {
     // Reset game state flags
     gameState.isPaused = false;
     gameState.gameOver = false;
+    gameState.houseCount = 0; // Reset house count
 }
 
 function update() {    
