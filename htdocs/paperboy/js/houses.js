@@ -42,6 +42,14 @@ export function updateHouses(scene, gameState, streetSpeed) {
         window1.y += streetSpeed;
         window2.y += streetSpeed;
         door.y += streetSpeed;
+
+        // Move breakDot with the window if it exists
+        if (window1.breakDot) {
+            window1.breakDot.y += streetSpeed;
+        }
+        if (window2.breakDot) {
+            window2.breakDot.y += streetSpeed;
+        }
     });
 
     // Remove off-screen houses

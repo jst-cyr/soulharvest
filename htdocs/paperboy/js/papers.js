@@ -28,9 +28,12 @@ export function checkPaperHit(scene, paper, mailbox, house, gameState) {
     }
 
     // Check for collision or overlap between paper and windows
-    if (Phaser.Geom.Intersects.RectangleToRectangle(paper.sprite.getBounds(), house.window1.getBounds()) ||
-        Phaser.Geom.Intersects.RectangleToRectangle(paper.sprite.getBounds(), house.window2.getBounds())) {
-        displayBreakAnimation(scene, paper.sprite.x, paper.sprite.y);
+    if (Phaser.Geom.Intersects.RectangleToRectangle(paper.sprite.getBounds(), house.window1.getBounds())) {
+        displayBreakAnimation(scene, house.window1);
+        paper.sprite.destroy(); // Remove the paper after a successful hit
+        gameState.papers = gameState.papers.filter(p => p !== paper); // Remove the paper from the array
+    } else if (Phaser.Geom.Intersects.RectangleToRectangle(paper.sprite.getBounds(), house.window2.getBounds())) {
+        displayBreakAnimation(scene, house.window2);
         paper.sprite.destroy(); // Remove the paper after a successful hit
         gameState.papers = gameState.papers.filter(p => p !== paper); // Remove the paper from the array
     }
@@ -59,18 +62,10 @@ export function displaySuccessAnimation(scene, mailbox) {
 }
 
 // Break animation for window
-export function displayBreakAnimation(scene, x, y) {
+export function displayBreakAnimation(scene, window) {
     // Add a small black dot to represent the broken window
-    const breakDot = scene.add.circle(x, y, 5, 0x000000); // Black color
+    const breakDot = scene.add.circle(window.x, window.y, 5, 0x000000); // Black color
 
-    // Optionally, you can add a tween animation for a visual effect
-    scene.tweens.add({
-        targets: breakDot,
-        alpha: 0,
-        duration: 1000,
-        ease: 'Power1',
-        onComplete: () => {
-            breakDot.destroy(); // Remove the dot after the animation
-        }
-    });
+    // Attach the breakDot to the window so it moves with the window
+    window.breakDot = breakDot;
 }
