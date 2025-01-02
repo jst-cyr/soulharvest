@@ -20,11 +20,11 @@ export function addHouse(scene, yPosition, gameState) {
     const post = scene.add.rectangle(100 + gameState.houseWidth / 2 + 30, yPosition + 20, 5, 40, postColor); // Post below the mailbox
 
     // Add windows to the front of the house with adjusted y-axis positions
-    const window1 = scene.add.rectangle(100 + gameState.houseWidth / 2 - 20, yPosition - 30, 20, 20, windowColor); // Moved up
-    const window2 = scene.add.rectangle(100 + gameState.houseWidth / 2 - 20, yPosition + 30, 20, 20, windowColor); // Moved down
+    const window1 = scene.add.rectangle(100 + gameState.houseWidth / 2 - 30, yPosition - 30, 20, 20, windowColor); // Moved up and left
+    const window2 = scene.add.rectangle(100 + gameState.houseWidth / 2 - 30, yPosition + 30, 20, 20, windowColor); // Moved down and left
 
     // Add a door to the right side of the house, facing the street
-    const door = scene.add.rectangle(100 + gameState.houseWidth / 2 - 10, yPosition, 50, 30, doorColor);
+    const door = scene.add.rectangle(100 + gameState.houseWidth / 2 - 25, yPosition, 50, 30, doorColor); // Adjusted position to align with house edge
 
     gameState.houses.push({ house, mailbox, post, window1, window2, door, subscriber: isSubscriber, delivered: false });
     gameState.houseCount++;
