@@ -26,6 +26,14 @@ export function checkPaperHit(scene, paper, mailbox, house, gameState) {
         paper.sprite.destroy(); // Remove the paper after a successful hit
         gameState.papers = gameState.papers.filter(p => p !== paper); // Remove the paper from the array
     }
+
+    // Check for collision or overlap between paper and windows
+    if (Phaser.Geom.Intersects.RectangleToRectangle(paper.sprite.getBounds(), house.window1.getBounds()) ||
+        Phaser.Geom.Intersects.RectangleToRectangle(paper.sprite.getBounds(), house.window2.getBounds())) {
+        displayBreakAnimation(scene, paper.sprite.x, paper.sprite.y);
+        paper.sprite.destroy(); // Remove the paper after a successful hit
+        gameState.papers = gameState.papers.filter(p => p !== paper); // Remove the paper from the array
+    }
 }
 
 // Success animation for paper delivery
@@ -46,6 +54,23 @@ export function displaySuccessAnimation(scene, mailbox) {
         ease: 'Power1',
         onComplete: () => {
             checkMark.destroy(); // Remove the check mark after the animation
+        }
+    });
+}
+
+// Break animation for window
+export function displayBreakAnimation(scene, x, y) {
+    // Add a small black dot to represent the broken window
+    const breakDot = scene.add.circle(x, y, 5, 0x000000); // Black color
+
+    // Optionally, you can add a tween animation for a visual effect
+    scene.tweens.add({
+        targets: breakDot,
+        alpha: 0,
+        duration: 1000,
+        ease: 'Power1',
+        onComplete: () => {
+            breakDot.destroy(); // Remove the dot after the animation
         }
     });
 }

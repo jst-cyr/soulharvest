@@ -121,7 +121,7 @@ function update() {
         updateHouses(this, gameState, gameState.streetSpeed);
         gameState.scoreText.setText(`Score: ${gameState.score}`);
 
-        //Check if paper hits mailbox
+        //Check if paper hits mailbox or windows
         gameState.papers.forEach(paper => {
             gameState.houses.forEach(house => {
                 checkPaperHit(this, paper, house.mailbox, house, gameState);
