@@ -13,7 +13,7 @@ export function addHouse(scene, yPosition, gameState) {
     const mailboxColor = isSubscriber ? 0xFF0000 : 0x000000; // Red for subscribers, black for non-subscribers
 
     const house = scene.add.rectangle(100, yPosition, gameState.houseWidth, gameState.houseHeight, houseColor);
-    const mailbox = scene.add.rectangle(125, yPosition + 75, 20, 40, mailboxColor);
+    const mailbox = scene.add.rectangle(100 + gameState.houseWidth / 2 + 10, yPosition, 40, 20, mailboxColor); // Moved to the front and made wider
 
     gameState.houses.push({ house, mailbox, subscriber: isSubscriber, delivered: false });
     gameState.houseCount++;
