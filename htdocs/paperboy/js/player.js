@@ -25,7 +25,11 @@ export function drawPaperboy(scene, player) {
     }
 
     // Add the player sprite with physics
-    player.sprite = scene.physics.add.sprite(200, 300, 'player');
+    player.sprite = scene.physics.add.sprite(
+        scene.sys.game.config.width / 3 - 145 + 50, // X position on the sidewalk
+        scene.sys.game.config.height - 100,         // Y position at the bottom of the screen
+        'player'
+    );
 
     // Set player properties
     player.sprite.setCollideWorldBounds(true); // Prevent going out of bounds
