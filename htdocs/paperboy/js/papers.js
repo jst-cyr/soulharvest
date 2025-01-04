@@ -63,11 +63,16 @@ export function displaySuccessAnimation(scene, mailbox) {
 
 // Break animation for window
 export function displayBreakAnimation(scene, window) {
-    // Add a small black dot to represent the broken window
-    const breakDot = scene.add.circle(window.x, window.y, 5, 0x000000); // Black color
+    // Update the window texture to broken
+    window.setTexture('brokenWindow');
 
-    // Attach the breakDot to the window so it moves with the window
-    window.breakDot = breakDot;
+    // Optionally, you can add a tween animation for a visual effect
+    scene.tweens.add({
+        targets: window,
+        alpha: { from: 0, to: 1 },
+        duration: 500,
+        ease: 'Power1',
+    });
 }
 
 // Handle window hit logic

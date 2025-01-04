@@ -66,7 +66,9 @@ gameState.fontStyles = {
 function preload() {
     this.load.image('paper', '/htdocs/paperboy/assets/Paper.png');
     this.load.image('player', '/htdocs/paperboy/assets/Paperboy.webp');
-    this.load.image('paperboyLogo', 'https://upload.wikimedia.org/wikipedia/en/7/7e/Paperboy_arcadeflyer.png' );
+    this.load.image('paperboyLogo', 'https://upload.wikimedia.org/wikipedia/en/7/7e/Paperboy_arcadeflyer.png');
+    this.load.image('brokenWindow', '/htdocs/paperboy/assets/Broken-Window.png'); // New sprite for broken windows
+    this.load.image('window', '/htdocs/paperboy/assets/Window.png'); // New sprite for windows
     this.load.on('complete', () => {
         console.log('Assets loaded successfully!');
     }); 
