@@ -14,7 +14,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       </Head>
 
       <div className={styles.container}>
-      <main style={{ width: '100%' }}>
+      <main className={styles.main}>
         <center>
           <blockquote>
             <table cellSpacing="0" cellPadding="3" width="85%">

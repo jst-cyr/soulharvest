@@ -16,6 +16,8 @@
 }
 .main {
   width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .row {
 	margin-right: -15px;
