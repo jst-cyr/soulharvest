@@ -15,7 +15,7 @@ export default function SeansSong() {
             <tr valign="top">
               <td width="50%">
                 <font face="arial,helvetica,verdana" size="-1">
-                  <a href="./ootb/"><img src="/music/ootb/ootb.jpg" width="300" /></a>
+                  <a href="../ootb/"><img src="/music/ootb/ootb.jpg" width="300" /></a>
                   <br />
                   <b>Album: </b>Out of the Basement EP<br />
                   <b>Lyrics by: </b>Sean McCullough<br />
