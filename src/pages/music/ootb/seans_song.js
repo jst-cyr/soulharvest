@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import styles from '../../../styles/soulharvest.module.css';
 
-export default function ChillingOnThePatio() {
+export default function SeansSong() {
   return (
     <div>
       <Head>
