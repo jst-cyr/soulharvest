@@ -23,27 +23,27 @@ export default function Music() {
               <tr><td align="center"><img src="/graphics/blackwav.gif" alt="Demo Tracks" border="0" height="50" width="50" align="left" /><h3>Demo Tracks</h3></td></tr>
 
               <tr bgcolor="#444444">
-                <td><a href="/backstage/mp3/Seans_Songs_mix1.mp3">Sean's Song</a></td>
+                <td><a href="/music/demo2003/Seans_Song.mp3">Sean's Song</a></td>
                 <td align="right"><b>[3.2Mb]</b></td>
               </tr>
 
               <tr>
-                <td><a href="/backstage/mp3/Sleepless_Storms_mix1.mp3">Sleepless Storms</a></td>
+                <td><a href="/music/demo2003/Sleepless_Storms.mp3">Sleepless Storms</a></td>
                 <td align="right"><b>[3.0Mb]</b></td>
               </tr>
 
               <tr bgcolor="#444444">
-                <td><a href="/backstage/mp3/Cruel_mix1.mp3">Cruel</a></td>
+                <td><a href="/music/demo2003/Cruel.mp3">Cruel</a></td>
                 <td align="right"><b>[2.9Mb]</b></td>
               </tr>
 
               <tr>
-                <td><a href="/backstage/mp3/Choked_mix1.mp3">Choked</a></td>
+                <td><a href="/music/demo2003/Choked.mp3">Choked</a></td>
                 <td align="right"><b>[4.3Mb]</b></td>
               </tr>
 
               <tr bgcolor="#444444">
-                <td><a href="/backstage/mp3/She's_Allright_mix1.mp3">She's Allright</a></td>
+                <td><a href="/music/demo2003/Shes_Allright.mp3">She's Allright</a></td>
                 <td align="right"><b>[4.5Mb]</b></td>
               </tr>
             </tbody>
