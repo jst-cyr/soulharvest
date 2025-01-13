@@ -31,7 +31,7 @@ export default function Rift() {
                 
                   Soul Harvest spent 3 hours recording live off the floor at Distortion Studio 2 to get 11 tracks recorded.  8 went onto "The Rift".  This album features the first appearance of several SH greats such as "Wanna Go Home", "Take Your Time", and "She's Alright".
                   <br /><br />
-                  You can currently purchase the Rift from our <a href="http://www.mp3.com/soulharvest" target="_new">mp3.com website</a>.  Drop us a line and let us know what you think at: <a href="mailto:soulharvest@canada.com">soulharvest@canada.com</a>
+                  You can currently purchase the Rift from our <a href="https://web.archive.org/web/20001002085556/http://artists.mp3s.com/artists/5/soul_harvest.html" target="_new">mp3.com website</a>.  Drop us a line and let us know what you think at: <a href="mailto:soulharvest@canada.com">soulharvest@canada.com</a>
                   <br /><br />
                 </font>
               </td>
