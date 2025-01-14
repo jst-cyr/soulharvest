@@ -18,7 +18,7 @@ export default function Booking() {
               <li><b>Contact:</b> Ryan Lindsay</li>
               <li><b>Phone:</b> (613) 762-6320</li>
               <li><b>Email:</b> <a href="mailto:whymedia@whymedia.ca">whymedia@whymedia.ca</a></li>
-              <li><b>Website:</b> <a href="http://www.whymedia.ca" target="_blank">www.whymedia.ca</a></li>
+              <li><b>Website:</b> <a href="https://web.archive.org/web/20060101132254/http://www.whymedia.ca/" target="_blank">www.whymedia.ca</a></li>
             </ul>
           </blockquote>
 
