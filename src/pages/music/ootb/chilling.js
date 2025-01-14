@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import styles from '../../../styles/soulharvest.module.css';
 
-export default function TakeYourTime() {
+export default function Chilling() {
   return (
     <div>
       <Head>
