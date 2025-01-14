@@ -68,7 +68,7 @@ export default function Archive() {
 
             <tr>
               <td>
-                <a href="mirrortime.html">
+                <a href="mirrortime">
                   <font face="arial,helvetica" size="-1" color="#33CCFF">Mirrortime</font>
                 </a>
               </td>
