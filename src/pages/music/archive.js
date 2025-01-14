@@ -101,7 +101,7 @@ export default function Archive() {
 
             <tr bgcolor="#444444">
               <td>
-                <a href="ootb/chilling.html">
+                <a href="ootb/chilling">
                   <font face="arial,helvetica" color="#33CCFF" size="-1">Chillin' on the Patio</font>
                 </a>
               </td>
@@ -113,7 +113,7 @@ export default function Archive() {
 
             <tr>
               <td>
-                <a href="ootb/cruel.html">
+                <a href="ootb/cruel">
                   <font face="arial,helvetica" size="-1" color="#33CCFF">Cruel</font>
                 </a>
               </td>
