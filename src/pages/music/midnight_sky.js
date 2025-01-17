@@ -35,10 +35,10 @@ export default function MidnightSky() {
                       </tr>
                       <tr>
                         <td>
-                          <a href="/music/midnight_sky.mp3"><img src="/graphics/download.gif" height="20" border="0" /></a>
+                          <a href="/music/Midnight_Sky.mp3"><img src="/graphics/download.gif" height="20" border="0" /></a>
                         </td>
                         <td>
-                          <font face="arial,helvetica,verdana" size="-1"><a href="/music/midnight_sky.mp3">Download</a></font>
+                          <font face="arial,helvetica,verdana" size="-1"><a href="/music/Midnight_Sky.mp3">Download</a></font>
                         </td>
                       </tr>
                     </tbody>
