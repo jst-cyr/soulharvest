@@ -41,10 +41,10 @@ export default function MacFEST() {
               <center>
                 <img src="/macfest/splash_m.jpg" alt="MacFEST Splash" /><br /><br />
                 <b>Sponsored by:</b><br />
-                <a href="http://www.distortionstudios.com" alt="Distortion Studios"><img src="/graphics/distortionLogo_s.gif" border="0" /></a><br />
+                <a href="https://web.archive.org/web/20020329161120/http://www.distortionstudios.com/" alt="Distortion Studios"><img src="/graphics/distortionLogo_s.gif" border="0" /></a><br />
                 {/*<a href="http://www.fyiottawa.com/ottsun.shtml" alt="The Ottawa Sun"><img src="/graphics/sunLogo.gif" border="0" /></a><br />*/}
-                <a href="http://www.thebear.net" alt="The Bear"><img src="/graphics/bearLogo.gif" border="0" /></a><br />
-                <a href="http://www.molson.com" alt="Molson Canadian"><img src="/graphics/molsonLogo.gif" border="0" /></a><br />
+                <a href="https://web.archive.org/web/20010419072125/http://www.thebear.net/" alt="The Bear"><img src="/graphics/bearLogo.gif" border="0" /></a><br />
+                <a href="https://web.archive.org/web/20020201162243/http://molson.com/splash.html" alt="Molson Canadian"><img src="/graphics/molsonLogo.gif" border="0" /></a><br />
                 <h3>Blue Cactus Restaurant</h3>
               </center>
             </td>
