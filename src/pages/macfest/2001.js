@@ -34,7 +34,7 @@ export default function MacFEST2001() {
 	            9pm to 2:30am
               <br /><br />
               <b>Where:</b><br />
-	            <a href="http://www.barrymores.on.ca/" target="_new">Barrymore's Music Hall</a><br />
+	            <a href="https://web.archive.org/web/20010925034708/http://www.barrymores.on.ca:80/" target="_new">Barrymore's Music Hall</a><br />
 	            323 Bank St, Ottawa, ON, Canada
 
               <br /><br />
@@ -58,10 +58,10 @@ export default function MacFEST2001() {
                   <b>MacFEST</b> will be celebrated on Thursday, August 9, 2001 at Barrymore’s Music Hall, 323 Bank Street, 9 pm to close.
                   <br /><br />
                   <h3>WHO IS INVOLVED?</h3>
-                  The musical line-up is yet to be announced. Currently, Soul Harvest and <a href="http://www.thebear.net" target="_new">106.9 the Bear</a> are facilitating a contest, both on-line and on-air, calling for local bands to submit press kits and demos in order to play at <b>MacFEST</b>. Applications can be made online at <a href="http://www.soulharvest.ca">http://www.soulharvest.ca</a><br />
-                  Winners of the contest will perform at <b>MacFEST</b>, and the first place band will also receive a <a href="prize.html">studio recording package</a> from <a href="http://www.distortionstudios.com" target="_new">Distortion Studios</a>.
+                  The musical line-up is yet to be announced. Currently, Soul Harvest and <a href="https://web.archive.org/web/20010515200227/http://thebear.net/" target="_new">106.9 the Bear</a> are facilitating a contest, both on-line and on-air, calling for local bands to submit press kits and demos in order to play at <b>MacFEST</b>. Applications can be made online at <a href="http://www.soulharvest.ca">http://www.soulharvest.ca</a><br />
+                  Winners of the contest will perform at <b>MacFEST</b>, and the first place band will also receive a <a href="prize.html">studio recording package</a> from <a href="https://web.archive.org/web/20010723232148/http://distortionstudios.com/" target="_new">Distortion Studios</a>.
                   <br /><br />
-                  Elissa Lansdell, Entertainment and Weather Anchor/Ottawa personality from the <a href="http://www.thenewro.com" target="_new">NewRO</a> will be emceeing <b>MacFEST</b>.<br />
+                  Elissa Lansdell, Entertainment and Weather Anchor/Ottawa personality from the <a href="https://web.archive.org/web/20010516034512if_/http://www.thenewro.com:80/" target="_new">NewRO</a> will be emceeing <b>MacFEST</b>.<br />
                   <br /><br />
                   <h3>WHO IS SPONSORING THE EVENT?</h3>
                   Corporate donations and sponsorship are being granted by:<br />
