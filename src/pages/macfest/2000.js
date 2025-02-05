@@ -41,7 +41,7 @@ export default function MacFEST2000() {
                           <font face="arial,helvetica,verdana" size="-1"><b>12:30pm</b></font>
                         </td>
                         <td align="left">
-                          <font face="arial,helvetica,verdana" size="-1"><a href="http://artists.mp3s.com/artists/102/veronica_charnley.html" target="_new">"Veronica Charnley"</a></font>
+                          <font face="arial,helvetica,verdana" size="-1"><a href="https://web.archive.org/web/20000510231443/http://artists.mp3s.com/artists/102/veronica_charnley.html" target="_new">"Veronica Charnley"</a></font>
                         </td>
                       </tr>
                       <tr valign="top">
@@ -49,7 +49,7 @@ export default function MacFEST2000() {
                           <font face="arial,helvetica,verdana" size="-1"><b>2:30pm</b></font>
                         </td>
                         <td align="left">
-                          <font face="arial,helvetica,verdana" size="-1"><a href="http://www.mp3.com/aitimusic" target="_new">"aiti maa"</a></font>
+                          <font face="arial,helvetica,verdana" size="-1"><a href="https://web.archive.org/web/20000929082226/http://artists.mp3s.com/artists/92/aitimaa.html" target="_new">"aiti maa"</a></font>
                         </td>
                       </tr>
                       <tr valign="top">
@@ -57,7 +57,7 @@ export default function MacFEST2000() {
                           <font face="arial,helvetica,verdana" size="-1"><b>4:30pm</b></font>
                         </td>
                         <td align="left">
-                          <font face="arial,helvetica,verdana" size="-1"><a href="http://www.mp3.com/shunt" target="_new">"Shunt"</a></font>
+                          <font face="arial,helvetica,verdana" size="-1"><a href="https://web.archive.org/web/20000606184926/http://artists.mp3s.com/artists/16/shunt.html" target="_new">"Shunt"</a></font>
                         </td>
                       </tr>
                       <tr valign="top">
@@ -65,7 +65,7 @@ export default function MacFEST2000() {
                           <font face="arial,helvetica,verdana" size="-1"><b>6:30pm</b></font>
                         </td>
                         <td align="left">
-                          <font face="arial,helvetica,verdana" size="-1"><a href="http://www.mp3.com/tos" target="_new">"Tables of Stone"</a></font>
+                          <font face="arial,helvetica,verdana" size="-1"><a href="https://web.archive.org/web/20000623131740/http://artists.mp3s.com/artists/27/tables_of_stone.html" target="_new">"Tables of Stone"</a></font>
                         </td>
                       </tr>
                       <tr valign="top">
@@ -73,7 +73,7 @@ export default function MacFEST2000() {
                           <font face="arial,helvetica,verdana" size="-1"><b>8:30pm</b></font>
                         </td>
                         <td align="left">
-                          <font face="arial,helvetica,verdana" size="-1"><a href="http://www.mp3.com/ignition" target="_new">"Ignition"</a></font>
+                          <font face="arial,helvetica,verdana" size="-1"><a href="https://web.archive.org/web/20001002223235/http://artists.mp3s.com/artists/19/social_ignition.html" target="_new">"Ignition"</a></font>
                         </td>
                       </tr>
                       <tr valign="top">
@@ -81,7 +81,7 @@ export default function MacFEST2000() {
                           <font face="arial,helvetica,verdana" size="-1"><b>10:30pm</b></font>
                         </td>
                         <td align="left">
-                          <font face="arial,helvetica,verdana" size="-1"><a href="http://www.mp3.com/divinityburst" target="_new">"Divinity Burst"</a></font>
+                          <font face="arial,helvetica,verdana" size="-1"><a href="https://web.archive.org/web/20000302203431/http://artists.mp3s.com/artists/36/divinity_burst.html" target="_new">"Divinity Burst"</a></font>
                         </td>
                       </tr>
                       <tr valign="top">
