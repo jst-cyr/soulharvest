@@ -29,7 +29,7 @@ export default function MacFEST() {
                           The prize package for the winner of the Bear's on-air MacFEST band contest.<br /><br /></li>
                       <li><a href="play.html">Play at MacFEST</a><br />
                           Submit band information to apply for a position in MacFEST 2001.<br /><br /></li>
-                      <li><a href="2000.html">MacFEST 2000</a><br />
+                      <li><a href="/macfest/2000">MacFEST 2000</a><br />
                           Information on last year's benefit concert.<br /><br /></li>
                       <li><a href="mailto:soulharvest@ottawa.com">soulharvest@ottawa.com</a><br />
                           Request more information concerning MacFEST.<br /><br /></li>
