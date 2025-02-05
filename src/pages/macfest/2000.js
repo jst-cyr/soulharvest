@@ -10,6 +10,20 @@ export default function MacFEST2000() {
 
       <table>
         <tbody>
+          <tr>
+            <td>
+                <font face="arial,helvetica,verdana" size="+1">
+                  <b>MacFEST '00</b>
+                </font>
+            </td>
+            <td>
+              <font face="arial, helvetica,verdana" size="-1">
+                <b>
+                  <a href="/macfest/"><font color="#FFFFFF">&lt;&lt; Back to MacFEST 2001</font></a>
+                </b>
+              </font>
+            </td>
+          </tr>
           <tr valign="top">
             <td className="soulharvest" width="50%">
               <img src="macfest_m.jpg" border="0" alt="MacFEST 2000" />
