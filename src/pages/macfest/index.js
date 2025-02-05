@@ -21,7 +21,7 @@ export default function MacFEST() {
                     Planned for the long weekend in August, this year's concert promises to be bigger and better than all those that have passed before.
                     <br /><br />
                     <ul>
-                      <li><a href="2001.html">MacFEST 2001</a><br />
+                      <li><a href="/macfest/2001">MacFEST 2001</a><br />
                           Information on this year's benefit concert.<br /><br /></li>
                       <li><a href="corporate.html">Sponsor MacFEST</a><br />
                           Submit corporate information to apply to sponsor MacFEST 2001.<br /><br /></li>
