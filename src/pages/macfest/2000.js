@@ -27,70 +27,72 @@ export default function MacFEST2000() {
                 Soul Harvest is putting together a benefit concert for the Bear Children's Fund. Set for August 6th at Molly's (formerly Molly McGuire's) in the market, here's the showtimes!
                 <center>
                   <table border="0" cellpadding="5" cellspacing="5">
-                    <tr valign="top">
-                      <td align="right">
-                        <font face="arial,helvetica,verdana" size="-1"><b>12:00pm</b></font>
-                      </td>
-                      <td align="left">
-                        <font face="arial,helvetica,verdana" size="-1">Soul Harvest</font>
-                      </td>
-                    </tr>
-                    <tr valign="top">
-                      <td align="right">
-                        <font face="arial,helvetica,verdana" size="-1"><b>12:30pm</b></font>
-                      </td>
-                      <td align="left">
-                        <font face="arial,helvetica,verdana" size="-1"><a href="http://artists.mp3s.com/artists/102/veronica_charnley.html" target="_new">"Veronica Charnley"</a></font>
-                      </td>
-                    </tr>
-                    <tr valign="top">
-                      <td align="right">
-                        <font face="arial,helvetica,verdana" size="-1"><b>2:30pm</b></font>
-                      </td>
-                      <td align="left">
-                        <font face="arial,helvetica,verdana" size="-1"><a href="http://www.mp3.com/aitimusic" target="_new">"aiti maa"</a></font>
-                      </td>
-                    </tr>
-                    <tr valign="top">
-                      <td align="right">
-                        <font face="arial,helvetica,verdana" size="-1"><b>4:30pm</b></font>
-                      </td>
-                      <td align="left">
-                        <font face="arial,helvetica,verdana" size="-1"><a href="http://www.mp3.com/shunt" target="_new">"Shunt"</a></font>
-                      </td>
-                    </tr>
-                    <tr valign="top">
-                      <td align="right">
-                        <font face="arial,helvetica,verdana" size="-1"><b>6:30pm</b></font>
-                      </td>
-                      <td align="left">
-                        <font face="arial,helvetica,verdana" size="-1"><a href="http://www.mp3.com/tos" target="_new">"Tables of Stone"</a></font>
-                      </td>
-                    </tr>
-                    <tr valign="top">
-                      <td align="right">
-                        <font face="arial,helvetica,verdana" size="-1"><b>8:30pm</b></font>
-                      </td>
-                      <td align="left">
-                        <font face="arial,helvetica,verdana" size="-1"><a href="http://www.mp3.com/ignition" target="_new">"Ignition"</a></font>
-                      </td>
-                    </tr>
-                    <tr valign="top">
-                      <td align="right">
-                        <font face="arial,helvetica,verdana" size="-1"><b>10:30pm</b></font>
-                      </td>
-                      <td align="left">
-                        <font face="arial,helvetica,verdana" size="-1"><a href="http://www.mp3.com/divinityburst" target="_new">"Divinity Burst"</a></font>
-                      </td>
-                    </tr>
-                    <tr valign="top">
-                      <td align="right">
-                        <font face="arial,helvetica,verdana" size="-1"><b>12:30am</b></font>
-                      </td>
-                      <td align="left">
-                        <font face="arial,helvetica,verdana" size="-1">Soul Harvest</font>
-                      </td>
-                    </tr>
+                    <tbody>
+                      <tr valign="top">
+                        <td align="right">
+                          <font face="arial,helvetica,verdana" size="-1"><b>12:00pm</b></font>
+                        </td>
+                        <td align="left">
+                          <font face="arial,helvetica,verdana" size="-1">Soul Harvest</font>
+                        </td>
+                      </tr>
+                      <tr valign="top">
+                        <td align="right">
+                          <font face="arial,helvetica,verdana" size="-1"><b>12:30pm</b></font>
+                        </td>
+                        <td align="left">
+                          <font face="arial,helvetica,verdana" size="-1"><a href="http://artists.mp3s.com/artists/102/veronica_charnley.html" target="_new">"Veronica Charnley"</a></font>
+                        </td>
+                      </tr>
+                      <tr valign="top">
+                        <td align="right">
+                          <font face="arial,helvetica,verdana" size="-1"><b>2:30pm</b></font>
+                        </td>
+                        <td align="left">
+                          <font face="arial,helvetica,verdana" size="-1"><a href="http://www.mp3.com/aitimusic" target="_new">"aiti maa"</a></font>
+                        </td>
+                      </tr>
+                      <tr valign="top">
+                        <td align="right">
+                          <font face="arial,helvetica,verdana" size="-1"><b>4:30pm</b></font>
+                        </td>
+                        <td align="left">
+                          <font face="arial,helvetica,verdana" size="-1"><a href="http://www.mp3.com/shunt" target="_new">"Shunt"</a></font>
+                        </td>
+                      </tr>
+                      <tr valign="top">
+                        <td align="right">
+                          <font face="arial,helvetica,verdana" size="-1"><b>6:30pm</b></font>
+                        </td>
+                        <td align="left">
+                          <font face="arial,helvetica,verdana" size="-1"><a href="http://www.mp3.com/tos" target="_new">"Tables of Stone"</a></font>
+                        </td>
+                      </tr>
+                      <tr valign="top">
+                        <td align="right">
+                          <font face="arial,helvetica,verdana" size="-1"><b>8:30pm</b></font>
+                        </td>
+                        <td align="left">
+                          <font face="arial,helvetica,verdana" size="-1"><a href="http://www.mp3.com/ignition" target="_new">"Ignition"</a></font>
+                        </td>
+                      </tr>
+                      <tr valign="top">
+                        <td align="right">
+                          <font face="arial,helvetica,verdana" size="-1"><b>10:30pm</b></font>
+                        </td>
+                        <td align="left">
+                          <font face="arial,helvetica,verdana" size="-1"><a href="http://www.mp3.com/divinityburst" target="_new">"Divinity Burst"</a></font>
+                        </td>
+                      </tr>
+                      <tr valign="top">
+                        <td align="right">
+                          <font face="arial,helvetica,verdana" size="-1"><b>12:30am</b></font>
+                        </td>
+                        <td align="left">
+                          <font face="arial,helvetica,verdana" size="-1">Soul Harvest</font>
+                        </td>
+                      </tr>
+                    </tbody>
                   </table>
                 </center>
                 <br />
