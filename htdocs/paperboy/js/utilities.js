@@ -1,22 +1,20 @@
 export function drawScore(scene, gameState) {
-    // Add score text to the top of the screen
-    gameState.scoreText = scene.add.text(
-        scene.cameras.main.width / 2, // Center horizontally
-        20,                         // 20 pixels from the top
-        `Score: ${gameState.score}`, // Initial score text
-        gameState.fontStyles.default
-    ).setOrigin(0.5, 0); // Center align the text horizontally
-
-    // Add paper count text to the top left of the screen
+    // Add paper count text to the top of the screen
     gameState.paperCountText = scene.add.text(
-        20, // 20 pixels from the left
+        scene.cameras.main.width / 2 - 100, // Adjusted position to the left
         20, // 20 pixels from the top
         `Papers: ${gameState.paperCount}`, // Initial paper count text
         gameState.fontStyles.default
-    ).setOrigin(0, 0); // Align the text to the top left
+    ).setOrigin(0.5, 0); // Center align the text horizontally
+
+    // Add score text next to the paper count text
+    gameState.scoreText = scene.add.text(
+        scene.cameras.main.width / 2 + 50, // Adjusted position to the right
+        20, // 20 pixels from the top
+        `Score: ${gameState.score}`, // Initial score text
+        gameState.fontStyles.default
+    ).setOrigin(0.5, 0); // Center align the text horizontally
 }
-
-
 
 export function resizeGame(game) {
     const canvas = game.canvas;
