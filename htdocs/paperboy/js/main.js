@@ -41,7 +41,7 @@ export const gameState = {
     gameOver: false,
     isPaused: false,
     houseCount: 0,
-    maxHouses: 10,
+    maxHouses: 20,
     houseHeight: 150, // Example height, adjust as needed
     houseWidth: 100, // Example width, adjust as needed
     houseGap: 50, // Example gap, adjust as needed
@@ -104,7 +104,8 @@ function create() {
     gameState.isPaused = false;
     gameState.gameOver = false;
     gameState.houseCount = 0; // Reset house count
-    gameState.nextPileHouseCount = 5; // Initialize next pile house count
+    gameState.distanceTraveled = 0; // Initialize distance traveled
+    gameState.nextPileDistance = gameState.houseHeight * Phaser.Math.Between(5, 7); // Initialize next pile distance
 }
 
 function update() {    
@@ -129,6 +130,9 @@ function update() {
         updatePaperPiles(this, gameState, gameState.streetSpeed); // Update paper piles
         gameState.scoreText.setText(`Score: ${gameState.score}`);
 
+        // Update distance traveled
+        gameState.distanceTraveled += gameState.streetSpeed;
+
         //Check if paper hits mailbox or windows
         gameState.papers.forEach(paper => {
             gameState.houses.forEach(house => {
@@ -147,9 +151,10 @@ function update() {
         });
 
         // Check if it's time to render a new paper pile
-        if (gameState.houseCount >= gameState.nextPileHouseCount) {
+        if (gameState.distanceTraveled >= gameState.nextPileDistance) {
             renderPaperPile(this, gameState);
-            gameState.nextPileHouseCount += Phaser.Math.Between(5, 7); // Set next pile house count
+            gameState.nextPileDistance += gameState.houseHeight * Phaser.Math.Between(5, 7); // Set next pile distance
+            console.log(`Next pile will be rendered at distance: ${gameState.nextPileDistance}`); // Debugging output
         }
 
         //Check if level is over
