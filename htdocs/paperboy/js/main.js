@@ -1,5 +1,5 @@
 import { initializeHouses, updateHouses } from './houses.js';
-import { drawStreet, drawSidewalk, updatePaperPiles } from './street.js';
+import { drawStreet, drawSidewalk, updatePaperPiles, renderPaperPile } from './street.js';
 import { handleInput } from './input.js';
 import { drawPaperboy, movePaperboy } from './player.js';
 import { drawScore } from './utilities.js';
@@ -104,6 +104,7 @@ function create() {
     gameState.isPaused = false;
     gameState.gameOver = false;
     gameState.houseCount = 0; // Reset house count
+    gameState.nextPileHouseCount = 5; // Initialize next pile house count
 }
 
 function update() {    
@@ -146,9 +147,9 @@ function update() {
         });
 
         // Check if it's time to render a new paper pile
-        if (gameState.housesPassed >= 5 && gameState.housesPassed % 5 === 0) {
+        if (gameState.houseCount >= gameState.nextPileHouseCount) {
             renderPaperPile(this, gameState);
-            gameState.housesPassed++; // Increment to avoid multiple piles at the same count
+            gameState.nextPileHouseCount += Phaser.Math.Between(5, 7); // Set next pile house count
         }
 
         //Check if level is over

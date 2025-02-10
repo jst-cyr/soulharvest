@@ -57,6 +57,21 @@ export function drawSidewalk(scene, gameState) {
     gameState.paperPiles.push(paperPile);
 }
 
+// Function to render a pile of newspapers on the sidewalk
+export function renderPaperPile(scene, gameState) {
+    const gameWidth = scene.sys.game.config.width;
+
+    // Add a pile of newspapers on the sidewalk
+    const paperPile = scene.physics.add.sprite(
+        gameWidth / 3 - 145 + 50, // X position
+        -50,                      // Y position (start off-screen)
+        'paperStack'              // Texture
+    );
+
+    paperPile.setDepth(1);
+    gameState.paperPiles.push(paperPile);
+}
+
 // Function to update the position of paper piles
 export function updatePaperPiles(scene, gameState, streetSpeed) {
     gameState.paperPiles.forEach(paperPile => {
