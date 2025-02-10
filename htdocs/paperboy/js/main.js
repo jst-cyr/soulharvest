@@ -50,6 +50,8 @@ export const gameState = {
     mailboxDeliveryScore: 10, // Score for successful delivery
     levelComplete: false,
     reachedIntersection: false,
+    paperPiles: [], // Array to store paper piles
+    housesPassed: 0, // Counter for houses passed
 };
 
 /* Setup font styles */
@@ -70,6 +72,7 @@ function preload() {
     this.load.image('paperboyLogo', 'https://upload.wikimedia.org/wikipedia/en/7/7e/Paperboy_arcadeflyer.png');
     this.load.image('brokenWindow', '/htdocs/paperboy/assets/Broken-Window.png'); // New sprite for broken windows
     this.load.image('window', '/htdocs/paperboy/assets/Window.png'); // New sprite for windows
+    this.load.image('paperStack', '/htdocs/paperboy/assets/PaperStack.png'); // Load paper stack image
     this.load.on('complete', () => {
         console.log('Assets loaded successfully!');
     }); 
@@ -130,6 +133,22 @@ function update() {
                 checkPaperHit(this, paper, house.mailbox, house, gameState);
             });
         });
+
+        // Check if paperboy picks up a paper pile
+        gameState.paperPiles.forEach(paperPile => {
+            if (Phaser.Geom.Intersects.RectangleToRectangle(player.sprite.getBounds(), paperPile.getBounds())) {
+                gameState.paperCount += 10; // Add 10 papers
+                gameState.paperCountText.setText(`Papers: ${gameState.paperCount}`);
+                paperPile.destroy(); // Remove the paper pile
+                gameState.paperPiles = gameState.paperPiles.filter(p => p !== paperPile); // Remove from array
+            }
+        });
+
+        // Check if it's time to render a new paper pile
+        if (gameState.housesPassed >= 5 && gameState.housesPassed % 5 === 0) {
+            renderPaperPile(this, gameState);
+            gameState.housesPassed++; // Increment to avoid multiple piles at the same count
+        }
 
         //Check if level is over
         if (gameState.houseCount >= gameState.maxHouses && gameState.houses.length === 0) {

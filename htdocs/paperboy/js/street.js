@@ -45,6 +45,16 @@ export function drawSidewalk(scene, gameState) {
     );
 
     sidewalk.setDepth(0);
+
+    // Add a pile of newspapers on the sidewalk
+    const paperPile = scene.physics.add.sprite(
+        gameWidth / 3 - 145 + 50, // X position
+        gameHeight / 2,           // Y position
+        'paperStack'              // Texture
+    );
+
+    paperPile.setDepth(1);
+    gameState.paperPiles.push(paperPile);
 }
 
 
