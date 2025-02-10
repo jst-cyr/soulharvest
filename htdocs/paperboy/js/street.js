@@ -57,6 +57,19 @@ export function drawSidewalk(scene, gameState) {
     gameState.paperPiles.push(paperPile);
 }
 
+// Function to update the position of paper piles
+export function updatePaperPiles(scene, gameState, streetSpeed) {
+    gameState.paperPiles.forEach(paperPile => {
+        paperPile.y += streetSpeed;
+
+        // Remove off-screen paper piles
+        if (paperPile.y > scene.sys.game.config.height) {
+            paperPile.destroy();
+            gameState.paperPiles = gameState.paperPiles.filter(p => p !== paperPile);
+        }
+    });
+}
+
 
 export function drawStreet(scene, gameState) {
     const gameWidth = scene.sys.game.config.width;

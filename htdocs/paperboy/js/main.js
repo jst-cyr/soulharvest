@@ -1,5 +1,5 @@
 import { initializeHouses, updateHouses } from './houses.js';
-import { drawStreet, drawSidewalk } from './street.js';
+import { drawStreet, drawSidewalk, updatePaperPiles } from './street.js';
 import { handleInput } from './input.js';
 import { drawPaperboy, movePaperboy } from './player.js';
 import { drawScore } from './utilities.js';
@@ -125,6 +125,7 @@ function update() {
 
     if (!gameState.isPaused && !gameState.gameOver) {
         updateHouses(this, gameState, gameState.streetSpeed);
+        updatePaperPiles(this, gameState, gameState.streetSpeed); // Update paper piles
         gameState.scoreText.setText(`Score: ${gameState.score}`);
 
         //Check if paper hits mailbox or windows
