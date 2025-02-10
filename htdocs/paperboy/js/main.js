@@ -37,6 +37,7 @@ export const gameState = {
     houses: [],
     score: 0,
     scoreText: "Score: 0",
+    paperCount: 10, // Initialize with 10 papers
     gameOver: false,
     isPaused: false,
     houseCount: 0,
@@ -90,7 +91,7 @@ function create() {
     drawSidewalk(this, gameState);
     drawStreet(this, gameState);
 
-    // Display current score
+    // Display current score and paper count
     drawScore(this, gameState);
 
     //Create Pause modal

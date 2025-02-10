@@ -1,6 +1,6 @@
 // Throw paper
 export function throwPaper(scene, gameState) {
-    if (gameState.gameOver) return;
+    if (gameState.gameOver || gameState.paperCount <= 0) return; // Check if game is over or no papers left
 
     const paperSprite = scene.physics.add.sprite(gameState.player.sprite.x, gameState.player.sprite.y, 'paper'); // Use 'paper' texture
     paperSprite.setVelocityX(gameState.paperSpeed); // Set the velocity to throw the paper
@@ -12,6 +12,8 @@ export function throwPaper(scene, gameState) {
     };
 
     gameState.papers.push(paper);
+    gameState.paperCount--; // Decrease paper count by one
+    gameState.paperCountText.setText(`Papers: ${gameState.paperCount}`); // Update paper count text
 }
 
 export function checkPaperHit(scene, paper, mailbox, house, gameState) {

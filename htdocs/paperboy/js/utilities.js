@@ -6,6 +6,14 @@ export function drawScore(scene, gameState) {
         `Score: ${gameState.score}`, // Initial score text
         gameState.fontStyles.default
     ).setOrigin(0.5, 0); // Center align the text horizontally
+
+    // Add paper count text to the top left of the screen
+    gameState.paperCountText = scene.add.text(
+        20, // 20 pixels from the left
+        20, // 20 pixels from the top
+        `Papers: ${gameState.paperCount}`, // Initial paper count text
+        gameState.fontStyles.default
+    ).setOrigin(0, 0); // Align the text to the top left
 }
 
 
