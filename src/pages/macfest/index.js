@@ -31,7 +31,7 @@ export default function MacFEST() {
                           Submit band information to apply for a position in MacFEST 2001.<br /><br /></li>
                       <li><a href="/macfest/2000">MacFEST 2000</a><br />
                           Information on last year's benefit concert.<br /><br /></li>
-                      <li><a href="mailto:soulharvest@ottawa.com">soulharvest@ottawa.com</a><br />
+                      <li><a href="mailto:soulharvest@soulharvest.ca">soulharvest@soulharvest.ca</a><br />
                           Request more information concerning MacFEST.<br /><br /></li>
                     </ul>
                 </blockquote>

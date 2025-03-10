@@ -31,7 +31,7 @@ export default function OOTB() {
                   <br /><br />
                   Soul Harvest spent 14 grueling hours in Dunrobin putting together this amazing 4-song EP of the new Soul Harvest line-up.  The EP features the stand-out single <b>"Sean's Song"</b>, the slow blues-tune <b>"Cruel"</b>, and re-recordings of old favourites <b>"Chillin' on the Patio"</b> and <b>"Take Your Time"</b>.
                   <br /><br />
-                  You can currently <a href="https://web.archive.org/web/20001002085556/http://artists.mp3s.com/artists/5/soul_harvest.html" target="_new">download</a> the track <b>"Sean's Song"</b> from our mp3.com website.  Drop us a line and let us know what you think at: <a href="mailto:soulharvest@canada.com">soulharvest@canada.com</a>
+                  You can currently <a href="https://web.archive.org/web/20001002085556/http://artists.mp3s.com/artists/5/soul_harvest.html" target="_new">download</a> the track <b>"Sean's Song"</b> from our mp3.com website.  Drop us a line and let us know what you think at: <a href="mailto:soulharvest@soulharvest.ca">soulharvest@soulharvest.ca</a>
                   <br /><br />
                 </font>
               </td>

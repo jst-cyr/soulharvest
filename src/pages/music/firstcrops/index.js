@@ -31,7 +31,7 @@ export default function FirstCrops() {
                 
                   Soul Harvest spent an entire day with an old 80's tape deck, two mikes, and a basement full of gear slamming together as much material as the makeshift group could put together.  At the time of recording, the bassist and drummer were missing, and with Eric St-Cyr filling in, the remaining members recorded as much as possible with as few takes as possible. While the sound quality was quite atrocious, a tracks like "Something Soothing" and "John Doe" showcased what was to come in future years, and the garbled recordings of "Windflow" and "Stumbled" were a fine first attempt at recording these SH rock tunes.
                   <br /><br />
-                  You can currently purchase the First Crops EP from our <a href="https://web.archive.org/web/20001002085556/http://artists.mp3s.com/artists/5/soul_harvest.html" target="_new">mp3.com website</a>.  Drop us a line and let us know what you think at: <a href="mailto:soulharvest@canada.com">soulharvest@canada.com</a>
+                  You can currently purchase the First Crops EP from our <a href="https://web.archive.org/web/20001002085556/http://artists.mp3s.com/artists/5/soul_harvest.html" target="_new">mp3.com website</a>.  Drop us a line and let us know what you think at: <a href="mailto:soulharvest@soulharvest.ca">soulharvest@soulharvest.ca</a>
                   <br /><br />
                 </font>
               </td>
