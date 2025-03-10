@@ -23,7 +23,7 @@ export default function MacFEST() {
                     <ul>
                       <li><a href="/macfest/2001">MacFEST 2001</a><br />
                           Information on this year's benefit concert.<br /><br /></li>
-                      <li><a href="corporate.html">Sponsor MacFEST</a><br />
+                      <li><a href="/macfest/corporate">Sponsor MacFEST</a><br />
                           Submit corporate information to apply to sponsor MacFEST 2001.<br /><br /></li>
                       <li><a href="prize.html">Prize package</a><br />
                           The prize package for the winner of the Bear's on-air MacFEST band contest.<br /><br /></li>
