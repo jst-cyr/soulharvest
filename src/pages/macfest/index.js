@@ -27,7 +27,7 @@ export default function MacFEST() {
                           Submit corporate information to apply to sponsor MacFEST 2001.<br /><br /></li>
                       <li><a href="prize.html">Prize package</a><br />
                           The prize package for the winner of the Bear's on-air MacFEST band contest.<br /><br /></li>
-                      <li><a href="play.html">Play at MacFEST</a><br />
+                      <li><a href="/macfest/play">Play at MacFEST</a><br />
                           Submit band information to apply for a position in MacFEST 2001.<br /><br /></li>
                       <li><a href="/macfest/2000">MacFEST 2000</a><br />
                           Information on last year's benefit concert.<br /><br /></li>
